@@ -6,3 +6,6 @@ wordpress/wp-content/*
 !wordpress/wp-content/themes/
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/mapaction
+
+# Ignore data folder in our dev directory
+dev/mysql_data
