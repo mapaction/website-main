@@ -7,5 +7,12 @@ wordpress/wp-content/*
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/mapaction
 
+# Ignore build directories & files
+.sass-cache
+style.css.map
+
 # Ignore data folder in our dev directory
 dev/mysql_data
+
+# Custom vim settings file
+.vimrc_local
