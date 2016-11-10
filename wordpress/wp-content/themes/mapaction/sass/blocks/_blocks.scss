@@ -83,3 +83,38 @@
 		text-decoration: underline;
 	}
 }
+
+.main-navigation {
+	ul {
+		list-style: none;
+	}
+	li {
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		width: 8em;
+		a {
+			color: $primary-blue;
+			text-decoration: none;
+			position: relative;  /* For positioning pseudo element on hover (underline effect) */
+		}
+		a:hover::after {
+			position: absolute;
+			left: 0;
+			bottom: -0.5em;
+			content: "";
+			height: 0.3em;
+			width: 100%;
+			background-color: $secondary-blue;
+			border-radius: 4px;
+		}
+	}
+	ul.sub-menu {
+		display: none;
+	}
+	li:hover {
+		ul.sub-menu {
+			display: block;
+		}
+	}
+}

@@ -1,12 +1,11 @@
 $max-width: 1200px;
 
 .site-layout {
-	width: $max-width;
+	max-width: $max-width;
 	margin: auto;
 }
 
 .site-header-layout {
-	width: 1200px;
 	margin: auto;
 }
 
@@ -72,5 +71,25 @@ $max-width: 1200px;
 		@media screen and (max-width: $two_column_min_width) {
 			margin: 0 $gutter-size/2 0 0;
 		}
+	}
+}
+
+.site-branding-layout {
+	float: left;
+}
+
+.main-navigation-layout {
+	float: right;
+}
+
+.site-branding-layout {
+	margin-top: $gutter-size;
+}
+
+.main-navigation-layout {
+	margin-top: #{ ( $logo-height + $gutter-size + $base-line-height * $base-font-size ) / 2 };
+
+	ul, li {
+		display: inline-block;
 	}
 }

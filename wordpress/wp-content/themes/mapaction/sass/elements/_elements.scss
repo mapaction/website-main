@@ -13,6 +13,7 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	overflow-x: hidden;  /* Hide horizontal overflow for full width header bar effect (pseudo elements) */
 }
 
 blockquote, q {
