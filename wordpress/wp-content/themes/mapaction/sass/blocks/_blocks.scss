@@ -1,0 +1,51 @@
+/* Create the color bars that spread outside the page width
+   for the emergencies banne r*/
+.site-emergencies {
+	&::before {
+		height: $emergencies-height;
+		width: 1000px;
+		background-color: $primary-blue;
+		content: "";
+	}
+	&::after {
+		height: $emergencies-height;
+		width: 1000px;
+		background-color: $primary-red;
+		content: "";
+	}
+}
+
+/* Create the arrow in the emergencies banner */
+.site-emergencies-layout > h1 {
+    &::after {
+    	content: "";
+    	width: 0;
+    	height: 0;
+    	border-width: $gutter-size 0 $gutter-size $gutter-size;
+    	border-color: transparent transparent transparent $primary-blue;
+    	border-style: solid;
+    }
+}
+
+.site-emergencies {
+	height: $emergencies-height;
+	background-color: $primary-red;
+	
+	> h1 {
+		background-color: $primary-blue;
+		color: white;
+		text-transform: uppercase;
+		font-size: 1rem;
+		font-weight: bold;
+		height: $emergencies-height;
+	}
+	> ul {
+		height: $emergencies-height;
+	}
+	> ul > li {
+		font-size: 1rem;
+		font-weight: bold;
+		color: white;
+		text-transform: uppercase;
+	}
+}

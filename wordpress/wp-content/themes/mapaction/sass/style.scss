@@ -42,6 +42,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
+$gutter-size: 30px;
+$primary-blue: #19458d;
+$primary-red: #e53d2f;
+$emergencies-height: 60px;
+$base-font-size: 14pt;
+$base-line-height: 1.5;
+$base-font-family: "Arial", "sans-serif";
+
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
@@ -71,6 +80,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "navigation/navigation";
 
 /*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 @import "modules/accessibility";
@@ -89,6 +103,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Widgets
 --------------------------------------------------------------*/
 @import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import "blocks/blocks";
 
 /*--------------------------------------------------------------
 # Content

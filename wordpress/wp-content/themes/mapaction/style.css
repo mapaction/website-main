@@ -378,9 +378,12 @@ big {
 /* line 1, sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
+  font-size: 14pt;
+  line-height: 1.5;
+  font-family: "Arial", "sans-serif";
 }
 
-/* line 5, sass/elements/_elements.scss */
+/* line 8, sass/elements/_elements.scss */
 *,
 *:before,
 *:after {
@@ -388,22 +391,22 @@ html {
   box-sizing: inherit;
 }
 
-/* line 11, sass/elements/_elements.scss */
+/* line 14, sass/elements/_elements.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-/* line 15, sass/elements/_elements.scss */
+/* line 18, sass/elements/_elements.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 18, sass/elements/_elements.scss */
+/* line 21, sass/elements/_elements.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 24, sass/elements/_elements.scss */
+/* line 27, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -443,7 +446,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 33, sass/elements/_elements.scss */
+/* line 36, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -451,7 +454,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 38, sass/elements/_elements.scss */
+/* line 41, sass/elements/_elements.scss */
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
@@ -679,6 +682,74 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 3, sass/layout/_layout.scss */
+.site-layout {
+  width: 1200px;
+  margin: auto;
+}
+
+/* line 8, sass/layout/_layout.scss */
+.site-header-layout {
+  width: 1200px;
+  margin: auto;
+}
+
+/* Create the color bars that spread outside the page width
+   for the emergencies banne r*/
+/* line 15, sass/layout/_layout.scss */
+.site-emergencies-layout {
+  position: relative;
+}
+/* line 17, sass/layout/_layout.scss */
+.site-emergencies-layout::before {
+  position: absolute;
+  right: 100%;
+}
+/* line 21, sass/layout/_layout.scss */
+.site-emergencies-layout::after {
+  position: absolute;
+  left: 100%;
+}
+
+/* Create the arrow in the emergencies banner */
+/* line 28, sass/layout/_layout.scss */
+.site-emergencies-layout > h1 {
+  position: relative;
+}
+/* line 30, sass/layout/_layout.scss */
+.site-emergencies-layout > h1::after {
+  position: absolute;
+  left: 100%;
+}
+
+/* line 37, sass/layout/_layout.scss */
+.site-emergencies-layout > h1 {
+  display: inline-block;
+  margin: 0;
+  /* Center the text in the emergencie block */
+}
+/* line 41, sass/layout/_layout.scss */
+.site-emergencies-layout > h1 span {
+  margin-top: 16px;
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 47, sass/layout/_layout.scss */
+.site-emergencies-layout > ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0 45px;
+}
+/* line 52, sass/layout/_layout.scss */
+.site-emergencies-layout > ul > li {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  margin-top: 16px;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -785,6 +856,63 @@ a:hover, a:active {
 /* line 5, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+/* Create the color bars that spread outside the page width
+   for the emergencies banne r*/
+/* line 4, sass/blocks/_blocks.scss */
+.site-emergencies::before {
+  height: 60px;
+  width: 1000px;
+  background-color: #19458d;
+  content: "";
+}
+/* line 10, sass/blocks/_blocks.scss */
+.site-emergencies::after {
+  height: 60px;
+  width: 1000px;
+  background-color: #e53d2f;
+  content: "";
+}
+
+/* Create the arrow in the emergencies banner */
+/* line 20, sass/blocks/_blocks.scss */
+.site-emergencies-layout > h1::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 30px 0 30px 30px;
+  border-color: transparent transparent transparent #19458d;
+  border-style: solid;
+}
+
+/* line 30, sass/blocks/_blocks.scss */
+.site-emergencies {
+  height: 60px;
+  background-color: #e53d2f;
+}
+/* line 34, sass/blocks/_blocks.scss */
+.site-emergencies > h1 {
+  background-color: #19458d;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 60px;
+}
+/* line 42, sass/blocks/_blocks.scss */
+.site-emergencies > ul {
+  height: 60px;
+}
+/* line 45, sass/blocks/_blocks.scss */
+.site-emergencies > ul > li {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------

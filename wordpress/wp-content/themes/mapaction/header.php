@@ -20,10 +20,17 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site site-layout">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mapaction' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header site-header-layout" role="banner">
+		<div class="site-emergencies site-emergencies-layout">
+		<h1><span>Current Emergencies</span></h1>
+		<ul>
+			<li>Huricane Mathew, Haiti</li>
+			<li>Earthquake, Tanzania</li>
+		</ul>
+		</div>
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
