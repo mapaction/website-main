@@ -736,17 +736,48 @@ a:hover, a:active {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 47, sass/layout/_layout.scss */
+@media screen and (max-width: 750px) {
+  /* line 41, sass/layout/_layout.scss */
+  .site-emergencies-layout > h1 span {
+    margin-top: 13px;
+  }
+}
+/* line 49, sass/layout/_layout.scss */
+.site-emergencies-layout > h1 .current-emergency-icon {
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  /* line 53, sass/layout/_layout.scss */
+  .site-emergencies-layout > h1 .current-emergency-icon {
+    display: inline-block;
+  }
+  /* line 56, sass/layout/_layout.scss */
+  .site-emergencies-layout > h1 .current-emergency-text {
+    display: none;
+  }
+}
+/* line 61, sass/layout/_layout.scss */
 .site-emergencies-layout > ul {
   display: inline-block;
   padding: 0;
   margin: 0 0 0 45px;
 }
-/* line 52, sass/layout/_layout.scss */
+@media screen and (max-width: 750px) {
+  /* line 61, sass/layout/_layout.scss */
+  .site-emergencies-layout > ul {
+    margin: 0 0 0 30px;
+  }
+}
+/* line 69, sass/layout/_layout.scss */
 .site-emergencies-layout > ul > li {
   display: inline-block;
   margin: 0 30px 0 0;
-  margin-top: 16px;
+}
+@media screen and (max-width: 750px) {
+  /* line 69, sass/layout/_layout.scss */
+  .site-emergencies-layout > ul > li {
+    margin: 0 15px 0 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -861,25 +892,48 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
+/* line 1, sass/blocks/_blocks.scss */
+.site-layout {
+  padding: 0 30px;
+}
+@media screen and (max-width: 750px) {
+  /* line 1, sass/blocks/_blocks.scss */
+  .site-layout {
+    padding: 0 15px;
+  }
+}
+
 /* Create the color bars that spread outside the page width
    for the emergencies banne r*/
-/* line 4, sass/blocks/_blocks.scss */
+/* line 11, sass/blocks/_blocks.scss */
 .site-emergencies::before {
   height: 60px;
   width: 1000px;
   background-color: #19458d;
   content: "";
 }
-/* line 10, sass/blocks/_blocks.scss */
+@media screen and (max-width: 750px) {
+  /* line 11, sass/blocks/_blocks.scss */
+  .site-emergencies::before {
+    height: 48px;
+  }
+}
+/* line 20, sass/blocks/_blocks.scss */
 .site-emergencies::after {
   height: 60px;
   width: 1000px;
   background-color: #e53d2f;
   content: "";
 }
+@media screen and (max-width: 750px) {
+  /* line 20, sass/blocks/_blocks.scss */
+  .site-emergencies::after {
+    height: 48px;
+  }
+}
 
 /* Create the arrow in the emergencies banner */
-/* line 20, sass/blocks/_blocks.scss */
+/* line 33, sass/blocks/_blocks.scss */
 .site-emergencies-layout > h1::after {
   content: "";
   width: 0;
@@ -888,13 +942,25 @@ a:hover, a:active {
   border-color: transparent transparent transparent #19458d;
   border-style: solid;
 }
+@media screen and (max-width: 750px) {
+  /* line 33, sass/blocks/_blocks.scss */
+  .site-emergencies-layout > h1::after {
+    border-width: 24px 0 24px 24px;
+  }
+}
 
-/* line 30, sass/blocks/_blocks.scss */
+/* line 46, sass/blocks/_blocks.scss */
 .site-emergencies {
   height: 60px;
   background-color: #e53d2f;
 }
-/* line 34, sass/blocks/_blocks.scss */
+@media screen and (max-width: 750px) {
+  /* line 46, sass/blocks/_blocks.scss */
+  .site-emergencies {
+    height: 48px;
+  }
+}
+/* line 53, sass/blocks/_blocks.scss */
 .site-emergencies > h1 {
   background-color: #19458d;
   color: white;
@@ -903,11 +969,24 @@ a:hover, a:active {
   font-weight: bold;
   height: 60px;
 }
-/* line 42, sass/blocks/_blocks.scss */
+@media screen and (max-width: 750px) {
+  /* line 53, sass/blocks/_blocks.scss */
+  .site-emergencies > h1 {
+    height: 48px;
+    font-size: 11pt;
+  }
+}
+/* line 65, sass/blocks/_blocks.scss */
 .site-emergencies > ul {
   height: 60px;
 }
-/* line 45, sass/blocks/_blocks.scss */
+@media screen and (max-width: 750px) {
+  /* line 65, sass/blocks/_blocks.scss */
+  .site-emergencies > ul {
+    height: 48px;
+  }
+}
+/* line 71, sass/blocks/_blocks.scss */
 .site-emergencies > ul > li > a,
 .site-emergencies > ul > li > a:visited {
   font-size: 1rem;
@@ -916,7 +995,14 @@ a:hover, a:active {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 53, sass/blocks/_blocks.scss */
+@media screen and (max-width: 750px) {
+  /* line 71, sass/blocks/_blocks.scss */
+  .site-emergencies > ul > li > a,
+  .site-emergencies > ul > li > a:visited {
+    font-size: 11pt;
+  }
+}
+/* line 82, sass/blocks/_blocks.scss */
 .site-emergencies > ul > li > a:hover {
   text-decoration: underline;
 }

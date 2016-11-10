@@ -25,7 +25,7 @@
 
 	<header id="masthead" class="site-header site-header-layout" role="banner">
 		<div class="site-emergencies site-emergencies-layout">
-		<h1><span>Current Emergencies</span></h1>
+		<h1><span class="current-emergency-icon">(!)</span><span class="current-emergency-text">Current Emergencies</span></h1>
 		<?php
 			wp_nav_menu( array(
 				'container' => false,
