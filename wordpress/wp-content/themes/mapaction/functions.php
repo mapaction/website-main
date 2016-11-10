@@ -45,6 +45,7 @@ function mapaction_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'mapaction' ),
+		'emergencies' => esc_html__( 'Emergencies', 'mapaction' ),
 	) );
 
 	/*

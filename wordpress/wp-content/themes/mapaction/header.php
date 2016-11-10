@@ -26,10 +26,13 @@
 	<header id="masthead" class="site-header site-header-layout" role="banner">
 		<div class="site-emergencies site-emergencies-layout">
 		<h1><span>Current Emergencies</span></h1>
-		<ul>
-			<li>Huricane Mathew, Haiti</li>
-			<li>Earthquake, Tanzania</li>
-		</ul>
+		<?php
+			wp_nav_menu( array(
+				'container' => false,
+				'depth' => 1,
+				'theme_location' => 'emergencies',
+			) );
+		?>
 		</div>
 		<div class="site-branding">
 			<?php

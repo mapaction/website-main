@@ -908,11 +908,17 @@ a:hover, a:active {
   height: 60px;
 }
 /* line 45, sass/blocks/_blocks.scss */
-.site-emergencies > ul > li {
+.site-emergencies > ul > li > a,
+.site-emergencies > ul > li > a:visited {
   font-size: 1rem;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 53, sass/blocks/_blocks.scss */
+.site-emergencies > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------

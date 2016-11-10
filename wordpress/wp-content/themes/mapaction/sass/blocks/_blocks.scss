@@ -42,10 +42,15 @@
 	> ul {
 		height: $emergencies-height;
 	}
-	> ul > li {
+	> ul > li > a,
+	> ul > li > a:visited {
 		font-size: 1rem;
 		font-weight: bold;
 		color: white;
 		text-transform: uppercase;
+		text-decoration: none;
+	}
+	> ul > li > a:hover {
+		text-decoration: underline;
 	}
 }
