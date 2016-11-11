@@ -100,12 +100,12 @@ $navigation-cell-width: 8em;
 		font-weight: bold;
 		text-transform: uppercase;
 		text-align: center;
-		width: $navigation-cell-width;
+		margin-right: $gutter-size;
 		> a {
 			position: relative;  /* For positioning pseudo element on hover (underline effect) */
 		}
 	}
-	> ul > li > a:hover::after,
+	> ul > li:hover > a::after,
 	> ul > li.current_page_item > a::after {
 		position: absolute;
 		left: 0;
@@ -115,17 +115,19 @@ $navigation-cell-width: 8em;
 		width: 100%;
 		background-color: $secondary-blue;
 		border-radius: 4px;
+		z-index: 1;
 	}
 	ul.sub-menu {
 		display: none;
 		margin: 0;
-		padding: 0;
-		min-width: $navigation-cell-width;
+		padding: $gutter-size/2 0 0 0;
 		background-color: white;
 		border-bottom: 3px solid $secondary-blue;
 		border-radius: 2px;
 		text-align: left;
+		width: 100%;
 		li {
+			width: 100%;
 			font-weight: normal;
 			text-transform: none;
 			padding: 0 $gutter-size/2;
@@ -135,7 +137,6 @@ $navigation-cell-width: 8em;
 		position: relative;
 		ul.sub-menu {
 			position: absolute;
-			width: $navigation-cell-width;
 			left: 0;
 			display: block;
 		}

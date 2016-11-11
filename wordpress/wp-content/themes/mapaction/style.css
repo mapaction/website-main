@@ -990,26 +990,28 @@ a:hover, a:active {
 /* line 90, sass/blocks/_blocks.scss */
 .main-navigation ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* line 93, sass/blocks/_blocks.scss */
+/* line 95, sass/blocks/_blocks.scss */
 .main-navigation li > a {
   color: #19458d;
   text-decoration: none;
 }
-/* line 97, sass/blocks/_blocks.scss */
+/* line 99, sass/blocks/_blocks.scss */
 .main-navigation > ul > li {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  width: 8em;
+  margin-right: 30px;
 }
-/* line 102, sass/blocks/_blocks.scss */
+/* line 104, sass/blocks/_blocks.scss */
 .main-navigation > ul > li > a {
   position: relative;
   /* For positioning pseudo element on hover (underline effect) */
 }
-/* line 106, sass/blocks/_blocks.scss */
-.main-navigation > ul > li > a:hover::after,
+/* line 108, sass/blocks/_blocks.scss */
+.main-navigation > ul > li:hover > a::after,
 .main-navigation > ul > li.current_page_item > a::after {
   position: absolute;
   left: 0;
@@ -1019,32 +1021,33 @@ a:hover, a:active {
   width: 100%;
   background-color: #92b4ec;
   border-radius: 4px;
+  z-index: 1;
 }
-/* line 117, sass/blocks/_blocks.scss */
+/* line 120, sass/blocks/_blocks.scss */
 .main-navigation ul.sub-menu {
   display: none;
   margin: 0;
-  padding: 0;
-  min-width: 8em;
+  padding: 15px 0 0 0;
   background-color: white;
   border-bottom: 3px solid #92b4ec;
   border-radius: 2px;
   text-align: left;
+  width: 100%;
 }
-/* line 126, sass/blocks/_blocks.scss */
+/* line 129, sass/blocks/_blocks.scss */
 .main-navigation ul.sub-menu li {
+  width: 100%;
   font-weight: normal;
   text-transform: none;
   padding: 0 15px;
 }
-/* line 132, sass/blocks/_blocks.scss */
+/* line 136, sass/blocks/_blocks.scss */
 .main-navigation li:hover {
   position: relative;
 }
-/* line 134, sass/blocks/_blocks.scss */
+/* line 138, sass/blocks/_blocks.scss */
 .main-navigation li:hover ul.sub-menu {
   position: absolute;
-  width: 8em;
   left: 0;
   display: block;
 }
