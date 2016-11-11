@@ -69,6 +69,11 @@ $max-width: 1200px;
 	> ul > li {
 		display: inline-block;
 		margin: 0 $gutter-size 0 0;
+		@media screen and (max-width: $three_column_min_width) {
+			.emergency-type {
+				display: none;
+			}
+		}
 		@media screen and (max-width: $two_column_min_width) {
 			margin: 0 $gutter-size/2 0 0;
 		}
