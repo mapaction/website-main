@@ -13,6 +13,7 @@ style.css.map
 
 # Ignore data folder in our dev directory
 dev/mysql_data
+dev/mapaction_*.sql
 
 # Custom vim settings file
 .vimrc_local
