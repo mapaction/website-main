@@ -120,3 +120,14 @@ function mapaction_category_transient_flusher() {
 }
 add_action( 'edit_category', 'mapaction_category_transient_flusher' );
 add_action( 'save_post',     'mapaction_category_transient_flusher' );
+
+/**
+ * Output the title of the menu in a given location
+ */
+function mapaction_menu_title_from_location( $location ) {
+	$all_locations = get_nav_menu_locations();
+	if ( ! empty( $all_locations[ $location ] ) ) {
+		$menu_obj = get_term( $all_locations[ $location ], 'nav_menu' );
+		echo esc_html( $menu_obj->name );
+	}
+}
