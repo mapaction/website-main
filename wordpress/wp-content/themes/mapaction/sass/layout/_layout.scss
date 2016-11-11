@@ -114,14 +114,22 @@ $max-width: 1200px;
 	}
 }
 
-/* Mobile navigation */
+/* Intermediate navigation */
 @media screen and (max-width: $full_menu_min_width) {
+	.main-navigation-layout {
+		float: none;
+		clear: both;
+	}
+}
+
+/* Mobile navigation */
+@media screen and (max-width: $two_column_min_width) {
 	.site-navigation-toggle-label-layout {
 		display: block;
 		float: right;
 	}
 
-	.main-navigation {
+	.main-navigation-layout {
 		float: none;
 		clear: both;
 		input[type="checkbox"]:not(:checked) + ul li {

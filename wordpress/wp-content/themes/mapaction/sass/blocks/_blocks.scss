@@ -105,6 +105,7 @@
 		}
 		> a {
 			position: relative;  /* For positioning pseudo element on hover (underline effect) */
+			font-size: $base-font-size;
 		}
 	}
 	> ul > li:hover > a::after,
@@ -145,8 +146,15 @@
 	}
 }
 
-/* Mobile navigation */
+/* Intermediate navigation */
 @media screen and (max-width: $full_menu_min_width) {
+	.main-navigation > ul > li  a {
+		font-size: $base-font-size-medium;
+	}
+}
+
+/* Mobile navigation */
+@media screen and (max-width: $two_column_min_width) {
 	.site-navigation-toggle-label {
 		font-size: $base-font-size-small;
 		text-transform: uppercase;

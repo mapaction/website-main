@@ -765,31 +765,39 @@ a:hover, a:active {
   display: none;
 }
 
-/* Mobile navigation */
+/* Intermediate navigation */
 @media screen and (max-width: 1023px) {
   /* line 119, sass/layout/_layout.scss */
+  .main-navigation-layout {
+    float: none;
+    clear: both;
+  }
+}
+/* Mobile navigation */
+@media screen and (max-width: 750px) {
+  /* line 127, sass/layout/_layout.scss */
   .site-navigation-toggle-label-layout {
     display: block;
     float: right;
   }
 
-  /* line 124, sass/layout/_layout.scss */
-  .main-navigation {
+  /* line 132, sass/layout/_layout.scss */
+  .main-navigation-layout {
     float: none;
     clear: both;
   }
-  /* line 127, sass/layout/_layout.scss */
-  .main-navigation input[type="checkbox"]:not(:checked) + ul li {
+  /* line 135, sass/layout/_layout.scss */
+  .main-navigation-layout input[type="checkbox"]:not(:checked) + ul li {
     display: none;
   }
-  /* line 130, sass/layout/_layout.scss */
-  .main-navigation > ul > li {
+  /* line 138, sass/layout/_layout.scss */
+  .main-navigation-layout > ul > li {
     display: block;
     text-align: left;
     margin-top: 15px;
   }
-  /* line 136, sass/layout/_layout.scss */
-  .main-navigation ul li:hover ul.sub-menu {
+  /* line 144, sass/layout/_layout.scss */
+  .main-navigation-layout ul li:hover ul.sub-menu {
     left: 100%;
     top: 0;
   }
@@ -1050,8 +1058,9 @@ a:hover, a:active {
 .main-navigation > ul > li > a {
   position: relative;
   /* For positioning pseudo element on hover (underline effect) */
+  font-size: 14pt;
 }
-/* line 110, sass/blocks/_blocks.scss */
+/* line 111, sass/blocks/_blocks.scss */
 .main-navigation > ul > li:hover > a::after,
 .main-navigation > ul > li.current_page_item > a::after {
   position: absolute;
@@ -1064,7 +1073,7 @@ a:hover, a:active {
   border-radius: 4px;
   z-index: 1;
 }
-/* line 122, sass/blocks/_blocks.scss */
+/* line 123, sass/blocks/_blocks.scss */
 .main-navigation ul.sub-menu {
   display: none;
   margin: 0;
@@ -1075,27 +1084,34 @@ a:hover, a:active {
   text-align: left;
   width: 100%;
 }
-/* line 131, sass/blocks/_blocks.scss */
+/* line 132, sass/blocks/_blocks.scss */
 .main-navigation ul.sub-menu li {
   width: 100%;
   font-weight: normal;
   text-transform: none;
   padding: 0 15px;
 }
-/* line 138, sass/blocks/_blocks.scss */
+/* line 139, sass/blocks/_blocks.scss */
 .main-navigation li:hover {
   position: relative;
 }
-/* line 140, sass/blocks/_blocks.scss */
+/* line 141, sass/blocks/_blocks.scss */
 .main-navigation li:hover ul.sub-menu {
   position: absolute;
   left: 0;
   display: block;
 }
 
-/* Mobile navigation */
+/* Intermediate navigation */
 @media screen and (max-width: 1023px) {
-  /* line 150, sass/blocks/_blocks.scss */
+  /* line 151, sass/blocks/_blocks.scss */
+  .main-navigation > ul > li a {
+    font-size: 12pt;
+  }
+}
+/* Mobile navigation */
+@media screen and (max-width: 750px) {
+  /* line 158, sass/blocks/_blocks.scss */
   .site-navigation-toggle-label {
     font-size: 11pt;
     text-transform: uppercase;
@@ -1105,21 +1121,21 @@ a:hover, a:active {
     color: #19458d;
   }
 
-  /* line 160, sass/blocks/_blocks.scss */
+  /* line 168, sass/blocks/_blocks.scss */
   .main-navigation > ul > li {
     text-align: left;
   }
-  /* line 163, sass/blocks/_blocks.scss */
+  /* line 171, sass/blocks/_blocks.scss */
   .main-navigation li:hover ul.sub-menu {
     padding-top: 0;
   }
 }
-/* line 169, sass/blocks/_blocks.scss */
+/* line 177, sass/blocks/_blocks.scss */
 .site-branding img {
   height: 75px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 169, sass/blocks/_blocks.scss */
+  /* line 177, sass/blocks/_blocks.scss */
   .site-branding img {
     height: 60px;
   }
