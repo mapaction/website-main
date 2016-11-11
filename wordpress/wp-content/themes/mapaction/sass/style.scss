@@ -55,9 +55,11 @@ $base-line-height: 1.5;
 $base-font-family: "Arial", "sans-serif";
 
 $logo-height: 75px;
+$logo-height-small: $logo-height * 0.8;
 
 $two_column_min_width: 750px;
 $three_column_min_width: 1140px;
+$full_menu_min_width: 1023px;
 
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";

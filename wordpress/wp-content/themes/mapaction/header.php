@@ -45,8 +45,9 @@
 				</a>
 			</div>
 		</div><!-- .site-branding -->
+		<label class="site-navigation-toggle-label site-navigation-toggle-label-layout" for="site-navigation-toggle">Menu</label>
 		<nav id="site-navigation" class="main-navigation main-navigation-layout" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mapaction' ); ?></button>
+			<input type="checkbox" id="site-navigation-toggle" name="site-navigation-toggle"></input>
 			<?php wp_nav_menu( array(
 				'container' => false,
 				'theme_location' => 'primary',
