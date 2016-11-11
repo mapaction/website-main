@@ -89,6 +89,8 @@ $navigation-cell-width: 8em;
 .main-navigation {
 	ul {
 		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
 	li > a {
 		color: $primary-blue;
