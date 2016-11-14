@@ -25,6 +25,7 @@ $margin-spread: 1000px;
 $primary-blue: #19458d;
 $primary-red: #e53d2f;
 $secondary-blue: #92b4ec;
+$secondary-green: #32a4a0;
 
 $base-font-size: 14pt;
 $base-font-size-medium: 12pt;
@@ -56,6 +57,7 @@ $full_menu_min_width: 1023px;
 
 /* Specific elements. Each file contains the layout
    of items within that element */
+@import "elements/buttons.scss";
 @import "elements/emergencies-bar.scss";
 @import "elements/main-navigation.scss";
 @import "elements/footer.scss";

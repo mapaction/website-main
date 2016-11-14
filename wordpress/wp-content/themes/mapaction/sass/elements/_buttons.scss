@@ -1,0 +1,9 @@
+.button, .button:visited, .button:hover {
+	font-size: $base-font-size;
+	font-weight: bold;
+	background-color: $secondary-green;
+	border-radius: 4px;
+	padding: $gutter-size/2 $gutter-size;
+	color: white;
+	text-decoration: none;
+}
