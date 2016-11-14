@@ -132,6 +132,7 @@
 
 .site-footer-inner-layout {
 	margin-left: $margin-spread;
+	padding-top: 2*$gutter-size;
 	width: calc( 100% - #{ 2 * $margin-spread } );
 	&::after {
 		content: "";
@@ -143,7 +144,6 @@
 .site-footer-inner-layout > section {
 	width: 33%;
 	max-width: $block-width;
-	margin-top: 2*$gutter-size;
 	float: left;
 
 	> h2 {

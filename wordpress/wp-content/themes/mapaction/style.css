@@ -862,20 +862,20 @@ table {
 /* line 133, sass/_page_layout.scss */
 .site-footer-inner-layout {
   margin-left: 1000px;
+  padding-top: 60px;
   width: calc( 100% - 2000px );
 }
-/* line 136, sass/_page_layout.scss */
+/* line 137, sass/_page_layout.scss */
 .site-footer-inner-layout::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 143, sass/_page_layout.scss */
+/* line 144, sass/_page_layout.scss */
 .site-footer-inner-layout > section {
   width: 33%;
   max-width: 360px;
-  margin-top: 60px;
   float: left;
 }
 /* line 149, sass/_page_layout.scss */
