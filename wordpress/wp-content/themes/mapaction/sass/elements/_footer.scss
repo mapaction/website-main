@@ -1,0 +1,16 @@
+.site-footer {
+	background-color: $primary-blue;
+}
+
+.site-footer-inner > section {
+	padding: 0 $gutter-size;
+	color: white;
+	> h2 {
+		font-size: $base-font-size;
+		font-weight: bold;
+	}
+	> div {
+		font-size: $base-font-size-medium;
+		font-weight: normal;
+	}
+}

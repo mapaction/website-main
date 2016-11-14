@@ -1,104 +1,69 @@
-$max-width: 1200px;
-
+/* Layout of the page */
 .site-layout {
-	max-width: $max-width;
+	padding: 0 $gutter-size;
+	max-width: $site-max-width;
 	margin: auto;
+	@media screen and (max-width: $two_column_min_width) {
+		padding: 0 $gutter-size/2;
+	}
 }
 
+/* Layout of the header (as a whole) */
 .site-header-layout {
-	margin: auto;
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
 }
 
-.site-footer-layout > div > section {
-	margin-top: 2*$gutter-size;
-	float: left;
-
-	> h2 {
-		margin: 0 0 $gutter-size/2 0;
+/* Layout of the emergencies bar */
+.site-emergencies-layout {
+	height: $emergencies-height;
+	@media screen and (max-width: $two_column_min_width) {
+		height: $emergencies-height-small;
 	}
 }
 
 /* Create the color bars that spread outside the page width
-   for the emergencies banne r*/
+   for the emergencies banner */
 .site-emergencies-layout {
 	position: relative;
 	&::before {
 		position: absolute;
 		right: 100%;
+		height: $emergencies-height;
+		@media screen and (max-width: $two_column_min_width) {
+			height: $emergencies-height-small;
+		}
+		width: $margin-spread;
+		background-color: $primary-blue;
+		content: "";
 	}
 	&::after {
 		position: absolute;
 		left: 100%;
-	}
-}
-
-/* Create the arrow in the emergencies banner */
-.site-emergencies-layout > h1 {
-	position: relative;
-	&::after {
-		position: absolute;
-		left: 100%;
-		top: 0;
-	}
-}
-
-.site-emergencies-layout {
-	> h1 {
-		display: inline-block;
-		margin: 0;
-		/* Center the text in the emergencie block */
-		span {
-			margin-top: #{ ($emergencies-height - $base-font-size * $base-line-height) / 2 };
-			display: inline-block;
-			margin-right: 0.5 * $gutter-size;
-			@media screen and (max-width: $two_column_min_width) {
-				margin-top: #{ ($emergencies-height-small - $base-font-size-small * $base-line-height) / 2 };
-			}
-		}
-		.current-emergency-icon {
-			display: none;
-		}
-		@media screen and (max-width: $three_column_min_width) {
-			.current-emergency-icon {
-				display: inline-block;
-			}
-			.current-emergency-text {
-				display: none;
-			}
-		}
-	}
-	> ul {
-		display: inline-block;
-		padding: 0;
-		margin: 0 0 0 $gutter-size*1.5;
+		height: $emergencies-height;
 		@media screen and (max-width: $two_column_min_width) {
-			margin: 0 0 0 $gutter-size;
+			height: $emergencies-height-small;
 		}
-	}
-	> ul > li {
-		display: inline-block;
-		margin: 0 $gutter-size 0 0;
-		@media screen and (max-width: $three_column_min_width) {
-			.emergency-type {
-				display: none;
-			}
-		}
-		@media screen and (max-width: $two_column_min_width) {
-			margin: 0 $gutter-size/2 0 0;
-		}
+		width: $margin-spread;
+		background-color: $primary-red;
+		content: "";
 	}
 }
 
+/* Site branding (logo) section */
+/* Place logo */
 .site-branding-layout {
 	float: left;
-}
-
-.main-navigation-layout {
-	float: right;
-}
-
-.site-branding-layout {
 	margin-top: $gutter-size;
+	img {
+		height: $logo-height;
+		@media screen and (max-width: $three_column_min_width) {
+			height: $logo-height-small;
+		}
+	}
 }
 
 /* Full width navigation */
@@ -110,6 +75,7 @@ $max-width: 1200px;
 	}
 }
 .main-navigation-layout {
+	float: right;
 	margin-top: #{ $gutter-size + ( $logo-height - $base-line-height * $base-font-size ) / 2 };
 	@media screen and (max-width: $three_column_min_width) {
 		margin-top: #{ $gutter-size + ( $logo-height-small - $base-line-height * $base-font-size ) / 2 };
@@ -154,5 +120,32 @@ $max-width: 1200px;
 			left: 100%;
 			top: 0;
 		}
+	}
+}
+
+/* Footer layout */
+.site-footer-layout {
+	min-height: $footer-min-height;
+	width: calc( 100% + #{ 2 * $margin-spread } );
+	margin-left: -$margin-spread;
+}
+
+.site-footer-inner-layout {
+	margin-left: $margin-spread;
+	width: calc( 100% - #{ 2 * $margin-spread } );
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.site-footer-inner-layout > section {
+	width: $block-width;
+	margin-top: 2*$gutter-size;
+	float: left;
+
+	> h2 {
+		margin: 0 0 $gutter-size/2 0;
 	}
 }

@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer site-footer-layout" role="contentinfo">
-		<div class="site-footer-inner-layout">
+		<div class="site-footer-inner site-footer-inner-layout">
 			<?php dynamic_sidebar('footer'); ?>
 		</div>
 	</footer><!-- #colophon -->
