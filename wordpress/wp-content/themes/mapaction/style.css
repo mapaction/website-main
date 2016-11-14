@@ -276,9 +276,11 @@ html {
   font-size: 14pt;
   line-height: 1.5;
   font-family: "Arial", "sans-serif";
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* line 8, sass/_defaults.scss */
+/* line 10, sass/_defaults.scss */
 *,
 *:before,
 *:after {
@@ -286,21 +288,24 @@ html {
   box-sizing: inherit;
 }
 
-/* line 14, sass/_defaults.scss */
+/* line 16, sass/_defaults.scss */
 body {
   background: white;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
-/* line 18, sass/_defaults.scss */
+/* line 23, sass/_defaults.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 20, sass/_defaults.scss */
+/* line 25, sass/_defaults.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 26, sass/_defaults.scss */
+/* line 31, sass/_defaults.scss */
 hr {
   background-color: #19458d;
   border: 0;
@@ -308,7 +313,7 @@ hr {
   margin-bottom: 1.5em;
 }
 
-/* line 33, sass/_defaults.scss */
+/* line 38, sass/_defaults.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -316,52 +321,52 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 38, sass/_defaults.scss */
+/* line 43, sass/_defaults.scss */
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
 }
 
-/* line 42, sass/_defaults.scss */
+/* line 47, sass/_defaults.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 46, sass/_defaults.scss */
+/* line 51, sass/_defaults.scss */
 ul {
   list-style: disc;
 }
 
-/* line 50, sass/_defaults.scss */
+/* line 55, sass/_defaults.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 54, sass/_defaults.scss */
+/* line 59, sass/_defaults.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 60, sass/_defaults.scss */
+/* line 65, sass/_defaults.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 64, sass/_defaults.scss */
+/* line 69, sass/_defaults.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 68, sass/_defaults.scss */
+/* line 73, sass/_defaults.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
 /* Text meant only for screen readers. */
-/* line 74, sass/_defaults.scss */
+/* line 79, sass/_defaults.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -369,7 +374,7 @@ table {
   width: 1px;
   overflow: hidden;
 }
-/* line 81, sass/_defaults.scss */
+/* line 86, sass/_defaults.scss */
 .screen-reader-text:focus {
   background-color: white;
   border-radius: 3px;
@@ -390,7 +395,7 @@ table {
 }
 
 /* Do not show the outline on the skip link target. */
-/* line 101, sass/_defaults.scss */
+/* line 106, sass/_defaults.scss */
 #content[tabindex="-1"]:focus {
   outline: 0;
 }

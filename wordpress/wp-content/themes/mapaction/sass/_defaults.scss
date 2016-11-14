@@ -3,6 +3,8 @@ html {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	font-family: $base-font-family;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 *,
@@ -13,6 +15,9 @@ html {
 
 body {
 	background: white;
+	overflow-x: hidden;
+	width: 100%;
+	position: relative;
 }
 
 blockquote, q {
