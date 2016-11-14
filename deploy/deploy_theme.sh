@@ -5,7 +5,7 @@ ROOT=`readlink -f $DEPLOY_DIR/..`
 WP_ROOT="$ROOT/wordpress"
 
 HOST='sftp.flywheelsites.com'
-REMOTE_WP_ROOT='/org-mapaction/mapactionmain'
+REMOTE_WP_ROOT='/org-mapaction/mapactionmain_staging'
 PATH_TO_THEME_FOLDER='wp-content/themes'
 THEME_NAME='mapaction'
 
