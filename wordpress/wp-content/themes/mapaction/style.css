@@ -695,6 +695,25 @@ table {
   font-size: 12pt;
   font-weight: normal;
 }
+/* line 17, sass/elements/_footer.scss */
+.site-footer-inner > section ul.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+/* line 25, sass/elements/_footer.scss */
+.site-footer-inner > section ul.menu a, .site-footer-inner > section ul.menu a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 12pt;
+}
+/* line 30, sass/elements/_footer.scss */
+.site-footer-inner > section ul.menu a:hover {
+  text-decoration: underline;
+}
 
 /* General layout */
 /* Layout of the page */

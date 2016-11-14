@@ -13,4 +13,22 @@
 		font-size: $base-font-size-medium;
 		font-weight: normal;
 	}
+
+	ul.menu {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+
+		a, a:visited {
+			color: white;
+			text-decoration: none;
+			font-size: $base-font-size-medium;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
 }
