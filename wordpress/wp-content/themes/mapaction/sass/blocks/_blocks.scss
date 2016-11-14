@@ -180,3 +180,35 @@
 		height: $logo-height-small;
 	}
 }
+
+.site-footer {
+	min-height: $footer-min-height;
+	background-color: $primary-blue;
+	width: calc( 100% + 2000px );
+	margin-left: -1000px;
+}
+
+.site-footer > .site-footer-inner-layout {
+	margin-left: 1000px;
+	width: calc( 100% - 2000px );
+	&::after {
+		content: "";
+		display: block;
+		clear:both;
+	}
+}
+
+.site-footer > div > section {
+	padding: 0 $gutter-size;
+	color: white;
+	width: 360px;
+
+	> h2 {
+		font-size: $base-font-size;
+		font-weight: bold;
+	}
+	> div {
+		font-size: $base-font-size-medium;
+		font-weight: normal;
+	}
+}

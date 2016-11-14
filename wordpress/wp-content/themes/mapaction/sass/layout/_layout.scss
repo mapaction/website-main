@@ -9,6 +9,15 @@ $max-width: 1200px;
 	margin: auto;
 }
 
+.site-footer-layout > div > section {
+	margin-top: 2*$gutter-size;
+	float: left;
+
+	> h2 {
+		margin: 0 0 $gutter-size/2 0;
+	}
+}
+
 /* Create the color bars that spread outside the page width
    for the emergencies banne r*/
 .site-emergencies-layout {

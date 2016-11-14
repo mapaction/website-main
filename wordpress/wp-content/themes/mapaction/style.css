@@ -627,147 +627,157 @@ a:hover, a:active {
   margin: auto;
 }
 
+/* line 12, sass/layout/_layout.scss */
+.site-footer-layout > div > section {
+  margin-top: 60px;
+  float: left;
+}
+/* line 16, sass/layout/_layout.scss */
+.site-footer-layout > div > section > h2 {
+  margin: 0 0 15px 0;
+}
+
 /* Create the color bars that spread outside the page width
    for the emergencies banne r*/
-/* line 14, sass/layout/_layout.scss */
+/* line 23, sass/layout/_layout.scss */
 .site-emergencies-layout {
   position: relative;
 }
-/* line 16, sass/layout/_layout.scss */
+/* line 25, sass/layout/_layout.scss */
 .site-emergencies-layout::before {
   position: absolute;
   right: 100%;
 }
-/* line 20, sass/layout/_layout.scss */
+/* line 29, sass/layout/_layout.scss */
 .site-emergencies-layout::after {
   position: absolute;
   left: 100%;
 }
 
 /* Create the arrow in the emergencies banner */
-/* line 27, sass/layout/_layout.scss */
+/* line 36, sass/layout/_layout.scss */
 .site-emergencies-layout > h1 {
   position: relative;
 }
-/* line 29, sass/layout/_layout.scss */
+/* line 38, sass/layout/_layout.scss */
 .site-emergencies-layout > h1::after {
   position: absolute;
   left: 100%;
   top: 0;
 }
 
-/* line 37, sass/layout/_layout.scss */
+/* line 46, sass/layout/_layout.scss */
 .site-emergencies-layout > h1 {
   display: inline-block;
   margin: 0;
   /* Center the text in the emergencie block */
 }
-/* line 41, sass/layout/_layout.scss */
+/* line 50, sass/layout/_layout.scss */
 .site-emergencies-layout > h1 span {
   margin-top: 16px;
   display: inline-block;
   margin-right: 15px;
 }
 @media screen and (max-width: 750px) {
-  /* line 41, sass/layout/_layout.scss */
+  /* line 50, sass/layout/_layout.scss */
   .site-emergencies-layout > h1 span {
     margin-top: 13px;
   }
 }
-/* line 49, sass/layout/_layout.scss */
+/* line 58, sass/layout/_layout.scss */
 .site-emergencies-layout > h1 .current-emergency-icon {
   display: none;
 }
 @media screen and (max-width: 1140px) {
-  /* line 53, sass/layout/_layout.scss */
+  /* line 62, sass/layout/_layout.scss */
   .site-emergencies-layout > h1 .current-emergency-icon {
     display: inline-block;
   }
-  /* line 56, sass/layout/_layout.scss */
+  /* line 65, sass/layout/_layout.scss */
   .site-emergencies-layout > h1 .current-emergency-text {
     display: none;
   }
 }
-/* line 61, sass/layout/_layout.scss */
+/* line 70, sass/layout/_layout.scss */
 .site-emergencies-layout > ul {
   display: inline-block;
   padding: 0;
   margin: 0 0 0 45px;
 }
 @media screen and (max-width: 750px) {
-  /* line 61, sass/layout/_layout.scss */
+  /* line 70, sass/layout/_layout.scss */
   .site-emergencies-layout > ul {
     margin: 0 0 0 30px;
   }
 }
-/* line 69, sass/layout/_layout.scss */
+/* line 78, sass/layout/_layout.scss */
 .site-emergencies-layout > ul > li {
   display: inline-block;
   margin: 0 30px 0 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 73, sass/layout/_layout.scss */
+  /* line 82, sass/layout/_layout.scss */
   .site-emergencies-layout > ul > li .emergency-type {
     display: none;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 69, sass/layout/_layout.scss */
+  /* line 78, sass/layout/_layout.scss */
   .site-emergencies-layout > ul > li {
     margin: 0 15px 0 0;
   }
 }
 
-/* line 83, sass/layout/_layout.scss */
+/* line 92, sass/layout/_layout.scss */
 .site-branding-layout {
   float: left;
 }
 
-/* line 87, sass/layout/_layout.scss */
+/* line 96, sass/layout/_layout.scss */
 .main-navigation-layout {
   float: right;
 }
 
-/* line 91, sass/layout/_layout.scss */
+/* line 100, sass/layout/_layout.scss */
 .site-branding-layout {
   margin-top: 30px;
 }
 
 /* Full width navigation */
-/* line 96, sass/layout/_layout.scss */
+/* line 105, sass/layout/_layout.scss */
 .site-navigation-toggle-label-layout {
   display: none;
   margin-top: 53.5px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 96, sass/layout/_layout.scss */
+  /* line 105, sass/layout/_layout.scss */
   .site-navigation-toggle-label-layout {
     margin-top: 46px;
   }
 }
 
-/* line 103, sass/layout/_layout.scss */
+/* line 112, sass/layout/_layout.scss */
 .main-navigation-layout {
   margin-top: 53.5px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 103, sass/layout/_layout.scss */
+  /* line 112, sass/layout/_layout.scss */
   .main-navigation-layout {
     margin-top: 46px;
   }
 }
-/* line 109, sass/layout/_layout.scss */
+/* line 118, sass/layout/_layout.scss */
 .main-navigation-layout ul, .main-navigation-layout li {
   display: inline-block;
 }
-/* line 112, sass/layout/_layout.scss */
+/* line 121, sass/layout/_layout.scss */
 .main-navigation-layout input {
   display: none;
 }
 
 /* Intermediate navigation */
 @media screen and (max-width: 1023px) {
-  /* line 119, sass/layout/_layout.scss */
+  /* line 128, sass/layout/_layout.scss */
   .main-navigation-layout {
     float: none;
     clear: both;
@@ -775,28 +785,28 @@ a:hover, a:active {
 }
 /* Mobile navigation */
 @media screen and (max-width: 750px) {
-  /* line 127, sass/layout/_layout.scss */
+  /* line 136, sass/layout/_layout.scss */
   .site-navigation-toggle-label-layout {
     display: block;
     float: right;
   }
 
-  /* line 132, sass/layout/_layout.scss */
+  /* line 141, sass/layout/_layout.scss */
   .main-navigation-layout {
     float: none;
     clear: both;
   }
-  /* line 135, sass/layout/_layout.scss */
+  /* line 144, sass/layout/_layout.scss */
   .main-navigation-layout input[type="checkbox"]:not(:checked) + ul li {
     display: none;
   }
-  /* line 138, sass/layout/_layout.scss */
+  /* line 147, sass/layout/_layout.scss */
   .main-navigation-layout > ul > li {
     display: block;
     text-align: left;
     margin-top: 15px;
   }
-  /* line 144, sass/layout/_layout.scss */
+  /* line 153, sass/layout/_layout.scss */
   .main-navigation-layout ul li:hover ul.sub-menu {
     left: 100%;
     top: 0;
@@ -880,21 +890,18 @@ a:hover, a:active {
 .site-header:before,
 .site-header:after,
 .site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
+.site-content:after {
   content: "";
   display: table;
   table-layout: fixed;
 }
 
-/* line 16, sass/modules/_clearings.scss */
+/* line 14, sass/modules/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
 .site-header:after,
-.site-content:after,
-.site-footer:after {
+.site-content:after {
   clear: both;
 }
 
@@ -1139,6 +1146,43 @@ a:hover, a:active {
   .site-branding img {
     height: 60px;
   }
+}
+
+/* line 184, sass/blocks/_blocks.scss */
+.site-footer {
+  min-height: 280px;
+  background-color: #19458d;
+  width: calc( 100% + 2000px );
+  margin-left: -1000px;
+}
+
+/* line 191, sass/blocks/_blocks.scss */
+.site-footer > .site-footer-inner-layout {
+  margin-left: 1000px;
+  width: calc( 100% - 2000px );
+}
+/* line 194, sass/blocks/_blocks.scss */
+.site-footer > .site-footer-inner-layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 201, sass/blocks/_blocks.scss */
+.site-footer > div > section {
+  padding: 0 30px;
+  color: white;
+  width: 360px;
+}
+/* line 206, sass/blocks/_blocks.scss */
+.site-footer > div > section > h2 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+/* line 210, sass/blocks/_blocks.scss */
+.site-footer > div > section > div {
+  font-size: 12pt;
+  font-weight: normal;
 }
 
 /*--------------------------------------------------------------
