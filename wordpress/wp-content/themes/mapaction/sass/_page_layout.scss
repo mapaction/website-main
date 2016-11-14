@@ -141,11 +141,21 @@
 }
 
 .site-footer-inner-layout > section {
-	width: $block-width;
+	width: 33%;
+	max-width: $block-width;
 	margin-top: 2*$gutter-size;
 	float: left;
 
 	> h2 {
 		margin: 0 0 $gutter-size/2 0;
+	}
+}
+
+@media screen and (max-width: $two_column_min_width) {
+	.site-footer-inner-layout > section {
+		width: $block-width-small;
+		margin: auto;
+		margin-bottom: $gutter-size;
+		float: none;
 	}
 }

@@ -873,13 +873,24 @@ table {
 
 /* line 143, sass/_page_layout.scss */
 .site-footer-inner-layout > section {
-  width: 360px;
+  width: 33%;
+  max-width: 360px;
   margin-top: 60px;
   float: left;
 }
-/* line 148, sass/_page_layout.scss */
+/* line 149, sass/_page_layout.scss */
 .site-footer-inner-layout > section > h2 {
   margin: 0 0 15px 0;
+}
+
+@media screen and (max-width: 750px) {
+  /* line 155, sass/_page_layout.scss */
+  .site-footer-inner-layout > section {
+    width: 320px;
+    margin: auto;
+    margin-bottom: 30px;
+    float: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
