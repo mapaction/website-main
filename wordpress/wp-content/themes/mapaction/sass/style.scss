@@ -28,6 +28,7 @@ $secondary-blue: #92b4ec;
 $secondary-green: #32a4a0;
 
 $base-font-size: 14pt;
+$base-font-size-large: 18pt;
 $base-font-size-medium: 12pt;
 $base-font-size-small: 11pt;
 $base-line-height: 1.5;
@@ -43,11 +44,16 @@ $logo-height-small: $logo-height * 0.8;
 
 $block-width: 360px;
 $block-width-small: 320px;
+$block-height: 320px;
+$block-height-small: 270px;
+$block-height-tall: 380px;
 
 $site-max-width: 1200px;
 $two_column_min_width: 750px;
 $three_column_min_width: 1140px;
 $full_menu_min_width: 1023px;
+
+$large-blocks-min-width: 1140px;
 
 /* Browser reset/normalize */
 @import "reset";
@@ -61,6 +67,7 @@ $full_menu_min_width: 1023px;
 @import "elements/emergencies-bar.scss";
 @import "elements/main-navigation.scss";
 @import "elements/footer.scss";
+@import "elements/dashboard.scss";
 
 /* General layout */
 @import "page_layout";

@@ -1,0 +1,10 @@
+.dashboard > section {
+	border-radius: 4px 0 0 4px;
+
+	h2 {
+		background-color: $secondary-green;
+		height: $gutter-size;
+		font-size: $base-font-size-large;
+		color: white;
+	}
+}

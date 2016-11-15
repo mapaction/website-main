@@ -726,6 +726,18 @@ table {
   text-decoration: underline;
 }
 
+/* line 1, sass/elements/_dashboard.scss */
+.dashboard > section {
+  border-radius: 4px 0 0 4px;
+}
+/* line 4, sass/elements/_dashboard.scss */
+.dashboard > section h2 {
+  background-color: #32a4a0;
+  height: 30px;
+  font-size: 18pt;
+  color: white;
+}
+
 /* General layout */
 /* Layout of the page */
 /* line 2, sass/_page_layout.scss */
@@ -925,6 +937,66 @@ table {
     margin: auto;
     margin-bottom: 30px;
     float: none;
+  }
+}
+/*
+ * Home page blocks
+ */
+/* line 166, sass/_page_layout.scss */
+.dashboard-layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 171, sass/_page_layout.scss */
+.dashboard-layout {
+  /* Make the container slightly larger than the page allows us to have
+     margin both sides of our blocks and not worry where they break
+     onto the next line */
+  width: calc( 100% + 30px );
+  margin-left: -15px;
+}
+
+/* line 178, sass/_page_layout.scss */
+.dashboard-layout > section {
+  width: calc( 33% - 30px );
+  margin: 15px;
+  height: 320px;
+  float: left;
+}
+
+/* line 184, sass/_page_layout.scss */
+.dashboard-layout > section:first-child {
+  width: calc( 2 * 33% - 30px );
+  height: 380px;
+}
+
+/* line 188, sass/_page_layout.scss */
+.dashboard-layout > section:nth-child(2) {
+  height: 380px;
+}
+
+@media screen and (max-width: 1140px) {
+  /* line 192, sass/_page_layout.scss */
+  .dashboard-layout > section {
+    width: calc( 50% - 30px );
+  }
+
+  /* line 195, sass/_page_layout.scss */
+  .dashboard-layout > section:first-child {
+    width: calc( 100% - 30px );
+  }
+
+  /* line 198, sass/_page_layout.scss */
+  .dashboard-layout > section:nth-child(2) {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* line 203, sass/_page_layout.scss */
+  .dashboard-layout > section {
+    width: calc( 100% - 30px );
   }
 }
 

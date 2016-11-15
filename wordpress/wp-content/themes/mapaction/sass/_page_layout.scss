@@ -159,3 +159,48 @@
 		float: none;
 	}
 }
+
+/*
+ * Home page blocks
+ */
+.dashboard-layout::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.dashboard-layout {
+	/* Make the container slightly larger than the page allows us to have
+	   margin both sides of our blocks and not worry where they break
+	   onto the next line */
+	width: calc( 100% + #{$gutter-size} );
+	margin-left: -$gutter-size/2;
+}
+.dashboard-layout > section {
+	width: calc( 33% - #{ $gutter-size } );
+	margin: $gutter-size/2;
+	height: $block-height;
+	float: left;
+}
+.dashboard-layout > section:first-child {
+	width: calc( 2 * 33% - #{ $gutter-size } );
+	height: $block-height-tall;
+}
+.dashboard-layout > section:nth-child(2) {
+	height: $block-height-tall;
+}
+@media screen and (max-width: $three_column_min_width) {
+	.dashboard-layout > section {
+		width: calc( 50% - #{ $gutter-size } );
+	}
+	.dashboard-layout > section:first-child {
+		width: calc( 100% - #{ $gutter-size } );
+	}
+	.dashboard-layout > section:nth-child(2) {
+		height: $block-height;
+	}
+}
+@media screen and (max-width: $two_column_min_width) {
+	.dashboard-layout > section {
+		width: calc( 100% - #{ $gutter-size } );
+	}
+}
