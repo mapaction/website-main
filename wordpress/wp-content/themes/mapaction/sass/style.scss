@@ -42,18 +42,10 @@ $footer-min-height: 280px;
 $logo-height: 75px;
 $logo-height-small: $logo-height * 0.8;
 
-$block-width: 360px;
-$block-width-small: 320px;
-$block-height: 320px;
-$block-height-small: 270px;
-$block-height-tall: 380px;
-
 $site-max-width: 1200px;
 $two_column_min_width: 750px;
 $three_column_min_width: 1140px;
 $full_menu_min_width: 1023px;
-
-$large-blocks-min-width: 1140px;
 
 /* Browser reset/normalize */
 @import "reset";
