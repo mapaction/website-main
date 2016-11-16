@@ -37,3 +37,21 @@ function mapaction_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'mapaction_pingback_header' );
+
+/**
+ * Add custom markup to the emergencies menu
+ */
+function mapaction_markup_emergencies( $items, $args ) {
+	if ( $args->theme_location == 'emergencies' ) {
+		foreach ( $items as $menu_item ) {
+			if ( ! preg_match( '/<.*>/', $menu_item->title ) ) {
+				$parts = explode( ',', $menu_item->title, 2 );
+				if ( count( $parts ) == 2 ) {
+					$menu_item->title = '<span class="emergency-type">' . $parts[0] . ',</span><span class="emergency-location">' . $parts[1] . '</span>';
+				}
+			}
+		}
+	}
+	return $items;
+}
+add_filter( 'wp_nav_menu_objects', 'mapaction_markup_emergencies', 10, 2 );
