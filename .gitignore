@@ -3,9 +3,14 @@
 wordpress/*
 !wordpress/wp-content/
 wordpress/wp-content/*
+
 !wordpress/wp-content/themes/
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/mapaction
+
+!wordpress/wp-content/plugins/
+wordpress/wp-content/plugins/*
+!wordpress/wp-content/plugins/ma-home-widget
 
 # Ignore build directories & files
 .sass-cache
