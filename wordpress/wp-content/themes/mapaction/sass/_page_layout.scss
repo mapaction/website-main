@@ -174,7 +174,7 @@
 }
 .dashboard-layout > section {
 	width: calc( 33% - #{ $gutter-size } );
-	margin: $gutter-size/2;
+	margin: 0 $gutter-size/2 $gutter-size $gutter-size/2;
 	height: $block-height;
 	float: left;
 }
@@ -213,5 +213,42 @@
 @media screen and (max-width: $two_column_min_width) {
 	.dashboard-layout > section {
 		width: calc( 100% - #{ $gutter-size } );
+	}
+}
+
+/**
+ * Content pages layout (including sidebar)
+ *
+ * We rely on classes set on body (page-parent, page-child) to
+ * know whether a sidebar is needed.
+ */
+.site-content-layout {
+	margin-top: $gutter-size;
+}
+
+.page-content-area {
+	/* Width is the same with or without sidebar */
+	width: calc( 100% - #{ $logo-width } - #{ 2*$gutter-size } );
+	@media screen and (max-width: $two_column_min_width) {
+		width: 100%;
+	}
+}
+.page-parent, .page-child {
+	.site-content {
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+
+	.page-content-area {
+		float: right;
+	}
+	.sidebar-navigation-layout {
+		width: $logo-width;
+		@media screen and (max-width: $two_column_min_width) {
+			display: none;
+		}
 	}
 }

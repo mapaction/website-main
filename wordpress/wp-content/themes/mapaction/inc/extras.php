@@ -55,3 +55,12 @@ function mapaction_markup_emergencies( $items, $args ) {
 	return $items;
 }
 add_filter( 'wp_nav_menu_objects', 'mapaction_markup_emergencies', 10, 2 );
+
+/**
+ * Custom mce buttons
+ */
+function mapaction_mce_buttons( $buttons ) {
+	$buttons[] = 'formatselect';
+	return $buttons;
+}
+add_filter( 'mce_buttons', 'mapaction_mce_buttons' );

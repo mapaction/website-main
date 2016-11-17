@@ -31,6 +31,7 @@ $secondary-grey-light: #eaeaea;
 
 $base-font-size: 14pt;
 $base-font-size-large: 18pt;
+$base-font-size-giant: 28pt;
 $base-font-size-medium: 12pt;
 $base-font-size-small: 11pt;
 $base-line-height: 1.5;
@@ -42,7 +43,9 @@ $emergencies-height-small: $emergencies-height*0.8;
 $footer-min-height: 280px;
 
 $logo-height: 75px;
+$logo-width: 206px;
 $logo-height-small: $logo-height * 0.8;
+$logo-width-small: $logo-width * 0.8;
 
 $block-height: 320px;
 $block-title-height: 56px;
@@ -67,6 +70,8 @@ $full_menu_min_width: 1023px;
 @import "elements/main-navigation.scss";
 @import "elements/footer.scss";
 @import "elements/dashboard.scss";
+@import "elements/sidebar-navigation.scss";
+@import "elements/_page_content.scss";
 
 /* General layout */
 @import "page_layout";
