@@ -102,3 +102,11 @@
 		@include navigation_sausage_container();
 	}
 }
+
+/* Special cases for single post pages */
+.single-post .sidebar-navigation {
+	ul.menu {
+		display: block;
+		@include navigation_sausage_container();
+	}
+}

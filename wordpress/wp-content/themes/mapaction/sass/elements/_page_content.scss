@@ -70,6 +70,10 @@
 	@include content_area_styles();
 }
 
+.single-post .content-area {
+	@include content_area_styles();
+}
+
 .category .content-area {
 	@include content_area_styles();
 	h2 {
