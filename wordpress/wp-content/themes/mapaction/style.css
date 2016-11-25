@@ -1205,6 +1205,55 @@ img.aligncenter {
 .category .content-area article {
   margin-bottom: 30px;
 }
+/* line 92, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation {
+  margin-bottom: 30px;
+  font-size: 18pt;
+}
+/* line 95, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 100, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation .nav-previous {
+  float: right;
+}
+/* line 102, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation .nav-previous a::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #92b4ec;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-left: 15px;
+}
+/* line 115, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation .nav-next {
+  float: left;
+}
+/* line 117, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation .nav-next a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #92b4ec;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-right: 15px;
+}
+/* line 131, sass/elements/_page_content.scss */
+.category .content-area .posts-navigation a {
+  color: #92b4ec;
+}
 
 /* General layout */
 /* Layout of the page */
