@@ -1,4 +1,7 @@
-.page-content-area {
+/* This mixin contains the default styling we'd expect to
+   apply to any container that contains main website
+   content */
+@mixin content_area_styles() {
 	h1 {
 		color: $primary-blue;
 		font-size: $base-font-size-giant;
@@ -31,7 +34,7 @@
 		text-decoration: none;
 	}
 
-	article > header > h1 {
+	header > h1 {
 		margin-top: 0;
 		line-height: 1em;
 	}
@@ -59,5 +62,31 @@
 
 	.edit-link {
 		display: none;
+	}
+
+}
+
+.page-content-area {
+	@include content_area_styles();
+}
+
+.category .content-area {
+	@include content_area_styles();
+	h2 {
+		margin-bottom: 0;
+		a, a:visited, a:hover {
+			text-decoration: none;
+			width: 100%;
+			display: block;
+			border-bottom: 2px solid $secondary-blue;
+		}
+	}
+	.entry-meta {
+		font-size: $base-font-size-small;
+		margin-top: $gutter-size/4;
+		color: $primary-blue;
+	}
+	article {
+		margin-bottom: $gutter-size;
 	}
 }

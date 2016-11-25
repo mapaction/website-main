@@ -247,3 +247,31 @@
 		}
 	}
 }
+
+/**
+ * Category page layout
+ */
+.category {
+	.content-area {
+		width: calc( 100% - #{ $logo-width } - #{ 2*$gutter-size } );
+		@media screen and (max-width: $two_column_min_width) {
+			width: 100%;
+		}
+		float: right;
+	}
+
+	.site-content {
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+
+	.sidebar-navigation-layout {
+		width: $logo-width;
+		@media screen and (max-width: $two_column_min_width) {
+			display: none;
+		}
+	}
+}
