@@ -75,9 +75,10 @@
 	ul.sub-menu {
 		display: none;
 		margin: 0;
-		width: 100%;
+		min-width: 100%;
 		li {
-			width: 100%;
+			min-width: 100%;
+			white-space: nowrap;
 		}
 	}
 	li:hover {

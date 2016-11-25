@@ -650,17 +650,18 @@ table {
 .main-navigation ul.sub-menu {
   display: none;
   margin: 0;
-  width: 100%;
+  min-width: 100%;
 }
 /* line 79, sass/elements/_main-navigation.scss */
 .main-navigation ul.sub-menu li {
-  width: 100%;
+  min-width: 100%;
+  white-space: nowrap;
 }
-/* line 83, sass/elements/_main-navigation.scss */
+/* line 84, sass/elements/_main-navigation.scss */
 .main-navigation li:hover {
   position: relative;
 }
-/* line 85, sass/elements/_main-navigation.scss */
+/* line 86, sass/elements/_main-navigation.scss */
 .main-navigation li:hover ul.sub-menu {
   position: absolute;
   left: 0;
@@ -670,14 +671,14 @@ table {
 
 /* Navigation for intermediate width layout */
 @media screen and (max-width: 1023px) {
-  /* line 96, sass/elements/_main-navigation.scss */
+  /* line 97, sass/elements/_main-navigation.scss */
   .main-navigation > ul > li a {
     font-size: 12pt;
   }
 }
 /* Mobile navigation */
 @media screen and (max-width: 750px) {
-  /* line 103, sass/elements/_main-navigation.scss */
+  /* line 104, sass/elements/_main-navigation.scss */
   .site-navigation-toggle-label {
     font-size: 11pt;
     text-transform: uppercase;
@@ -687,16 +688,16 @@ table {
     color: #19458d;
   }
 
-  /* line 113, sass/elements/_main-navigation.scss */
+  /* line 114, sass/elements/_main-navigation.scss */
   .main-navigation > ul > li {
     text-align: left;
   }
-  /* line 116, sass/elements/_main-navigation.scss */
+  /* line 117, sass/elements/_main-navigation.scss */
   .main-navigation ul.sub-menu {
     display: block;
     border: none;
   }
-  /* line 120, sass/elements/_main-navigation.scss */
+  /* line 121, sass/elements/_main-navigation.scss */
   .main-navigation li:hover ul.sub-menu {
     position: relative;
     z-index: 0;
