@@ -1,6 +1,7 @@
 
 # Ignore all WP files other than the ones we are developing, as WP core is managed by Flywheel
 wordpress/*
+!wordpress/.htaccess
 !wordpress/wp-content/
 wordpress/wp-content/*
 
