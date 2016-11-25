@@ -400,6 +400,43 @@ table {
   outline: 0;
 }
 
+/* Wordpress rich text editor adds these classes */
+/* line 111, sass/_defaults.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+/* line 115, sass/_defaults.scss */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* line 119, sass/_defaults.scss */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 124, sass/_defaults.scss */
+.alignright {
+  float: right;
+}
+
+/* line 127, sass/_defaults.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 130, sass/_defaults.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Specific elements. Each file contains the layout
    of items within that element */
 /* line 1, sass/elements/_buttons.scss */
