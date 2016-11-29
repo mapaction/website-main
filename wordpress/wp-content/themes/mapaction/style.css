@@ -273,7 +273,7 @@ th {
 /* line 1, sass/_defaults.scss */
 html {
   box-sizing: border-box;
-  font-size: 14pt;
+  font-size: 18px;
   line-height: 1.5;
   font-family: "Arial", "sans-serif";
   width: 100%;
@@ -441,7 +441,7 @@ img.aligncenter {
    of items within that element */
 /* line 1, sass/elements/_buttons.scss */
 .button, .button:visited, .button:hover {
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 4px;
   padding: 15px 30px;
@@ -481,7 +481,7 @@ img.aligncenter {
 @media screen and (max-width: 750px) {
   /* line 4, sass/elements/_emergencies-bar.scss */
   .site-emergencies > h1 {
-    font-size: 11pt;
+    font-size: 14px;
   }
 }
 /* line 14, sass/elements/_emergencies-bar.scss */
@@ -497,7 +497,7 @@ img.aligncenter {
   /* line 14, sass/elements/_emergencies-bar.scss */
   .site-emergencies > ul > li > a,
   .site-emergencies > ul > li > a:visited {
-    font-size: 11pt;
+    font-size: 14px;
   }
 }
 /* line 25, sass/elements/_emergencies-bar.scss */
@@ -549,14 +549,14 @@ img.aligncenter {
 }
 /* line 63, sass/elements/_emergencies-bar.scss */
 .site-emergencies h1 span {
-  margin-top: 16px;
+  margin-top: 16.5px;
   display: inline-block;
   margin-right: 15px;
 }
 @media screen and (max-width: 750px) {
   /* line 63, sass/elements/_emergencies-bar.scss */
   .site-emergencies h1 span {
-    margin-top: 13px;
+    margin-top: 13.5px;
   }
 }
 /* line 73, sass/elements/_emergencies-bar.scss */
@@ -640,7 +640,7 @@ img.aligncenter {
 }
 /* line 18, sass/elements/_main-navigation.scss */
 .main-navigation > ul > li > a {
-  font-size: 14pt;
+  font-size: 18px;
 }
 /* line 22, sass/elements/_main-navigation.scss */
 .main-navigation ul.sub-menu {
@@ -724,14 +724,14 @@ img.aligncenter {
 @media screen and (max-width: 1023px) {
   /* line 97, sass/elements/_main-navigation.scss */
   .main-navigation > ul > li a {
-    font-size: 12pt;
+    font-size: 16px;
   }
 }
 /* Mobile navigation */
 @media screen and (max-width: 750px) {
   /* line 104, sass/elements/_main-navigation.scss */
   .site-navigation-toggle-label {
-    font-size: 11pt;
+    font-size: 14px;
     text-transform: uppercase;
     border: 1px solid #92b4ec;
     border-radius: 4px;
@@ -766,12 +766,12 @@ img.aligncenter {
 }
 /* line 8, sass/elements/_footer.scss */
 .site-footer-inner > section > h2 {
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: bold;
 }
 /* line 12, sass/elements/_footer.scss */
 .site-footer-inner > section > div {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: normal;
 }
 /* line 17, sass/elements/_footer.scss */
@@ -787,7 +787,7 @@ img.aligncenter {
 .site-footer-inner > section ul.menu a, .site-footer-inner > section ul.menu a:visited {
   color: white;
   text-decoration: none;
-  font-size: 12pt;
+  font-size: 16px;
 }
 /* line 30, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu a:hover {
@@ -802,7 +802,7 @@ img.aligncenter {
 /* line 5, sass/elements/_dashboard.scss */
 .dashboard > section > h2 {
   background-color: #32a4a0;
-  font-size: 18pt;
+  font-size: 22px;
   padding: 10px 30px;
   margin: 0;
   border-radius: 4px 4px 0 0;
@@ -835,7 +835,7 @@ img.aligncenter {
 /* line 31, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget > h2 {
   background-color: #32a4a0;
-  font-size: 18pt;
+  font-size: 22px;
   color: white;
   padding: 10px 30px;
   margin: 0;
@@ -849,12 +849,12 @@ img.aligncenter {
 }
 /* line 45, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget > .ma-home-widget-text {
-  font-size: 18pt;
+  font-size: 22px;
 }
 @media screen and (max-width: 1140px) {
   /* line 45, sass/elements/_dashboard.scss */
   .dashboard > section > .ma-home-widget > .ma-home-widget-text {
-    font-size: 14pt;
+    font-size: 18px;
   }
 }
 /* line 53, sass/elements/_dashboard.scss */
@@ -935,7 +935,7 @@ img.aligncenter {
   width: 100%;
   margin-top: 7.5px;
   text-align: center;
-  font-size: 18pt;
+  font-size: 22px;
 }
 
 /* The very first home block behaves differently */
@@ -948,7 +948,7 @@ img.aligncenter {
   width: 65%;
   color: black;
   line-height: 1.25em;
-  font-size: 28pt;
+  font-size: 37px;
   font-weight: normal;
   background-color: rgba(255, 255, 255, 0.75);
   position: absolute;
@@ -971,7 +971,7 @@ img.aligncenter {
   width: 30%;
   position: absolute;
   right: 0;
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 4px 0 0 4px 0;
   /* Should align with button in neighbouring box */
@@ -1005,7 +1005,7 @@ img.aligncenter {
 /* line 15, sass/elements/_sidebar-navigation.scss */
 .sidebar-navigation ul.menu a {
   color: #19458d;
-  font-size: 14pt;
+  font-size: 18px;
   display: block;
   border-radius: 4px;
   font-weight: normal;
@@ -1171,14 +1171,14 @@ img.aligncenter {
 /* line 5, sass/elements/_page_content.scss */
 .page-content-area h1 {
   color: #19458d;
-  font-size: 28pt;
+  font-size: 37px;
   margin-top: 15px;
   margin-bottom: 7.5px;
   font-weight: normal;
 }
 /* line 13, sass/elements/_page_content.scss */
 .page-content-area h2 {
-  font-size: 18pt;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1186,7 +1186,7 @@ img.aligncenter {
 }
 /* line 21, sass/elements/_page_content.scss */
 .page-content-area h3, .page-content-area h4, .page-content-area h5, .page-content-area h6 {
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1241,14 +1241,14 @@ img.aligncenter {
 /* line 5, sass/elements/_page_content.scss */
 .single-post .content-area h1 {
   color: #19458d;
-  font-size: 28pt;
+  font-size: 37px;
   margin-top: 15px;
   margin-bottom: 7.5px;
   font-weight: normal;
 }
 /* line 13, sass/elements/_page_content.scss */
 .single-post .content-area h2 {
-  font-size: 18pt;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1256,7 +1256,7 @@ img.aligncenter {
 }
 /* line 21, sass/elements/_page_content.scss */
 .single-post .content-area h3, .single-post .content-area h4, .single-post .content-area h5, .single-post .content-area h6 {
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1311,14 +1311,14 @@ img.aligncenter {
 /* line 5, sass/elements/_page_content.scss */
 .category .content-area h1 {
   color: #19458d;
-  font-size: 28pt;
+  font-size: 37px;
   margin-top: 15px;
   margin-bottom: 7.5px;
   font-weight: normal;
 }
 /* line 13, sass/elements/_page_content.scss */
 .category .content-area h2 {
-  font-size: 18pt;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1326,7 +1326,7 @@ img.aligncenter {
 }
 /* line 21, sass/elements/_page_content.scss */
 .category .content-area h3, .category .content-area h4, .category .content-area h5, .category .content-area h6 {
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1389,7 +1389,7 @@ img.aligncenter {
 }
 /* line 95, sass/elements/_page_content.scss */
 .category .content-area .entry-meta {
-  font-size: 11pt;
+  font-size: 14px;
   margin-top: 7.5px;
   color: #19458d;
 }
@@ -1400,7 +1400,7 @@ img.aligncenter {
 /* line 103, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation {
   margin-bottom: 30px;
-  font-size: 18pt;
+  font-size: 22px;
 }
 /* line 106, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation::after {
@@ -1549,24 +1549,24 @@ img.aligncenter {
 /* line 70, sass/_page_layout.scss */
 .site-navigation-toggle-label-layout {
   display: none;
-  margin-top: 53.5px;
+  margin-top: 54px;
 }
 @media screen and (max-width: 1140px) {
   /* line 70, sass/_page_layout.scss */
   .site-navigation-toggle-label-layout {
-    margin-top: 46px;
+    margin-top: 46.5px;
   }
 }
 
 /* line 77, sass/_page_layout.scss */
 .main-navigation-layout {
   float: right;
-  margin-top: 53.5px;
+  margin-top: 54px;
 }
 @media screen and (max-width: 1140px) {
   /* line 77, sass/_page_layout.scss */
   .main-navigation-layout {
-    margin-top: 46px;
+    margin-top: 46.5px;
   }
 }
 /* line 84, sass/_page_layout.scss */
