@@ -1537,52 +1537,63 @@ img.aligncenter {
   margin-top: 30px;
 }
 /* line 61, sass/_page_layout.scss */
+.site-branding-layout .site-logo a {
+  height: 75px;
+  display: block;
+}
+@media screen and (max-width: 1140px) {
+  /* line 61, sass/_page_layout.scss */
+  .site-branding-layout .site-logo a {
+    height: 60px;
+  }
+}
+/* line 68, sass/_page_layout.scss */
 .site-branding-layout img {
   height: 75px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 61, sass/_page_layout.scss */
+  /* line 68, sass/_page_layout.scss */
   .site-branding-layout img {
     height: 60px;
   }
 }
 
 /* Full width navigation */
-/* line 70, sass/_page_layout.scss */
+/* line 77, sass/_page_layout.scss */
 .site-navigation-toggle-label-layout {
   display: none;
   margin-top: 54px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 70, sass/_page_layout.scss */
+  /* line 77, sass/_page_layout.scss */
   .site-navigation-toggle-label-layout {
     margin-top: 46.5px;
   }
 }
 
-/* line 77, sass/_page_layout.scss */
+/* line 84, sass/_page_layout.scss */
 .main-navigation-layout {
   float: right;
   margin-top: 54px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 77, sass/_page_layout.scss */
+  /* line 84, sass/_page_layout.scss */
   .main-navigation-layout {
     margin-top: 46.5px;
   }
 }
-/* line 84, sass/_page_layout.scss */
+/* line 91, sass/_page_layout.scss */
 .main-navigation-layout ul, .main-navigation-layout li {
   display: inline-block;
 }
-/* line 87, sass/_page_layout.scss */
+/* line 94, sass/_page_layout.scss */
 .main-navigation-layout input {
   display: none;
 }
 
 /* Intermediate navigation */
 @media screen and (max-width: 1023px) {
-  /* line 94, sass/_page_layout.scss */
+  /* line 101, sass/_page_layout.scss */
   .main-navigation-layout {
     float: none;
     clear: both;
@@ -1590,22 +1601,22 @@ img.aligncenter {
 }
 /* Mobile navigation */
 @media screen and (max-width: 750px) {
-  /* line 102, sass/_page_layout.scss */
+  /* line 109, sass/_page_layout.scss */
   .site-navigation-toggle-label-layout {
     display: block;
     float: right;
   }
 
-  /* line 107, sass/_page_layout.scss */
+  /* line 114, sass/_page_layout.scss */
   .main-navigation-layout {
     float: none;
     clear: both;
   }
-  /* line 110, sass/_page_layout.scss */
+  /* line 117, sass/_page_layout.scss */
   .main-navigation-layout input[type="checkbox"]:not(:checked) + ul {
     display: none;
   }
-  /* line 113, sass/_page_layout.scss */
+  /* line 120, sass/_page_layout.scss */
   .main-navigation-layout > ul > li {
     display: block;
     text-align: left;
@@ -1613,38 +1624,38 @@ img.aligncenter {
   }
 }
 /* Footer layout */
-/* line 122, sass/_page_layout.scss */
+/* line 129, sass/_page_layout.scss */
 .site-footer-layout {
   min-height: 280px;
   width: calc( 100% + 2000px );
   margin-left: -1000px;
 }
 
-/* line 128, sass/_page_layout.scss */
+/* line 135, sass/_page_layout.scss */
 .site-footer-inner-layout {
   margin-left: 1000px;
   padding-top: 60px;
   width: calc( 100% - 2000px );
 }
-/* line 132, sass/_page_layout.scss */
+/* line 139, sass/_page_layout.scss */
 .site-footer-inner-layout::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 139, sass/_page_layout.scss */
+/* line 146, sass/_page_layout.scss */
 .site-footer-inner-layout > section {
   width: 33%;
   float: left;
 }
-/* line 142, sass/_page_layout.scss */
+/* line 149, sass/_page_layout.scss */
 .site-footer-inner-layout > section > h2 {
   margin: 0 0 15px 0;
 }
 
 @media screen and (max-width: 750px) {
-  /* line 148, sass/_page_layout.scss */
+  /* line 155, sass/_page_layout.scss */
   .site-footer-inner-layout > section {
     width: 100%;
     margin-bottom: 30px;
@@ -1654,14 +1665,14 @@ img.aligncenter {
 /*
  * Home page blocks
  */
-/* line 158, sass/_page_layout.scss */
+/* line 165, sass/_page_layout.scss */
 .dashboard-layout::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 163, sass/_page_layout.scss */
+/* line 170, sass/_page_layout.scss */
 .dashboard-layout {
   /* Make the container slightly larger than the page allows us to have
      margin both sides of our blocks and not worry where they break
@@ -1670,7 +1681,7 @@ img.aligncenter {
   margin-left: -15px;
 }
 
-/* line 170, sass/_page_layout.scss */
+/* line 177, sass/_page_layout.scss */
 .dashboard-layout > section {
   width: calc( 33% - 30px );
   margin: 0 15px 30px 15px;
@@ -1678,57 +1689,57 @@ img.aligncenter {
   float: left;
 }
 
-/* line 176, sass/_page_layout.scss */
+/* line 183, sass/_page_layout.scss */
 .dashboard-layout > section > .ma-home-widget {
   width: 100%;
   height: 320px;
 }
 
-/* line 180, sass/_page_layout.scss */
+/* line 187, sass/_page_layout.scss */
 .dashboard-layout > section:first-child {
   width: calc( 2 * 33% - 30px );
   height: 380px;
 }
 
-/* line 184, sass/_page_layout.scss */
+/* line 191, sass/_page_layout.scss */
 .dashboard-layout > section:first-child > .ma-home-widget {
   width: 100%;
   height: 380px;
 }
 
-/* line 188, sass/_page_layout.scss */
+/* line 195, sass/_page_layout.scss */
 .dashboard-layout > section:nth-child(2) {
   height: 380px;
 }
 
-/* line 191, sass/_page_layout.scss */
+/* line 198, sass/_page_layout.scss */
 .dashboard-layout > section:nth-child(2) > .ma-home-widget {
   height: 380px;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 195, sass/_page_layout.scss */
+  /* line 202, sass/_page_layout.scss */
   .dashboard-layout > section {
     width: calc( 50% - 30px );
   }
 
-  /* line 198, sass/_page_layout.scss */
+  /* line 205, sass/_page_layout.scss */
   .dashboard-layout > section:first-child {
     width: calc( 100% - 30px );
   }
 
-  /* line 201, sass/_page_layout.scss */
+  /* line 208, sass/_page_layout.scss */
   .dashboard-layout > section:nth-child(2) {
     height: 320px;
   }
 
-  /* line 204, sass/_page_layout.scss */
+  /* line 211, sass/_page_layout.scss */
   .dashboard-layout > section:nth-child(2) > .ma-home-widget {
     height: 320px;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 209, sass/_page_layout.scss */
+  /* line 216, sass/_page_layout.scss */
   .dashboard-layout > section {
     width: calc( 100% - 30px );
   }
@@ -1739,39 +1750,39 @@ img.aligncenter {
  * We rely on classes set on body (page-parent, page-child) to
  * know whether a sidebar is needed.
  */
-/* line 220, sass/_page_layout.scss */
+/* line 227, sass/_page_layout.scss */
 .site-content-layout {
   margin-top: 30px;
 }
 
-/* line 224, sass/_page_layout.scss */
+/* line 231, sass/_page_layout.scss */
 .page-content-area {
   /* Width is the same with or without sidebar */
   width: calc( 100% - 206px - 60px );
 }
 @media screen and (max-width: 750px) {
-  /* line 224, sass/_page_layout.scss */
+  /* line 231, sass/_page_layout.scss */
   .page-content-area {
     width: 100%;
   }
 }
 
-/* line 233, sass/_page_layout.scss */
+/* line 240, sass/_page_layout.scss */
 .page-parent .site-content::after, .page-child .site-content::after {
   display: block;
   content: "";
   clear: both;
 }
-/* line 240, sass/_page_layout.scss */
+/* line 247, sass/_page_layout.scss */
 .page-parent .page-content-area, .page-child .page-content-area {
   float: right;
 }
-/* line 243, sass/_page_layout.scss */
+/* line 250, sass/_page_layout.scss */
 .page-parent .sidebar-navigation-layout, .page-child .sidebar-navigation-layout {
   width: 206px;
 }
 @media screen and (max-width: 750px) {
-  /* line 243, sass/_page_layout.scss */
+  /* line 250, sass/_page_layout.scss */
   .page-parent .sidebar-navigation-layout, .page-child .sidebar-navigation-layout {
     display: none;
   }
@@ -1780,29 +1791,29 @@ img.aligncenter {
 /**
  * Category page layout
  */
-/* line 255, sass/_page_layout.scss */
+/* line 262, sass/_page_layout.scss */
 .category .content-area {
   width: calc( 100% - 206px - 60px );
   float: right;
 }
 @media screen and (max-width: 750px) {
-  /* line 255, sass/_page_layout.scss */
+  /* line 262, sass/_page_layout.scss */
   .category .content-area {
     width: 100%;
   }
 }
-/* line 264, sass/_page_layout.scss */
+/* line 271, sass/_page_layout.scss */
 .category .site-content::after {
   display: block;
   content: "";
   clear: both;
 }
-/* line 271, sass/_page_layout.scss */
+/* line 278, sass/_page_layout.scss */
 .category .sidebar-navigation-layout {
   width: 206px;
 }
 @media screen and (max-width: 750px) {
-  /* line 271, sass/_page_layout.scss */
+  /* line 278, sass/_page_layout.scss */
   .category .sidebar-navigation-layout {
     display: none;
   }
@@ -1811,29 +1822,29 @@ img.aligncenter {
 /**
  * Single post page layout
  */
-/* line 283, sass/_page_layout.scss */
+/* line 290, sass/_page_layout.scss */
 .single-post .content-area {
   width: calc( 100% - 206px - 60px );
   float: right;
 }
 @media screen and (max-width: 750px) {
-  /* line 283, sass/_page_layout.scss */
+  /* line 290, sass/_page_layout.scss */
   .single-post .content-area {
     width: 100%;
   }
 }
-/* line 292, sass/_page_layout.scss */
+/* line 299, sass/_page_layout.scss */
 .single-post .site-content::after {
   display: block;
   content: "";
   clear: both;
 }
-/* line 299, sass/_page_layout.scss */
+/* line 306, sass/_page_layout.scss */
 .single-post .sidebar-navigation-layout {
   width: 206px;
 }
 @media screen and (max-width: 750px) {
-  /* line 299, sass/_page_layout.scss */
+  /* line 306, sass/_page_layout.scss */
   .single-post .sidebar-navigation-layout {
     display: none;
   }

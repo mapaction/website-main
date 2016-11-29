@@ -58,6 +58,13 @@
 .site-branding-layout {
 	float: left;
 	margin-top: $gutter-size;
+	.site-logo a {
+		height: $logo-height;
+		display: block;
+		@media screen and (max-width: $three_column_min_width) {
+			height: $logo-height-small;
+		}
+	}
 	img {
 		height: $logo-height;
 		@media screen and (max-width: $three_column_min_width) {
