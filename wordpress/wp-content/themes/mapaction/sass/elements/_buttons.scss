@@ -6,6 +6,8 @@
 	color: white;
 	text-decoration: none;
 	background-color: $secondary-green;
+	display: inline-block;
+	margin: $gutter-size/10;
 }
 .button:hover {
 	background-color: darken($secondary-green, 5%);

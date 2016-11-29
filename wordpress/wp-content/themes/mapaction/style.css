@@ -448,19 +448,21 @@ img.aligncenter {
   color: white;
   text-decoration: none;
   background-color: #32a4a0;
+  display: inline-block;
+  margin: 3px;
 }
 
-/* line 10, sass/elements/_buttons.scss */
+/* line 12, sass/elements/_buttons.scss */
 .button:hover {
   background-color: #2c908d;
 }
 
-/* line 14, sass/elements/_buttons.scss */
+/* line 16, sass/elements/_buttons.scss */
 .button-important, .button-important:visited, .button-important:hover {
   background-color: #e53d2f;
 }
 
-/* line 17, sass/elements/_buttons.scss */
+/* line 19, sass/elements/_buttons.scss */
 .button-important:hover {
   background-color: #df2b1c;
 }
@@ -899,7 +901,7 @@ img.aligncenter {
 .dashboard > section > .ma-home-widget.image-above > .ma-home-widget-text {
   padding: 7.5px 30px 15px 30px;
   position: absolute;
-  bottom: 0;
+  bottom: 3.75px;
   width: 100%;
 }
 /* line 89, sass/elements/_dashboard.scss */
@@ -975,7 +977,7 @@ img.aligncenter {
   font-weight: bold;
   border-radius: 4px 0 0 4px 0;
   /* Should align with button in neighbouring box */
-  bottom: 15px;
+  bottom: 22.5px;
   min-height: 66px;
 }
 @media screen and (max-width: 750px) {

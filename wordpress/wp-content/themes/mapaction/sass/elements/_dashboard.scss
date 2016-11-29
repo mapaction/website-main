@@ -83,7 +83,7 @@
 		> .ma-home-widget-text {
 			padding: $gutter-size/4 $gutter-size $gutter-size/2 $gutter-size;
 			position: absolute;
-			bottom: 0;
+			bottom: $gutter-size/8;
 			width: 100%;
 		}
 		> img {
@@ -152,7 +152,7 @@
 		font-weight: bold;
 		border-radius: 4px 0 0 4px 0;
         /* Should align with button in neighbouring box */
-		bottom: $gutter-size/2;
+		bottom: $gutter-size * 0.75;
 		min-height: 66px;
 		@media screen and (max-width: $two_column_min_width) {
 			width: 70%;
