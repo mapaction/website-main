@@ -906,6 +906,53 @@ img.aligncenter {
   font-size: 18pt;
 }
 
+/* The very first home block behaves differently */
+/* line 112, sass/elements/_dashboard.scss */
+.dashboard > section:first-child > .ma-home-widget {
+  position: relative;
+}
+/* line 114, sass/elements/_dashboard.scss */
+.dashboard > section:first-child > .ma-home-widget > .widget-title {
+  width: 65%;
+  color: black;
+  line-height: 1.25em;
+  font-size: 28pt;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+}
+@media screen and (max-width: 750px) {
+  /* line 114, sass/elements/_dashboard.scss */
+  .dashboard > section:first-child > .ma-home-widget > .widget-title {
+    width: 100%;
+    bottom: auto;
+    top: 50px;
+  }
+}
+/* line 130, sass/elements/_dashboard.scss */
+.dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
+  color: white;
+  background-color: #19458d;
+  padding: 15px;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 4px 0 0 4px 0;
+  /* Should align with button in neighbouring box */
+  bottom: 15px;
+  min-height: 66px;
+}
+@media screen and (max-width: 750px) {
+  /* line 130, sass/elements/_dashboard.scss */
+  .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
+    width: 70%;
+  }
+}
+
 /* By default always hide the sidebar menu, then re-enable it as and when */
 /* line 2, sass/elements/_sidebar-navigation.scss */
 .sidebar-navigation ul.menu {

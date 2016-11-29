@@ -107,3 +107,41 @@
 		font-size: $base-font-size-large;
 	}
 }
+
+/* The very first home block behaves differently */
+.dashboard > section:first-child > .ma-home-widget {
+	position: relative;
+	> .widget-title {
+		width: 65%;
+		color: black;
+		line-height: 1.25em;
+		font-size: $base-font-size-giant;
+		font-weight: normal;
+		background-color: rgba(255, 255, 255, 0.75);
+		position: absolute;
+		left: 0;
+		bottom: 100px;
+		@media screen and (max-width: $two_column_min_width) {
+			width: 100%;
+			bottom: auto;
+			top: 50px;
+		}
+	}
+	> .ma-home-widget-text {
+		color: white;
+		background-color: $primary-blue;
+		padding: $gutter-size/2;
+		width: 30%;
+		position: absolute;
+		right: 0;
+		font-size: $base-font-size;
+		font-weight: bold;
+		border-radius: 4px 0 0 4px 0;
+        /* Should align with button in neighbouring box */
+		bottom: $gutter-size/2;
+		min-height: 66px;
+		@media screen and (max-width: $two_column_min_width) {
+			width: 70%;
+		}
+	}
+}
