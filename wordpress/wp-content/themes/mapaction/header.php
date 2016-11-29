@@ -26,7 +26,9 @@
 	<header id="masthead" class="site-header site-header-layout" role="banner">
 		<div class="site-emergencies site-emergencies-layout">
 		<h1>
-			<span class="current-emergency-icon">(!)</span>
+			<span class="current-emergency-icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/emergency_icon.svg"/>
+			</span>
 			<span class="current-emergency-text"><?php mapaction_menu_title_from_location( 'emergencies' ); ?></span>
 		</h1>
 		<?php

@@ -558,7 +558,11 @@ img.aligncenter {
   .site-emergencies h1 .current-emergency-icon {
     display: inline-block;
   }
-  /* line 80, sass/elements/_emergencies-bar.scss */
+  /* line 79, sass/elements/_emergencies-bar.scss */
+  .site-emergencies h1 .current-emergency-icon img {
+    height: 1em;
+  }
+  /* line 83, sass/elements/_emergencies-bar.scss */
   .site-emergencies h1 .current-emergency-text {
     display: none;
   }
@@ -566,7 +570,7 @@ img.aligncenter {
 
 /* Layout of the text part of the emergencies bar (includes
    hiding text in smaller screen sizes */
-/* line 88, sass/elements/_emergencies-bar.scss */
+/* line 91, sass/elements/_emergencies-bar.scss */
 .site-emergencies > ul {
   height: 60px;
   display: inline-block;
@@ -574,31 +578,31 @@ img.aligncenter {
   margin: 0 0 0 45px;
 }
 @media screen and (max-width: 750px) {
-  /* line 88, sass/elements/_emergencies-bar.scss */
+  /* line 91, sass/elements/_emergencies-bar.scss */
   .site-emergencies > ul {
     height: 48px;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 88, sass/elements/_emergencies-bar.scss */
+  /* line 91, sass/elements/_emergencies-bar.scss */
   .site-emergencies > ul {
     margin: 0 0 0 30px;
   }
 }
 
-/* line 100, sass/elements/_emergencies-bar.scss */
+/* line 103, sass/elements/_emergencies-bar.scss */
 .site-emergencies > ul > li {
   display: inline-block;
   margin: 0 30px 0 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 104, sass/elements/_emergencies-bar.scss */
+  /* line 107, sass/elements/_emergencies-bar.scss */
   .site-emergencies > ul > li .emergency-type {
     display: none;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 100, sass/elements/_emergencies-bar.scss */
+  /* line 103, sass/elements/_emergencies-bar.scss */
   .site-emergencies > ul > li {
     margin: 0 15px 0 0;
   }
