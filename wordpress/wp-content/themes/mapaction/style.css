@@ -450,9 +450,19 @@ img.aligncenter {
   background-color: #32a4a0;
 }
 
-/* line 11, sass/elements/_buttons.scss */
+/* line 10, sass/elements/_buttons.scss */
+.button:hover {
+  background-color: #2c908d;
+}
+
+/* line 14, sass/elements/_buttons.scss */
 .button-important, .button-important:visited, .button-important:hover {
   background-color: #e53d2f;
+}
+
+/* line 17, sass/elements/_buttons.scss */
+.button-important:hover {
+  background-color: #df2b1c;
 }
 
 /* Main styling of the emergencies bar */

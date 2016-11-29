@@ -7,7 +7,13 @@
 	text-decoration: none;
 	background-color: $secondary-green;
 }
+.button:hover {
+	background-color: darken($secondary-green, 5%);
+}
 
 .button-important, .button-important:visited, .button-important:hover {
 	background-color: $primary-red;
+}
+.button-important:hover {
+	background-color: darken($primary-red, 5%);
 }
