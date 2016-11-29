@@ -112,9 +112,9 @@ class Ma_Home_Widget extends WP_Widget {
 		$title = $this->_get_field_info( 'title', $instance );
 		$background = $this->_get_field_info( 'background', $instance, array(
 			'options' => array(
-				'transparent' => 'Transparent',
-				'light-green' => 'Light green',
-				'light-grey' => 'Light grey'
+				'transparent' => 'Transparent (black text)',
+				'light-green' => 'Light green (blue text)',
+				'light-grey' => 'Light grey (black text)'
 			)
 		));
 		$content = $this->_get_field_info( 'content', $instance );

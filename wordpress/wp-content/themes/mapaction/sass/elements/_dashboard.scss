@@ -52,14 +52,28 @@
 	/* Custom background colors */
 	&.background-light-green {
 		background-color: $secondary-green-light;
+		color: $primary-blue;
+		a.ma-home-widget {
+			color: $primary-blue;
+		}
 		> .ma-home-widget-text {
 			background-color: $secondary-green-light;
 		}
 	}
 	&.background-light-grey {
 		background-color: $secondary-grey-light;
+		color: black;
+		a.ma-home-widget {
+			color: black;
+		}
 		> .ma-home-widget-text {
 			background-color: $secondary-grey-light;
+		}
+	}
+	&.background-transparent {
+		color: black;
+		a.ma-home-widget {
+			color: black;
 		}
 	}
 
