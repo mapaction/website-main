@@ -1088,6 +1088,7 @@ img.aligncenter {
 /* This mixin contains the default styling we'd expect to
    apply to any container that contains main website
    content */
+/* General page styling */
 /* line 5, sass/elements/_page_content.scss */
 .page-content-area h1 {
   color: #19458d;
@@ -1121,17 +1122,22 @@ img.aligncenter {
 .page-content-area a:hover {
   text-decoration: none;
 }
-/* line 37, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content.scss */
+.page-content-area a.button, .page-content-area a.button:visited, .page-content-area a.button:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 41, sass/elements/_page_content.scss */
 .page-content-area header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
-/* line 42, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content.scss */
 .page-content-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 46, sass/elements/_page_content.scss */
+/* line 50, sass/elements/_page_content.scss */
 .page-content-area ul li::before {
   content: "";
   background-color: #19458d;
@@ -1143,15 +1149,16 @@ img.aligncenter {
   position: relative;
   top: -0.1em;
 }
-/* line 59, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content.scss */
 .page-content-area ol {
   margin-left: 0;
 }
-/* line 63, sass/elements/_page_content.scss */
+/* line 67, sass/elements/_page_content.scss */
 .page-content-area .edit-link {
   display: none;
 }
 
+/* General single post styling */
 /* line 5, sass/elements/_page_content.scss */
 .single-post .content-area h1 {
   color: #19458d;
@@ -1185,17 +1192,22 @@ img.aligncenter {
 .single-post .content-area a:hover {
   text-decoration: none;
 }
-/* line 37, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content.scss */
+.single-post .content-area a.button, .single-post .content-area a.button:visited, .single-post .content-area a.button:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 41, sass/elements/_page_content.scss */
 .single-post .content-area header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
-/* line 42, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content.scss */
 .single-post .content-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 46, sass/elements/_page_content.scss */
+/* line 50, sass/elements/_page_content.scss */
 .single-post .content-area ul li::before {
   content: "";
   background-color: #19458d;
@@ -1207,15 +1219,16 @@ img.aligncenter {
   position: relative;
   top: -0.1em;
 }
-/* line 59, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content.scss */
 .single-post .content-area ol {
   margin-left: 0;
 }
-/* line 63, sass/elements/_page_content.scss */
+/* line 67, sass/elements/_page_content.scss */
 .single-post .content-area .edit-link {
   display: none;
 }
 
+/* Category listing page styling */
 /* line 5, sass/elements/_page_content.scss */
 .category .content-area h1 {
   color: #19458d;
@@ -1249,17 +1262,22 @@ img.aligncenter {
 .category .content-area a:hover {
   text-decoration: none;
 }
-/* line 37, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content.scss */
+.category .content-area a.button, .category .content-area a.button:visited, .category .content-area a.button:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 41, sass/elements/_page_content.scss */
 .category .content-area header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
-/* line 42, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content.scss */
 .category .content-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 46, sass/elements/_page_content.scss */
+/* line 50, sass/elements/_page_content.scss */
 .category .content-area ul li::before {
   content: "";
   background-color: #19458d;
@@ -1271,51 +1289,51 @@ img.aligncenter {
   position: relative;
   top: -0.1em;
 }
-/* line 59, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content.scss */
 .category .content-area ol {
   margin-left: 0;
 }
-/* line 63, sass/elements/_page_content.scss */
+/* line 67, sass/elements/_page_content.scss */
 .category .content-area .edit-link {
   display: none;
 }
-/* line 79, sass/elements/_page_content.scss */
+/* line 86, sass/elements/_page_content.scss */
 .category .content-area h2 {
   margin-bottom: 0;
 }
-/* line 81, sass/elements/_page_content.scss */
+/* line 88, sass/elements/_page_content.scss */
 .category .content-area h2 a, .category .content-area h2 a:visited, .category .content-area h2 a:hover {
   text-decoration: none;
   width: 100%;
   display: block;
   border-bottom: 2px solid #92b4ec;
 }
-/* line 88, sass/elements/_page_content.scss */
+/* line 95, sass/elements/_page_content.scss */
 .category .content-area .entry-meta {
   font-size: 11pt;
   margin-top: 7.5px;
   color: #19458d;
 }
-/* line 93, sass/elements/_page_content.scss */
+/* line 100, sass/elements/_page_content.scss */
 .category .content-area article {
   margin-bottom: 30px;
 }
-/* line 96, sass/elements/_page_content.scss */
+/* line 103, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation {
   margin-bottom: 30px;
   font-size: 18pt;
 }
-/* line 99, sass/elements/_page_content.scss */
+/* line 106, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 104, sass/elements/_page_content.scss */
+/* line 111, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-previous {
   float: right;
 }
-/* line 106, sass/elements/_page_content.scss */
+/* line 113, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-previous a::after {
   content: "";
   width: 0;
@@ -1328,11 +1346,11 @@ img.aligncenter {
   top: 4px;
   margin-left: 15px;
 }
-/* line 119, sass/elements/_page_content.scss */
+/* line 126, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-next {
   float: left;
 }
-/* line 121, sass/elements/_page_content.scss */
+/* line 128, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-next a::before {
   content: "";
   width: 0;
@@ -1345,9 +1363,17 @@ img.aligncenter {
   top: 4px;
   margin-right: 15px;
 }
-/* line 135, sass/elements/_page_content.scss */
+/* line 142, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation a {
   color: #92b4ec;
+}
+
+/* Specifics for the donate page */
+/* line 149, sass/elements/_page_content.scss */
+.page-content-area #CAFDonateWidgetContainer > a {
+  display: block;
+  text-align: center;
+  margin: 30px;
 }
 
 /* General layout */

@@ -33,6 +33,10 @@
 	a:hover {
 		text-decoration: none;
 	}
+	a.button, a.button:visited, a.button:hover {
+		color: white;
+		text-decoration: none;
+	}
 
 	header > h1 {
 		margin-top: 0;
@@ -66,14 +70,17 @@
 
 }
 
+/* General page styling */
 .page-content-area {
 	@include content_area_styles();
 }
 
+/* General single post styling */
 .single-post .content-area {
 	@include content_area_styles();
 }
 
+/* Category listing page styling */
 .category .content-area {
 	@include content_area_styles();
 	h2 {
@@ -136,4 +143,11 @@
 			color: $secondary-blue;
 		}
 	}
+}
+
+/* Specifics for the donate page */
+.page-content-area #CAFDonateWidgetContainer > a {
+	display: block;
+	text-align: center;
+	margin: $gutter-size;
 }
