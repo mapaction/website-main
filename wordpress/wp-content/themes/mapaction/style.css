@@ -1602,7 +1602,7 @@ img.aligncenter {
     clear: both;
   }
   /* line 110, sass/_page_layout.scss */
-  .main-navigation-layout input[type="checkbox"]:not(:checked) + ul li {
+  .main-navigation-layout input[type="checkbox"]:not(:checked) + ul {
     display: none;
   }
   /* line 113, sass/_page_layout.scss */

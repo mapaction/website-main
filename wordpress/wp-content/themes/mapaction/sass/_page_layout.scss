@@ -107,7 +107,7 @@
 	.main-navigation-layout {
 		float: none;
 		clear: both;
-		input[type="checkbox"]:not(:checked) + ul li {
+		input[type="checkbox"]:not(:checked) + ul {
 			display: none;
 		}
 		> ul > li {
