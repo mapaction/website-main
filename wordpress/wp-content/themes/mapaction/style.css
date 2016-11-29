@@ -759,24 +759,25 @@ img.aligncenter {
 /* line 1, sass/elements/_footer.scss */
 .site-footer {
   background-color: #19458d;
+  padding-bottom: 30px;
 }
 
-/* line 5, sass/elements/_footer.scss */
+/* line 6, sass/elements/_footer.scss */
 .site-footer-inner > section {
   padding: 0 30px;
   color: white;
 }
-/* line 8, sass/elements/_footer.scss */
+/* line 9, sass/elements/_footer.scss */
 .site-footer-inner > section > h2 {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 12, sass/elements/_footer.scss */
+/* line 13, sass/elements/_footer.scss */
 .site-footer-inner > section > div {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 17, sass/elements/_footer.scss */
+/* line 18, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu {
   padding: 0;
   margin: 0;
@@ -785,13 +786,13 @@ img.aligncenter {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-/* line 25, sass/elements/_footer.scss */
+/* line 26, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu a, .site-footer-inner > section ul.menu a:visited {
   color: white;
   text-decoration: none;
   font-size: 16px;
 }
-/* line 30, sass/elements/_footer.scss */
+/* line 31, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu a:hover {
   text-decoration: underline;
 }
