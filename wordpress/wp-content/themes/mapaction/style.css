@@ -656,7 +656,7 @@ img.aligncenter {
 .main-navigation ul.sub-menu li {
   font-weight: normal;
   text-transform: none;
-  padding: 0 15px;
+  padding: 0;
 }
 
 /*
@@ -694,27 +694,43 @@ img.aligncenter {
   z-index: 2;
 }
 /* line 68, sass/elements/_main-navigation.scss */
+.main-navigation ul.sub-menu > li > a {
+  display: block;
+  border-radius: 4px;
+  padding: 0 7.5px;
+}
+/* line 72, sass/elements/_main-navigation.scss */
 .main-navigation ul.sub-menu > li > a:hover {
-  text-decoration: underline;
+  background-color: #92b4ec;
+  color: white;
+}
+/* line 77, sass/elements/_main-navigation.scss */
+.main-navigation ul.sub-menu > li.current-menu-item > a {
+  background-color: #19458d;
+  color: white;
+}
+/* line 80, sass/elements/_main-navigation.scss */
+.main-navigation ul.sub-menu > li.current-menu-item > a:hover {
+  background-color: #19458d;
 }
 
 /* Create the drop down menu magic */
-/* line 75, sass/elements/_main-navigation.scss */
+/* line 88, sass/elements/_main-navigation.scss */
 .main-navigation ul.sub-menu {
   display: none;
   margin: 0;
   min-width: 100%;
 }
-/* line 79, sass/elements/_main-navigation.scss */
+/* line 92, sass/elements/_main-navigation.scss */
 .main-navigation ul.sub-menu li {
   min-width: 100%;
   white-space: nowrap;
 }
-/* line 84, sass/elements/_main-navigation.scss */
+/* line 97, sass/elements/_main-navigation.scss */
 .main-navigation li:hover {
   position: relative;
 }
-/* line 86, sass/elements/_main-navigation.scss */
+/* line 99, sass/elements/_main-navigation.scss */
 .main-navigation li:hover ul.sub-menu {
   position: absolute;
   left: 0;
@@ -724,14 +740,14 @@ img.aligncenter {
 
 /* Navigation for intermediate width layout */
 @media screen and (max-width: 1023px) {
-  /* line 97, sass/elements/_main-navigation.scss */
+  /* line 110, sass/elements/_main-navigation.scss */
   .main-navigation > ul > li a {
     font-size: 16px;
   }
 }
 /* Mobile navigation */
 @media screen and (max-width: 750px) {
-  /* line 104, sass/elements/_main-navigation.scss */
+  /* line 117, sass/elements/_main-navigation.scss */
   .site-navigation-toggle-label {
     font-size: 14px;
     text-transform: uppercase;
@@ -741,16 +757,16 @@ img.aligncenter {
     color: #19458d;
   }
 
-  /* line 114, sass/elements/_main-navigation.scss */
+  /* line 127, sass/elements/_main-navigation.scss */
   .main-navigation > ul > li {
     text-align: left;
   }
-  /* line 117, sass/elements/_main-navigation.scss */
+  /* line 130, sass/elements/_main-navigation.scss */
   .main-navigation ul.sub-menu {
     display: block;
     border: none;
   }
-  /* line 121, sass/elements/_main-navigation.scss */
+  /* line 134, sass/elements/_main-navigation.scss */
   .main-navigation li:hover ul.sub-menu {
     position: relative;
     z-index: 0;

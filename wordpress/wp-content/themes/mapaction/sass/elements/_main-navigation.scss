@@ -28,7 +28,7 @@
 		li {
 			font-weight: normal;
 			text-transform: none;
-			padding: 0 $gutter-size/2;
+			padding: 0;
 		}
 	}
 }
@@ -65,8 +65,21 @@
 		border-radius: 4px;
 		z-index: 2;
 	}
-	ul.sub-menu > li > a:hover {
-		text-decoration: underline;
+	ul.sub-menu > li > a {
+		display: block;
+		border-radius: 4px;
+		padding: 0 $gutter-size/4;
+		&:hover {
+			background-color: $secondary-blue;
+			color: white;
+		}
+	}
+	ul.sub-menu > li.current-menu-item > a {
+		background-color: $primary-blue;
+		color: white;
+		&:hover {
+			background-color: $primary-blue;
+		}
 	}
 }
 
