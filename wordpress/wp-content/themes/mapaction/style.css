@@ -813,6 +813,12 @@ img.aligncenter {
   text-decoration: underline;
 }
 
+/* line 37, sass/elements/_footer.scss */
+.site-footer .social-media-icons a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
 /* line 1, sass/elements/_dashboard.scss */
 .dashboard > section {
   border-radius: 4px;
