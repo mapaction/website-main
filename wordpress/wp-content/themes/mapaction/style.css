@@ -18,6 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+/* Settings & Variables */
 /* Browser reset/normalize */
 /* line 1, sass/_reset.scss */
 html {
@@ -1195,7 +1196,7 @@ img.aligncenter {
    apply to any container that contains main website
    content */
 /* General page styling */
-/* line 5, sass/elements/_page_content.scss */
+/* line 5, sass/elements/_page_content_mixin.scss */
 .page-content-area h1 {
   color: #19458d;
   font-size: 37px;
@@ -1203,7 +1204,7 @@ img.aligncenter {
   margin-bottom: 7.5px;
   font-weight: normal;
 }
-/* line 13, sass/elements/_page_content.scss */
+/* line 13, sass/elements/_page_content_mixin.scss */
 .page-content-area h2 {
   font-size: 22px;
   font-weight: bold;
@@ -1211,7 +1212,7 @@ img.aligncenter {
   margin-bottom: 15px;
   color: #19458d;
 }
-/* line 21, sass/elements/_page_content.scss */
+/* line 21, sass/elements/_page_content_mixin.scss */
 .page-content-area h3, .page-content-area h4, .page-content-area h5, .page-content-area h6 {
   font-size: 18px;
   font-weight: bold;
@@ -1219,31 +1220,31 @@ img.aligncenter {
   margin-bottom: 15px;
   color: #19458d;
 }
-/* line 29, sass/elements/_page_content.scss */
+/* line 29, sass/elements/_page_content_mixin.scss */
 .page-content-area a, .page-content-area a:visited {
   color: #19458d;
   text-decoration: underline;
 }
-/* line 33, sass/elements/_page_content.scss */
+/* line 33, sass/elements/_page_content_mixin.scss */
 .page-content-area a:hover {
   text-decoration: none;
 }
-/* line 36, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content_mixin.scss */
 .page-content-area a.button, .page-content-area a.button:visited, .page-content-area a.button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 41, sass/elements/_page_content.scss */
+/* line 41, sass/elements/_page_content_mixin.scss */
 .page-content-area header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
-/* line 46, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content_mixin.scss */
 .page-content-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 50, sass/elements/_page_content.scss */
+/* line 50, sass/elements/_page_content_mixin.scss */
 .page-content-area ul li::before {
   content: "";
   background-color: #19458d;
@@ -1255,17 +1256,57 @@ img.aligncenter {
   position: relative;
   top: -0.1em;
 }
-/* line 63, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content_mixin.scss */
 .page-content-area ol {
   margin-left: 0;
 }
-/* line 67, sass/elements/_page_content.scss */
+/* line 67, sass/elements/_page_content_mixin.scss */
 .page-content-area .edit-link {
   display: none;
 }
+/* line 71, sass/elements/_page_content_mixin.scss */
+.page-content-area blockquote {
+  position: relative;
+  padding-left: 30px;
+  margin: 30px 0;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+/* line 78, sass/elements/_page_content_mixin.scss */
+.page-content-area blockquote::before {
+  position: absolute;
+  width: 4px;
+  background-color: #19458d;
+  border-radius: 4px;
+  left: 0;
+  height: 100%;
+}
+/* line 86, sass/elements/_page_content_mixin.scss */
+.page-content-area blockquote .quote-author {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+/* line 91, sass/elements/_page_content_mixin.scss */
+.page-content-area blockquote.blockquote-image {
+  padding-left: 180px;
+}
+/* line 93, sass/elements/_page_content_mixin.scss */
+.page-content-area blockquote.blockquote-image img {
+  width: 150px;
+  position: absolute;
+  left: 0;
+  top: 7.5px;
+}
+/* line 99, sass/elements/_page_content_mixin.scss */
+.page-content-area blockquote.blockquote-image::before {
+  width: 0;
+  height: 0;
+}
 
 /* General single post styling */
-/* line 5, sass/elements/_page_content.scss */
+/* line 5, sass/elements/_page_content_mixin.scss */
 .single-post .content-area h1 {
   color: #19458d;
   font-size: 37px;
@@ -1273,7 +1314,7 @@ img.aligncenter {
   margin-bottom: 7.5px;
   font-weight: normal;
 }
-/* line 13, sass/elements/_page_content.scss */
+/* line 13, sass/elements/_page_content_mixin.scss */
 .single-post .content-area h2 {
   font-size: 22px;
   font-weight: bold;
@@ -1281,7 +1322,7 @@ img.aligncenter {
   margin-bottom: 15px;
   color: #19458d;
 }
-/* line 21, sass/elements/_page_content.scss */
+/* line 21, sass/elements/_page_content_mixin.scss */
 .single-post .content-area h3, .single-post .content-area h4, .single-post .content-area h5, .single-post .content-area h6 {
   font-size: 18px;
   font-weight: bold;
@@ -1289,31 +1330,31 @@ img.aligncenter {
   margin-bottom: 15px;
   color: #19458d;
 }
-/* line 29, sass/elements/_page_content.scss */
+/* line 29, sass/elements/_page_content_mixin.scss */
 .single-post .content-area a, .single-post .content-area a:visited {
   color: #19458d;
   text-decoration: underline;
 }
-/* line 33, sass/elements/_page_content.scss */
+/* line 33, sass/elements/_page_content_mixin.scss */
 .single-post .content-area a:hover {
   text-decoration: none;
 }
-/* line 36, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content_mixin.scss */
 .single-post .content-area a.button, .single-post .content-area a.button:visited, .single-post .content-area a.button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 41, sass/elements/_page_content.scss */
+/* line 41, sass/elements/_page_content_mixin.scss */
 .single-post .content-area header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
-/* line 46, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content_mixin.scss */
 .single-post .content-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 50, sass/elements/_page_content.scss */
+/* line 50, sass/elements/_page_content_mixin.scss */
 .single-post .content-area ul li::before {
   content: "";
   background-color: #19458d;
@@ -1325,17 +1366,57 @@ img.aligncenter {
   position: relative;
   top: -0.1em;
 }
-/* line 63, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content_mixin.scss */
 .single-post .content-area ol {
   margin-left: 0;
 }
-/* line 67, sass/elements/_page_content.scss */
+/* line 67, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .edit-link {
   display: none;
 }
+/* line 71, sass/elements/_page_content_mixin.scss */
+.single-post .content-area blockquote {
+  position: relative;
+  padding-left: 30px;
+  margin: 30px 0;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+/* line 78, sass/elements/_page_content_mixin.scss */
+.single-post .content-area blockquote::before {
+  position: absolute;
+  width: 4px;
+  background-color: #19458d;
+  border-radius: 4px;
+  left: 0;
+  height: 100%;
+}
+/* line 86, sass/elements/_page_content_mixin.scss */
+.single-post .content-area blockquote .quote-author {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+/* line 91, sass/elements/_page_content_mixin.scss */
+.single-post .content-area blockquote.blockquote-image {
+  padding-left: 180px;
+}
+/* line 93, sass/elements/_page_content_mixin.scss */
+.single-post .content-area blockquote.blockquote-image img {
+  width: 150px;
+  position: absolute;
+  left: 0;
+  top: 7.5px;
+}
+/* line 99, sass/elements/_page_content_mixin.scss */
+.single-post .content-area blockquote.blockquote-image::before {
+  width: 0;
+  height: 0;
+}
 
 /* Category listing page styling */
-/* line 5, sass/elements/_page_content.scss */
+/* line 5, sass/elements/_page_content_mixin.scss */
 .category .content-area h1 {
   color: #19458d;
   font-size: 37px;
@@ -1343,7 +1424,7 @@ img.aligncenter {
   margin-bottom: 7.5px;
   font-weight: normal;
 }
-/* line 13, sass/elements/_page_content.scss */
+/* line 13, sass/elements/_page_content_mixin.scss */
 .category .content-area h2 {
   font-size: 22px;
   font-weight: bold;
@@ -1351,7 +1432,7 @@ img.aligncenter {
   margin-bottom: 15px;
   color: #19458d;
 }
-/* line 21, sass/elements/_page_content.scss */
+/* line 21, sass/elements/_page_content_mixin.scss */
 .category .content-area h3, .category .content-area h4, .category .content-area h5, .category .content-area h6 {
   font-size: 18px;
   font-weight: bold;
@@ -1359,31 +1440,31 @@ img.aligncenter {
   margin-bottom: 15px;
   color: #19458d;
 }
-/* line 29, sass/elements/_page_content.scss */
+/* line 29, sass/elements/_page_content_mixin.scss */
 .category .content-area a, .category .content-area a:visited {
   color: #19458d;
   text-decoration: underline;
 }
-/* line 33, sass/elements/_page_content.scss */
+/* line 33, sass/elements/_page_content_mixin.scss */
 .category .content-area a:hover {
   text-decoration: none;
 }
-/* line 36, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content_mixin.scss */
 .category .content-area a.button, .category .content-area a.button:visited, .category .content-area a.button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 41, sass/elements/_page_content.scss */
+/* line 41, sass/elements/_page_content_mixin.scss */
 .category .content-area header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
-/* line 46, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content_mixin.scss */
 .category .content-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 50, sass/elements/_page_content.scss */
+/* line 50, sass/elements/_page_content_mixin.scss */
 .category .content-area ul li::before {
   content: "";
   background-color: #19458d;
@@ -1395,51 +1476,91 @@ img.aligncenter {
   position: relative;
   top: -0.1em;
 }
-/* line 63, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content_mixin.scss */
 .category .content-area ol {
   margin-left: 0;
 }
-/* line 67, sass/elements/_page_content.scss */
+/* line 67, sass/elements/_page_content_mixin.scss */
 .category .content-area .edit-link {
   display: none;
 }
-/* line 86, sass/elements/_page_content.scss */
+/* line 71, sass/elements/_page_content_mixin.scss */
+.category .content-area blockquote {
+  position: relative;
+  padding-left: 30px;
+  margin: 30px 0;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+/* line 78, sass/elements/_page_content_mixin.scss */
+.category .content-area blockquote::before {
+  position: absolute;
+  width: 4px;
+  background-color: #19458d;
+  border-radius: 4px;
+  left: 0;
+  height: 100%;
+}
+/* line 86, sass/elements/_page_content_mixin.scss */
+.category .content-area blockquote .quote-author {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+/* line 91, sass/elements/_page_content_mixin.scss */
+.category .content-area blockquote.blockquote-image {
+  padding-left: 180px;
+}
+/* line 93, sass/elements/_page_content_mixin.scss */
+.category .content-area blockquote.blockquote-image img {
+  width: 150px;
+  position: absolute;
+  left: 0;
+  top: 7.5px;
+}
+/* line 99, sass/elements/_page_content_mixin.scss */
+.category .content-area blockquote.blockquote-image::before {
+  width: 0;
+  height: 0;
+}
+/* line 16, sass/elements/_page_content.scss */
 .category .content-area h2 {
   margin-bottom: 0;
 }
-/* line 88, sass/elements/_page_content.scss */
+/* line 18, sass/elements/_page_content.scss */
 .category .content-area h2 a, .category .content-area h2 a:visited, .category .content-area h2 a:hover {
   text-decoration: none;
   width: 100%;
   display: block;
   border-bottom: 2px solid #92b4ec;
 }
-/* line 95, sass/elements/_page_content.scss */
+/* line 25, sass/elements/_page_content.scss */
 .category .content-area .entry-meta {
   font-size: 14px;
   margin-top: 7.5px;
   color: #19458d;
 }
-/* line 100, sass/elements/_page_content.scss */
+/* line 30, sass/elements/_page_content.scss */
 .category .content-area article {
   margin-bottom: 30px;
 }
-/* line 103, sass/elements/_page_content.scss */
+/* line 33, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation {
   margin-bottom: 30px;
   font-size: 22px;
 }
-/* line 106, sass/elements/_page_content.scss */
+/* line 36, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 111, sass/elements/_page_content.scss */
+/* line 41, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-previous {
   float: right;
 }
-/* line 113, sass/elements/_page_content.scss */
+/* line 43, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-previous a::after {
   content: "";
   width: 0;
@@ -1452,11 +1573,11 @@ img.aligncenter {
   top: 4px;
   margin-left: 15px;
 }
-/* line 126, sass/elements/_page_content.scss */
+/* line 56, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-next {
   float: left;
 }
-/* line 128, sass/elements/_page_content.scss */
+/* line 58, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-next a::before {
   content: "";
   width: 0;
@@ -1469,13 +1590,13 @@ img.aligncenter {
   top: 4px;
   margin-right: 15px;
 }
-/* line 142, sass/elements/_page_content.scss */
+/* line 72, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation a {
   color: #92b4ec;
 }
 
 /* Specifics for the donate page */
-/* line 149, sass/elements/_page_content.scss */
+/* line 79, sass/elements/_page_content.scss */
 .page-content-area #CAFDonateWidgetContainer > a {
   display: block;
   text-align: center;

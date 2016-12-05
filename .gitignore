@@ -16,6 +16,7 @@ wordpress/wp-content/plugins/*
 # Ignore build directories & files
 .sass-cache
 style.css.map
+editor-style.css.map
 
 # Ignore data folder in our dev directory
 dev/mysql_data

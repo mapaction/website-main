@@ -19,43 +19,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-$gutter-size: 30px;
-$margin-spread: 1000px;
-
-$primary-blue: #19458d;
-$primary-red: #e53d2f;
-$secondary-blue: #92b4ec;
-$secondary-green: #32a4a0;
-$secondary-green-light: #dff1f0;
-$secondary-grey-light: #eaeaea;
-
-$base-font-size: 18px;
-$base-font-size-large: 22px;
-$base-font-size-giant: 37px;
-$base-font-size-medium: 16px;
-$base-font-size-small: 14px;
-$base-line-height: 1.5;
-$base-font-family: "Arial", "sans-serif";
-
-$emergencies-height: 60px;
-$emergencies-height-small: $emergencies-height*0.8;
-
-$footer-min-height: 280px;
-
-$logo-height: 75px;
-$logo-width: 206px;
-$logo-height-small: $logo-height * 0.8;
-$logo-width-small: $logo-width * 0.8;
-
-$block-height: 320px;
-$block-title-height: 56px;
-$block-height-small: 270px;
-$block-height-tall: 380px;
-
-$site-max-width: 1200px;
-$two_column_min_width: 750px;
-$three_column_min_width: 1140px;
-$full_menu_min_width: 1023px;
+/* Settings & Variables */
+@import "settings";
 
 /* Browser reset/normalize */
 @import "reset";
@@ -71,7 +36,7 @@ $full_menu_min_width: 1023px;
 @import "elements/footer.scss";
 @import "elements/dashboard.scss";
 @import "elements/sidebar-navigation.scss";
-@import "elements/_page_content.scss";
+@import "elements/page_content.scss";
 
 /* General layout */
 @import "page_layout";

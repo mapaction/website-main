@@ -57,10 +57,46 @@ function mapaction_markup_emergencies( $items, $args ) {
 add_filter( 'wp_nav_menu_objects', 'mapaction_markup_emergencies', 10, 2 );
 
 /**
- * Custom mce buttons
+ * Custom mce buttons and styles
  */
 function mapaction_mce_buttons( $buttons ) {
-	$buttons[] = 'formatselect';
+	$buttons[] = 'styleselect';
 	return $buttons;
 }
 add_filter( 'mce_buttons', 'mapaction_mce_buttons' );
+
+function mapaction_before_init_insert_formats( $init_array ) {
+	$style_formats = array(
+		array(
+			'title' => 'Blockquotes',
+			'icon' => 'blockquote',
+			'items' => array(
+				array(
+					'title' => 'Blockquote',
+					'block' => 'blockquote',
+					'wrapper' => FALSE,
+					'icon' => 'blockquote'
+				),
+				array(
+					'title' => 'Blockquote (with image)',
+					'block' => 'blockquote',
+					'classes' => 'blockquote-image',
+					'wrapper' => FALSE,
+					'icon' => 'blockquote'
+				),
+				array(
+					'title' => 'Quote author',
+					'inline' => 'span',
+					'classes' => 'quote-author',
+					'icon' => 'blockquote'
+				)
+			)
+		)
+	);
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = json_encode( $style_formats );
+
+	return $init_array;
+}
+// Attach callback to 'tiny_mce_before_init'
+add_filter( 'tiny_mce_before_init', 'mapaction_before_init_insert_formats' );

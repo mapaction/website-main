@@ -65,6 +65,9 @@ function mapaction_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Add editor style
+	add_editor_style();
 }
 endif;
 add_action( 'after_setup_theme', 'mapaction_setup' );
