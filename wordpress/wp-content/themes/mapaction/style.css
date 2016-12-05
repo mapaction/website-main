@@ -1303,7 +1303,7 @@ img.aligncenter {
   height: 0;
 }
 /* line 101, sass/elements/_page_content_mixin.scss */
-.page-content-area .pull-out-box {
+.page-content-area .pull-out-box-right, .page-content-area .pull-out-box-left {
   width: 350px;
   text-align: center;
   background-color: #dff1f0;
@@ -1442,7 +1442,7 @@ img.aligncenter {
   height: 0;
 }
 /* line 101, sass/elements/_page_content_mixin.scss */
-.single-post .content-area .pull-out-box {
+.single-post .content-area .pull-out-box-right, .single-post .content-area .pull-out-box-left {
   width: 350px;
   text-align: center;
   background-color: #dff1f0;
@@ -1581,7 +1581,7 @@ img.aligncenter {
   height: 0;
 }
 /* line 101, sass/elements/_page_content_mixin.scss */
-.category .content-area .pull-out-box {
+.category .content-area .pull-out-box-right, .category .content-area .pull-out-box-left {
   width: 350px;
   text-align: center;
   background-color: #dff1f0;

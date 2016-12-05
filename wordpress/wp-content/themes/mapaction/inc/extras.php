@@ -94,14 +94,14 @@ function mapaction_before_init_insert_formats( $init_array ) {
 					'title' => 'Pull out box (right)',
 					'block' => 'div',
 					'wrapper' => FALSE,
-					'classes' => 'pull-out-box pull-out-box-right',
+					'classes' => 'pull-out-box-right',
 					'icon' => 'wp_page'
 				),
 				array(
 					'title' => 'Pull out box (left)',
 					'block' => 'div',
 					'wrapper' => FALSE,
-					'classes' => 'pull-out-box pull-out-box-left',
+					'classes' => 'pull-out-box-left',
 					'icon' => 'wp_page',
 				),
 			),

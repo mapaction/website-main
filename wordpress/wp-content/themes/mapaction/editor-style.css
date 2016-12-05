@@ -535,7 +535,7 @@ blockquote.blockquote-image::before {
 }
 
 /* line 101, sass/elements/_page_content_mixin.scss */
-.pull-out-box {
+.pull-out-box-right, .pull-out-box-left {
   width: 350px;
   text-align: center;
   background-color: #dff1f0;
