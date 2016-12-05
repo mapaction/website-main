@@ -83,11 +83,6 @@
 			left: 0;
 			height: 100%;
 		}
-		.quote-author {
-			color: black;
-			font-size: $base-font-size;
-			font-style: normal;
-		}
 		&.blockquote-image {
 			padding-left: 150px + $gutter-size;
 			img {
@@ -101,7 +96,35 @@
 				height: 0;
 			}
 		}
+	}
 
+	.pull-out-box {
+		width: $pull-out-box-width;
+		text-align: center;
+		background-color: $secondary-green-light;
+		padding: $gutter-size;
+		margin: $gutter-size;
+		color: $primary-blue;
+		font-style: italic;
+		font-size: $base-font-size-large;
+	}
+	.pull-out-box-right {
+		float: right;
+	}
+	.pull-out-box-left {
+		float: left;
+	}
+
+	/* Used to override themes, eg. in block quotes */
+	.plain-text {
+		color: black;
+		font-size: $base-font-size;
+		font-style: normal;
+	}
+	.blue-italicised {
+		color: $primary-blue;
+		font-style: italic;
+		font-size: $base-font-size-large;
 	}
 }
 

@@ -518,26 +518,57 @@ blockquote::before {
   height: 100%;
 }
 /* line 86, sass/elements/_page_content_mixin.scss */
-blockquote .quote-author {
-  color: black;
-  font-size: 18px;
-  font-style: normal;
-}
-/* line 91, sass/elements/_page_content_mixin.scss */
 blockquote.blockquote-image {
   padding-left: 180px;
 }
-/* line 93, sass/elements/_page_content_mixin.scss */
+/* line 88, sass/elements/_page_content_mixin.scss */
 blockquote.blockquote-image img {
   width: 150px;
   position: absolute;
   left: 0;
   top: 7.5px;
 }
-/* line 99, sass/elements/_page_content_mixin.scss */
+/* line 94, sass/elements/_page_content_mixin.scss */
 blockquote.blockquote-image::before {
   width: 0;
   height: 0;
+}
+
+/* line 101, sass/elements/_page_content_mixin.scss */
+.pull-out-box {
+  width: 350px;
+  text-align: center;
+  background-color: #dff1f0;
+  padding: 30px;
+  margin: 30px;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+
+/* line 111, sass/elements/_page_content_mixin.scss */
+.pull-out-box-right {
+  float: right;
+}
+
+/* line 114, sass/elements/_page_content_mixin.scss */
+.pull-out-box-left {
+  float: left;
+}
+
+/* Used to override themes, eg. in block quotes */
+/* line 119, sass/elements/_page_content_mixin.scss */
+.plain-text {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/* line 124, sass/elements/_page_content_mixin.scss */
+.blue-italicised {
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=editor-style.css.map */

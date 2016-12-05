@@ -1196,6 +1196,10 @@ img.aligncenter {
    apply to any container that contains main website
    content */
 /* General page styling */
+/* line 4, sass/elements/_page_content.scss */
+.page-content-area {
+  /* Used to override themes, eg. in block quotes */
+}
 /* line 5, sass/elements/_page_content_mixin.scss */
 .page-content-area h1 {
   color: #19458d;
@@ -1283,29 +1287,58 @@ img.aligncenter {
   height: 100%;
 }
 /* line 86, sass/elements/_page_content_mixin.scss */
-.page-content-area blockquote .quote-author {
-  color: black;
-  font-size: 18px;
-  font-style: normal;
-}
-/* line 91, sass/elements/_page_content_mixin.scss */
 .page-content-area blockquote.blockquote-image {
   padding-left: 180px;
 }
-/* line 93, sass/elements/_page_content_mixin.scss */
+/* line 88, sass/elements/_page_content_mixin.scss */
 .page-content-area blockquote.blockquote-image img {
   width: 150px;
   position: absolute;
   left: 0;
   top: 7.5px;
 }
-/* line 99, sass/elements/_page_content_mixin.scss */
+/* line 94, sass/elements/_page_content_mixin.scss */
 .page-content-area blockquote.blockquote-image::before {
   width: 0;
   height: 0;
 }
+/* line 101, sass/elements/_page_content_mixin.scss */
+.page-content-area .pull-out-box {
+  width: 350px;
+  text-align: center;
+  background-color: #dff1f0;
+  padding: 30px;
+  margin: 30px;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+/* line 111, sass/elements/_page_content_mixin.scss */
+.page-content-area .pull-out-box-right {
+  float: right;
+}
+/* line 114, sass/elements/_page_content_mixin.scss */
+.page-content-area .pull-out-box-left {
+  float: left;
+}
+/* line 119, sass/elements/_page_content_mixin.scss */
+.page-content-area .plain-text {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+/* line 124, sass/elements/_page_content_mixin.scss */
+.page-content-area .blue-italicised {
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
 
 /* General single post styling */
+/* line 9, sass/elements/_page_content.scss */
+.single-post .content-area {
+  /* Used to override themes, eg. in block quotes */
+}
 /* line 5, sass/elements/_page_content_mixin.scss */
 .single-post .content-area h1 {
   color: #19458d;
@@ -1393,29 +1426,58 @@ img.aligncenter {
   height: 100%;
 }
 /* line 86, sass/elements/_page_content_mixin.scss */
-.single-post .content-area blockquote .quote-author {
-  color: black;
-  font-size: 18px;
-  font-style: normal;
-}
-/* line 91, sass/elements/_page_content_mixin.scss */
 .single-post .content-area blockquote.blockquote-image {
   padding-left: 180px;
 }
-/* line 93, sass/elements/_page_content_mixin.scss */
+/* line 88, sass/elements/_page_content_mixin.scss */
 .single-post .content-area blockquote.blockquote-image img {
   width: 150px;
   position: absolute;
   left: 0;
   top: 7.5px;
 }
-/* line 99, sass/elements/_page_content_mixin.scss */
+/* line 94, sass/elements/_page_content_mixin.scss */
 .single-post .content-area blockquote.blockquote-image::before {
   width: 0;
   height: 0;
 }
+/* line 101, sass/elements/_page_content_mixin.scss */
+.single-post .content-area .pull-out-box {
+  width: 350px;
+  text-align: center;
+  background-color: #dff1f0;
+  padding: 30px;
+  margin: 30px;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+/* line 111, sass/elements/_page_content_mixin.scss */
+.single-post .content-area .pull-out-box-right {
+  float: right;
+}
+/* line 114, sass/elements/_page_content_mixin.scss */
+.single-post .content-area .pull-out-box-left {
+  float: left;
+}
+/* line 119, sass/elements/_page_content_mixin.scss */
+.single-post .content-area .plain-text {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+/* line 124, sass/elements/_page_content_mixin.scss */
+.single-post .content-area .blue-italicised {
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
 
 /* Category listing page styling */
+/* line 14, sass/elements/_page_content.scss */
+.category .content-area {
+  /* Used to override themes, eg. in block quotes */
+}
 /* line 5, sass/elements/_page_content_mixin.scss */
 .category .content-area h1 {
   color: #19458d;
@@ -1503,26 +1565,51 @@ img.aligncenter {
   height: 100%;
 }
 /* line 86, sass/elements/_page_content_mixin.scss */
-.category .content-area blockquote .quote-author {
-  color: black;
-  font-size: 18px;
-  font-style: normal;
-}
-/* line 91, sass/elements/_page_content_mixin.scss */
 .category .content-area blockquote.blockquote-image {
   padding-left: 180px;
 }
-/* line 93, sass/elements/_page_content_mixin.scss */
+/* line 88, sass/elements/_page_content_mixin.scss */
 .category .content-area blockquote.blockquote-image img {
   width: 150px;
   position: absolute;
   left: 0;
   top: 7.5px;
 }
-/* line 99, sass/elements/_page_content_mixin.scss */
+/* line 94, sass/elements/_page_content_mixin.scss */
 .category .content-area blockquote.blockquote-image::before {
   width: 0;
   height: 0;
+}
+/* line 101, sass/elements/_page_content_mixin.scss */
+.category .content-area .pull-out-box {
+  width: 350px;
+  text-align: center;
+  background-color: #dff1f0;
+  padding: 30px;
+  margin: 30px;
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
+}
+/* line 111, sass/elements/_page_content_mixin.scss */
+.category .content-area .pull-out-box-right {
+  float: right;
+}
+/* line 114, sass/elements/_page_content_mixin.scss */
+.category .content-area .pull-out-box-left {
+  float: left;
+}
+/* line 119, sass/elements/_page_content_mixin.scss */
+.category .content-area .plain-text {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+}
+/* line 124, sass/elements/_page_content_mixin.scss */
+.category .content-area .blue-italicised {
+  color: #19458d;
+  font-style: italic;
+  font-size: 22px;
 }
 /* line 16, sass/elements/_page_content.scss */
 .category .content-area h2 {

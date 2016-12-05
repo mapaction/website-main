@@ -84,11 +84,43 @@ function mapaction_before_init_insert_formats( $init_array ) {
 					'wrapper' => FALSE,
 					'icon' => 'blockquote'
 				),
+			)
+		),
+		array(
+			'title' => 'Pull out boxes',
+			'icon' => 'wp_page',
+			'items' => array(
 				array(
-					'title' => 'Quote author',
+					'title' => 'Pull out box (right)',
+					'block' => 'div',
+					'wrapper' => FALSE,
+					'classes' => 'pull-out-box pull-out-box-right',
+					'icon' => 'wp_page'
+				),
+				array(
+					'title' => 'Pull out box (left)',
+					'block' => 'div',
+					'wrapper' => FALSE,
+					'classes' => 'pull-out-box pull-out-box-left',
+					'icon' => 'wp_page',
+				),
+			),
+		),
+		array(
+			'title' => 'Text styles',
+			'icon' => 'pastetext',
+			'items' => array(
+				array(
+					'title' => 'Plain text',
 					'inline' => 'span',
-					'classes' => 'quote-author',
-					'icon' => 'blockquote'
+					'classes' => 'plain-text',
+					'icon' => 'pastetext'
+				),
+				array(
+					'title' => 'Blue italicised',
+					'inline' => 'span',
+					'classes' => 'blue-italicised',
+					'icon' => 'pastetext'
 				)
 			)
 		)
