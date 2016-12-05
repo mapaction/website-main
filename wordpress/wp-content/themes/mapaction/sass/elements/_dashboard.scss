@@ -44,6 +44,7 @@
 
 	> .ma-home-widget-text {
 		font-size: $base-font-size-large;
+		padding: $gutter-size/2 $gutter-size;
 		@media screen and (max-width: $three_column_min_width) {
 			font-size: $base-font-size;
 		}
@@ -93,13 +94,14 @@
 	&.image-right {
 		> img {
 			float: right;
-			margin-top: $gutter-size;
+			margin-top: $gutter-size/2;
 		}
 		> .ma-home-widget-text {
 			float: left;
 			width: 50%;
-			margin-top: $gutter-size;
+			margin-top: $gutter-size/2;
 			padding-left: $gutter-size;
+			padding-top: 0;
 		}
 		&::after {
 			content: "";

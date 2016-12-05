@@ -875,6 +875,7 @@ img.aligncenter {
 /* line 45, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget > .ma-home-widget-text {
   font-size: 22px;
+  padding: 15px 30px;
 }
 @media screen and (max-width: 1140px) {
   /* line 45, sass/elements/_dashboard.scss */
@@ -882,79 +883,80 @@ img.aligncenter {
     font-size: 18px;
   }
 }
-/* line 53, sass/elements/_dashboard.scss */
+/* line 54, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-light-green {
   background-color: #dff1f0;
   color: #19458d;
 }
-/* line 56, sass/elements/_dashboard.scss */
+/* line 57, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-light-green a.ma-home-widget {
   color: #19458d;
 }
-/* line 59, sass/elements/_dashboard.scss */
+/* line 60, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-light-green > .ma-home-widget-text {
   background-color: #dff1f0;
 }
-/* line 63, sass/elements/_dashboard.scss */
+/* line 64, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-light-grey {
   background-color: #eaeaea;
   color: black;
 }
-/* line 66, sass/elements/_dashboard.scss */
+/* line 67, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-light-grey a.ma-home-widget {
   color: black;
 }
-/* line 69, sass/elements/_dashboard.scss */
+/* line 70, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-light-grey > .ma-home-widget-text {
   background-color: #eaeaea;
 }
-/* line 73, sass/elements/_dashboard.scss */
+/* line 74, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-transparent {
   color: black;
 }
-/* line 75, sass/elements/_dashboard.scss */
+/* line 76, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.background-transparent a.ma-home-widget {
   color: black;
 }
-/* line 81, sass/elements/_dashboard.scss */
+/* line 82, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-above {
   position: relative;
 }
-/* line 83, sass/elements/_dashboard.scss */
+/* line 84, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-above > .ma-home-widget-text {
   padding: 7.5px 30px 15px 30px;
   position: absolute;
   bottom: 3.75px;
   width: 100%;
 }
-/* line 89, sass/elements/_dashboard.scss */
+/* line 90, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-above > img {
   width: 100%;
 }
-/* line 94, sass/elements/_dashboard.scss */
+/* line 95, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-right > img {
   float: right;
-  margin-top: 30px;
+  margin-top: 15px;
 }
-/* line 98, sass/elements/_dashboard.scss */
+/* line 99, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-right > .ma-home-widget-text {
   float: left;
   width: 50%;
-  margin-top: 30px;
+  margin-top: 15px;
   padding-left: 30px;
+  padding-top: 0;
 }
-/* line 104, sass/elements/_dashboard.scss */
+/* line 106, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-right::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 110, sass/elements/_dashboard.scss */
+/* line 112, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget.image-full {
   background-size: cover;
   background-position: center;
 }
-/* line 116, sass/elements/_dashboard.scss */
+/* line 118, sass/elements/_dashboard.scss */
 .dashboard > section > .ma-home-widget .button {
   display: block;
   width: 100%;
@@ -964,11 +966,11 @@ img.aligncenter {
 }
 
 /* The very first home block behaves differently */
-/* line 126, sass/elements/_dashboard.scss */
+/* line 128, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget {
   position: relative;
 }
-/* line 128, sass/elements/_dashboard.scss */
+/* line 130, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget > .widget-title {
   width: 65%;
   color: black;
@@ -981,14 +983,14 @@ img.aligncenter {
   bottom: 100px;
 }
 @media screen and (max-width: 750px) {
-  /* line 128, sass/elements/_dashboard.scss */
+  /* line 130, sass/elements/_dashboard.scss */
   .dashboard > section:first-child > .ma-home-widget > .widget-title {
     width: 100%;
     bottom: auto;
     top: 50px;
   }
 }
-/* line 144, sass/elements/_dashboard.scss */
+/* line 146, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
   color: white;
   background-color: #19458d;
@@ -1004,7 +1006,7 @@ img.aligncenter {
   min-height: 66px;
 }
 @media screen and (max-width: 750px) {
-  /* line 144, sass/elements/_dashboard.scss */
+  /* line 146, sass/elements/_dashboard.scss */
   .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
     width: 70%;
   }
