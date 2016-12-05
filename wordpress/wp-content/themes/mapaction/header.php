@@ -15,7 +15,15 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<?php $icon_path = get_template_directory_uri() . '/icons'; ?>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $icon_path;?>/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php echo $icon_path;?>/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php echo $icon_path;?>/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php echo $icon_path;?>/manifest.json">
+<link rel="mask-icon" href="<?php echo $icon_path;?>/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="<?php echo $icon_path;?>/favicon.ico">
+<meta name="msapplication-config" content="<?php echo $icon_path;?>/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 <?php wp_head(); ?>
 </head>
 
