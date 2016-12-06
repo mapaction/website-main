@@ -1364,7 +1364,7 @@ img.aligncenter {
   text-align: center;
   background-color: #dff1f0;
   padding: 30px;
-  margin: 30px;
+  margin: 0 0 30px 0;
   color: #19458d;
   font-style: italic;
   font-size: 22px;
@@ -1372,24 +1372,26 @@ img.aligncenter {
 /* line 113, sass/elements/_page_content_mixin.scss */
 .page-content-area .pull-out-box-right {
   float: right;
+  margin: 0 0 30px 30px;
 }
-/* line 116, sass/elements/_page_content_mixin.scss */
+/* line 117, sass/elements/_page_content_mixin.scss */
 .page-content-area .pull-out-box-left {
   float: left;
+  margin: 0 30px 30px 0;
 }
-/* line 121, sass/elements/_page_content_mixin.scss */
+/* line 123, sass/elements/_page_content_mixin.scss */
 .page-content-area .plain-text {
   color: black;
   font-size: 18px;
   font-style: normal;
 }
-/* line 126, sass/elements/_page_content_mixin.scss */
+/* line 128, sass/elements/_page_content_mixin.scss */
 .page-content-area .blue-italicised {
   color: #19458d;
   font-style: italic;
   font-size: 22px;
 }
-/* line 133, sass/elements/_page_content_mixin.scss */
+/* line 135, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed {
   /* Style the block container */
   /* Style the header when directly beneath the container
@@ -1551,48 +1553,48 @@ img.aligncenter {
   text-align: center;
   font-size: 22px;
 }
-/* line 137, sass/elements/_page_content_mixin.scss */
+/* line 139, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed > section > h2 {
   font-size: 18px;
   padding: 10px 30px;
   height: 46px;
 }
-/* line 142, sass/elements/_page_content_mixin.scss */
+/* line 144, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed > section > .ma-home-widget > h2 {
   font-size: 18px;
   height: 46px;
   padding: 10px 30px;
 }
-/* line 147, sass/elements/_page_content_mixin.scss */
+/* line 149, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed > section > .ma-home-widget > .ma-home-widget-text {
   font-size: 18px;
   padding: 15px 30px;
 }
-/* line 159, sass/elements/_page_content_mixin.scss */
+/* line 161, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 165, sass/elements/_page_content_mixin.scss */
+/* line 167, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed > section {
   width: calc( 33% - 30px );
   margin: 0 15px 30px 15px;
   float: left;
 }
 @media screen and (max-width: 1140px) {
-  /* line 165, sass/elements/_page_content_mixin.scss */
+  /* line 167, sass/elements/_page_content_mixin.scss */
   .page-content-area .ma-widgets-embed > section {
     width: calc( 50% - 30px );
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 165, sass/elements/_page_content_mixin.scss */
+  /* line 167, sass/elements/_page_content_mixin.scss */
   .page-content-area .ma-widgets-embed > section {
     width: calc( 100% - 30px );
   }
 }
-/* line 176, sass/elements/_page_content_mixin.scss */
+/* line 178, sass/elements/_page_content_mixin.scss */
 .page-content-area .ma-widgets-embed > section > .ma-home-widget {
   width: 100%;
   height: 194px;
@@ -1712,7 +1714,7 @@ img.aligncenter {
   text-align: center;
   background-color: #dff1f0;
   padding: 30px;
-  margin: 30px;
+  margin: 0 0 30px 0;
   color: #19458d;
   font-style: italic;
   font-size: 22px;
@@ -1720,24 +1722,26 @@ img.aligncenter {
 /* line 113, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .pull-out-box-right {
   float: right;
+  margin: 0 0 30px 30px;
 }
-/* line 116, sass/elements/_page_content_mixin.scss */
+/* line 117, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .pull-out-box-left {
   float: left;
+  margin: 0 30px 30px 0;
 }
-/* line 121, sass/elements/_page_content_mixin.scss */
+/* line 123, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .plain-text {
   color: black;
   font-size: 18px;
   font-style: normal;
 }
-/* line 126, sass/elements/_page_content_mixin.scss */
+/* line 128, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .blue-italicised {
   color: #19458d;
   font-style: italic;
   font-size: 22px;
 }
-/* line 133, sass/elements/_page_content_mixin.scss */
+/* line 135, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed {
   /* Style the block container */
   /* Style the header when directly beneath the container
@@ -1899,48 +1903,48 @@ img.aligncenter {
   text-align: center;
   font-size: 22px;
 }
-/* line 137, sass/elements/_page_content_mixin.scss */
+/* line 139, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed > section > h2 {
   font-size: 18px;
   padding: 10px 30px;
   height: 46px;
 }
-/* line 142, sass/elements/_page_content_mixin.scss */
+/* line 144, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed > section > .ma-home-widget > h2 {
   font-size: 18px;
   height: 46px;
   padding: 10px 30px;
 }
-/* line 147, sass/elements/_page_content_mixin.scss */
+/* line 149, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed > section > .ma-home-widget > .ma-home-widget-text {
   font-size: 18px;
   padding: 15px 30px;
 }
-/* line 159, sass/elements/_page_content_mixin.scss */
+/* line 161, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 165, sass/elements/_page_content_mixin.scss */
+/* line 167, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed > section {
   width: calc( 33% - 30px );
   margin: 0 15px 30px 15px;
   float: left;
 }
 @media screen and (max-width: 1140px) {
-  /* line 165, sass/elements/_page_content_mixin.scss */
+  /* line 167, sass/elements/_page_content_mixin.scss */
   .single-post .content-area .ma-widgets-embed > section {
     width: calc( 50% - 30px );
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 165, sass/elements/_page_content_mixin.scss */
+  /* line 167, sass/elements/_page_content_mixin.scss */
   .single-post .content-area .ma-widgets-embed > section {
     width: calc( 100% - 30px );
   }
 }
-/* line 176, sass/elements/_page_content_mixin.scss */
+/* line 178, sass/elements/_page_content_mixin.scss */
 .single-post .content-area .ma-widgets-embed > section > .ma-home-widget {
   width: 100%;
   height: 194px;
@@ -2060,7 +2064,7 @@ img.aligncenter {
   text-align: center;
   background-color: #dff1f0;
   padding: 30px;
-  margin: 30px;
+  margin: 0 0 30px 0;
   color: #19458d;
   font-style: italic;
   font-size: 22px;
@@ -2068,24 +2072,26 @@ img.aligncenter {
 /* line 113, sass/elements/_page_content_mixin.scss */
 .category .content-area .pull-out-box-right {
   float: right;
+  margin: 0 0 30px 30px;
 }
-/* line 116, sass/elements/_page_content_mixin.scss */
+/* line 117, sass/elements/_page_content_mixin.scss */
 .category .content-area .pull-out-box-left {
   float: left;
+  margin: 0 30px 30px 0;
 }
-/* line 121, sass/elements/_page_content_mixin.scss */
+/* line 123, sass/elements/_page_content_mixin.scss */
 .category .content-area .plain-text {
   color: black;
   font-size: 18px;
   font-style: normal;
 }
-/* line 126, sass/elements/_page_content_mixin.scss */
+/* line 128, sass/elements/_page_content_mixin.scss */
 .category .content-area .blue-italicised {
   color: #19458d;
   font-style: italic;
   font-size: 22px;
 }
-/* line 133, sass/elements/_page_content_mixin.scss */
+/* line 135, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed {
   /* Style the block container */
   /* Style the header when directly beneath the container
@@ -2247,48 +2253,48 @@ img.aligncenter {
   text-align: center;
   font-size: 22px;
 }
-/* line 137, sass/elements/_page_content_mixin.scss */
+/* line 139, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed > section > h2 {
   font-size: 18px;
   padding: 10px 30px;
   height: 46px;
 }
-/* line 142, sass/elements/_page_content_mixin.scss */
+/* line 144, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed > section > .ma-home-widget > h2 {
   font-size: 18px;
   height: 46px;
   padding: 10px 30px;
 }
-/* line 147, sass/elements/_page_content_mixin.scss */
+/* line 149, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed > section > .ma-home-widget > .ma-home-widget-text {
   font-size: 18px;
   padding: 15px 30px;
 }
-/* line 159, sass/elements/_page_content_mixin.scss */
+/* line 161, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 165, sass/elements/_page_content_mixin.scss */
+/* line 167, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed > section {
   width: calc( 33% - 30px );
   margin: 0 15px 30px 15px;
   float: left;
 }
 @media screen and (max-width: 1140px) {
-  /* line 165, sass/elements/_page_content_mixin.scss */
+  /* line 167, sass/elements/_page_content_mixin.scss */
   .category .content-area .ma-widgets-embed > section {
     width: calc( 50% - 30px );
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 165, sass/elements/_page_content_mixin.scss */
+  /* line 167, sass/elements/_page_content_mixin.scss */
   .category .content-area .ma-widgets-embed > section {
     width: calc( 100% - 30px );
   }
 }
-/* line 176, sass/elements/_page_content_mixin.scss */
+/* line 178, sass/elements/_page_content_mixin.scss */
 .category .content-area .ma-widgets-embed > section > .ma-home-widget {
   width: 100%;
   height: 194px;

@@ -105,16 +105,18 @@
 		text-align: center;
 		background-color: $secondary-green-light;
 		padding: $gutter-size;
-		margin: $gutter-size;
+		margin: 0 0 $gutter-size 0;
 		color: $primary-blue;
 		font-style: italic;
 		font-size: $base-font-size-large;
 	}
 	.pull-out-box-right {
 		float: right;
+		margin: 0 0 $gutter-size $gutter-size;
 	}
 	.pull-out-box-left {
 		float: left;
+		margin: 0 $gutter-size $gutter-size 0;
 	}
 
 	/* Used to override themes, eg. in block quotes */
