@@ -2678,8 +2678,8 @@ img.aligncenter {
 
 /* line 231, sass/_page_layout.scss */
 .page-content-area {
-  /* Width is the same with or without sidebar */
   width: calc( 100% - 206px - 60px );
+  float: right;
 }
 @media screen and (max-width: 750px) {
   /* line 231, sass/_page_layout.scss */
@@ -2688,22 +2688,19 @@ img.aligncenter {
   }
 }
 
-/* line 240, sass/_page_layout.scss */
-.page-parent .site-content::after, .page-child .site-content::after {
+/* line 239, sass/_page_layout.scss */
+.page .site-content::after {
   display: block;
   content: "";
   clear: both;
 }
+
 /* line 247, sass/_page_layout.scss */
-.page-parent .page-content-area, .page-child .page-content-area {
-  float: right;
-}
-/* line 250, sass/_page_layout.scss */
 .page-parent .sidebar-navigation-layout, .page-child .sidebar-navigation-layout {
   width: 206px;
 }
 @media screen and (max-width: 750px) {
-  /* line 250, sass/_page_layout.scss */
+  /* line 247, sass/_page_layout.scss */
   .page-parent .sidebar-navigation-layout, .page-child .sidebar-navigation-layout {
     display: none;
   }
@@ -2712,29 +2709,29 @@ img.aligncenter {
 /**
  * Category page layout
  */
-/* line 262, sass/_page_layout.scss */
+/* line 259, sass/_page_layout.scss */
 .category .content-area {
   width: calc( 100% - 206px - 60px );
   float: right;
 }
 @media screen and (max-width: 750px) {
-  /* line 262, sass/_page_layout.scss */
+  /* line 259, sass/_page_layout.scss */
   .category .content-area {
     width: 100%;
   }
 }
-/* line 271, sass/_page_layout.scss */
+/* line 268, sass/_page_layout.scss */
 .category .site-content::after {
   display: block;
   content: "";
   clear: both;
 }
-/* line 278, sass/_page_layout.scss */
+/* line 275, sass/_page_layout.scss */
 .category .sidebar-navigation-layout {
   width: 206px;
 }
 @media screen and (max-width: 750px) {
-  /* line 278, sass/_page_layout.scss */
+  /* line 275, sass/_page_layout.scss */
   .category .sidebar-navigation-layout {
     display: none;
   }
@@ -2743,29 +2740,29 @@ img.aligncenter {
 /**
  * Single post page layout
  */
-/* line 290, sass/_page_layout.scss */
+/* line 287, sass/_page_layout.scss */
 .single-post .content-area {
   width: calc( 100% - 206px - 60px );
   float: right;
 }
 @media screen and (max-width: 750px) {
-  /* line 290, sass/_page_layout.scss */
+  /* line 287, sass/_page_layout.scss */
   .single-post .content-area {
     width: 100%;
   }
 }
-/* line 299, sass/_page_layout.scss */
+/* line 296, sass/_page_layout.scss */
 .single-post .site-content::after {
   display: block;
   content: "";
   clear: both;
 }
-/* line 306, sass/_page_layout.scss */
+/* line 303, sass/_page_layout.scss */
 .single-post .sidebar-navigation-layout {
   width: 206px;
 }
 @media screen and (max-width: 750px) {
-  /* line 306, sass/_page_layout.scss */
+  /* line 303, sass/_page_layout.scss */
   .single-post .sidebar-navigation-layout {
     display: none;
   }
