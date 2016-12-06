@@ -1,0 +1,147 @@
+/*
+ * Mixin defining the style of the Map Action
+ * Home Block widget (which can be in other places
+ * than the home page!). The mixin does not define
+ * the layout, which is context dependent.
+ *
+ * Mixin should be applied to parent container
+ * (eg. .dashboard or .ma-home-widget-embed),
+ * and it is expected widgets are defined within
+ * 'section' tags.
+ */
+@mixin home_widget_styles() {
+	/* Style the block container */
+	& > section {
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	/* Style the header when directly beneath the container
+	   (eg. for text widget ) */
+	& > section > h2 {
+		background-color: $secondary-green;
+		font-size: $base-font-size-large; /* Maybe override */
+		padding: $gutter-size/3 $gutter-size; /* Maybe override */
+		margin: 0;
+		border-radius: 4px 4px 0 0;
+		height: $block-title-height; /* Maybe override */
+		color: white;
+		text-decoration: none;
+
+		& > a, & > a:visited, & > a:hover {
+			color: white;
+			text-decoration: none;
+			display: block;
+		}
+	}
+
+	/* Whole block as a link */
+	& > section > a.ma-home-widget {
+		display: block;
+		border: 0;
+		text-decoration: none;
+	}
+
+	/* Style the block */
+	& > section > .ma-home-widget {
+		border-radius: 4px;
+		overflow: hidden;
+
+		/* Style ma-home-widget specific header */
+		> h2 {
+			background-color: $secondary-green;
+			font-size: $base-font-size-large; /* Maybe override */
+			height: $block-title-height; /* Maybe override */
+			color: white;
+			padding: $gutter-size/3 $gutter-size; /* Maybe override */
+			margin: 0;
+			border-radius: 4px 4px 0 0;
+		}
+
+		> h2 > a, > h2 > a:visited, > h2 > a:hover {
+			color: white;
+			text-decoration: none;
+			display: block;
+		}
+
+		> .ma-home-widget-text {
+			font-size: $base-font-size-large; /* Maybe override */
+			padding: $gutter-size/2 $gutter-size; /* Maybe override */
+		}
+
+		/* Custom background colors */
+		&.background-light-green {
+			background-color: $secondary-green-light;
+			color: $primary-blue;
+			a.ma-home-widget {
+				color: $primary-blue;
+			}
+			> .ma-home-widget-text {
+				background-color: $secondary-green-light;
+			}
+		}
+		&.background-light-grey {
+			background-color: $secondary-grey-light;
+			color: black;
+			a.ma-home-widget {
+				color: black;
+			}
+			> .ma-home-widget-text {
+				background-color: $secondary-grey-light;
+			}
+		}
+		&.background-transparent {
+			color: black;
+			a.ma-home-widget {
+				color: black;
+			}
+		}
+
+		/* Handle image placement */
+		&.image-above {
+			position: relative;
+			> .ma-home-widget-text {
+				padding: $gutter-size/4 $gutter-size $gutter-size/2 $gutter-size;
+				position: absolute;
+				bottom: $gutter-size/8;
+				width: 100%;
+			}
+			> img {
+				width: 100%;
+			}
+		}
+		&.image-right {
+			> img {
+				float: right;
+				margin-top: $gutter-size/2;
+			}
+			> .ma-home-widget-text {
+				float: left;
+				width: 50%;
+				margin-top: $gutter-size/2;
+				padding-left: $gutter-size;
+				padding-top: 0;
+			}
+			&::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		}
+		&.image-full {
+			background-size: cover;
+			background-position: center;
+		}
+
+		/* Buttons */
+		.button {
+			display: block;
+			width: 100%;
+			margin-top: $gutter-size/4;
+			text-align: center;
+			font-size: $base-font-size-large;
+		}
+	}
+}
+
+

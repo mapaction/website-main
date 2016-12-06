@@ -1,126 +1,23 @@
-.dashboard > section {
-	border-radius: 4px;
-	overflow: hidden;
+@import "elements/home_widgets_mixin";
 
-	> h2 {
-		background-color: $secondary-green;
+.dashboard {
+	@include home_widget_styles();
+	& > section > h2 {
 		font-size: $base-font-size-large;
 		padding: $gutter-size/3 $gutter-size;
-		margin: 0;
-		border-radius: 4px 4px 0 0;
 		height: $block-title-height;
-		color: white;
-		text-decoration: none;
 	}
-	> h2 > a, > h2 > a:visited, > h2 > a:hover {
-		color: white;
-		text-decoration: none;
-		display: block;
-	}
-}
-
-.dashboard > section > a.ma-home-widget {
-	display: block;
-	border: 0;
-	text-decoration: none;
-}
-.dashboard > section > .ma-home-widget {
-	border-radius: 4px;
-	overflow: hidden;
-
-	> h2 {
-		background-color: $secondary-green;
+	& > section > .ma-home-widget > h2 {
 		font-size: $base-font-size-large;
-		color: white;
+		height: $block-title-height;
 		padding: $gutter-size/3 $gutter-size;
-		margin: 0;
-		border-radius: 4px 4px 0 0;
 	}
-	> h2 > a, > h2 > a:visited, > h2 > a:hover {
-		color: white;
-		text-decoration: none;
-		display: block;
-	}
-
-	> .ma-home-widget-text {
+	& > section > .ma-home-widget > .ma-home-widget-text {
 		font-size: $base-font-size-large;
 		padding: $gutter-size/2 $gutter-size;
 		@media screen and (max-width: $three_column_min_width) {
 			font-size: $base-font-size;
 		}
-	}
-
-	/* Custom background colors */
-	&.background-light-green {
-		background-color: $secondary-green-light;
-		color: $primary-blue;
-		a.ma-home-widget {
-			color: $primary-blue;
-		}
-		> .ma-home-widget-text {
-			background-color: $secondary-green-light;
-		}
-	}
-	&.background-light-grey {
-		background-color: $secondary-grey-light;
-		color: black;
-		a.ma-home-widget {
-			color: black;
-		}
-		> .ma-home-widget-text {
-			background-color: $secondary-grey-light;
-		}
-	}
-	&.background-transparent {
-		color: black;
-		a.ma-home-widget {
-			color: black;
-		}
-	}
-
-	/* Handle image placement */
-	&.image-above {
-		position: relative;
-		> .ma-home-widget-text {
-			padding: $gutter-size/4 $gutter-size $gutter-size/2 $gutter-size;
-			position: absolute;
-			bottom: $gutter-size/8;
-			width: 100%;
-		}
-		> img {
-			width: 100%;
-		}
-	}
-	&.image-right {
-		> img {
-			float: right;
-			margin-top: $gutter-size/2;
-		}
-		> .ma-home-widget-text {
-			float: left;
-			width: 50%;
-			margin-top: $gutter-size/2;
-			padding-left: $gutter-size;
-			padding-top: 0;
-		}
-		&::after {
-			content: "";
-			display: block;
-			clear: both;
-		}
-	}
-	&.image-full {
-		background-size: cover;
-		background-position: center;
-	}
-
-	/* Buttons */
-	.button {
-		display: block;
-		width: 100%;
-		margin-top: $gutter-size/4;
-		text-align: center;
-		font-size: $base-font-size-large;
 	}
 }
 
