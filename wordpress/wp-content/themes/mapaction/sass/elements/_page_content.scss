@@ -10,8 +10,14 @@
 	@include content_area_styles();
 }
 
+/* 404 page styling */
+.error404 .content-area {
+	@include content_area_styles();
+}
+
 /* Category listing page styling */
-.category .content-area {
+.category .content-area,
+.search .content-area {
 	@include content_area_styles();
 	h2 {
 		margin-bottom: 0;

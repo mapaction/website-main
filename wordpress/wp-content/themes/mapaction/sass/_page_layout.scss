@@ -228,14 +228,18 @@
 	margin-top: $gutter-size;
 }
 
-.page-content-area {
+.page-content-area,
+.error404 .content-area,
+.search .content-area {
 	width: calc( 100% - #{ $logo-width } - #{ 2*$gutter-size } );
 	float: right;
 	@media screen and (max-width: $two_column_min_width) {
 		width: 100%;
 	}
 }
-.page .site-content {
+.page .site-content,
+.error404 .site-content,
+.search .site-content {
 	&::after {
 		display: block;
 		content: "";
