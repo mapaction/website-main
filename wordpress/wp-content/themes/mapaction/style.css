@@ -1029,6 +1029,7 @@ img.aligncenter {
   width: 65%;
   color: black;
   line-height: 1.25em;
+  height: auto;
   font-size: 37px;
   font-weight: normal;
   background-color: rgba(255, 255, 255, 0.75);
@@ -1044,7 +1045,7 @@ img.aligncenter {
     top: 50px;
   }
 }
-/* line 43, sass/elements/_dashboard.scss */
+/* line 44, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
   color: white;
   background-color: #19458d;
@@ -1060,7 +1061,7 @@ img.aligncenter {
   min-height: 66px;
 }
 @media screen and (max-width: 750px) {
-  /* line 43, sass/elements/_dashboard.scss */
+  /* line 44, sass/elements/_dashboard.scss */
   .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
     width: 70%;
   }
@@ -2348,21 +2349,26 @@ img.aligncenter {
   margin-bottom: 30px;
 }
 /* line 33, sass/elements/_page_content.scss */
+.category .content-area article footer a.read-more-link {
+  font-size: 14px;
+  color: #19458d;
+}
+/* line 38, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation {
   margin-bottom: 30px;
   font-size: 22px;
 }
-/* line 36, sass/elements/_page_content.scss */
+/* line 41, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 41, sass/elements/_page_content.scss */
+/* line 46, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-previous {
   float: right;
 }
-/* line 43, sass/elements/_page_content.scss */
+/* line 48, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-previous a::after {
   content: "";
   width: 0;
@@ -2375,11 +2381,11 @@ img.aligncenter {
   top: 4px;
   margin-left: 15px;
 }
-/* line 56, sass/elements/_page_content.scss */
+/* line 61, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-next {
   float: left;
 }
-/* line 58, sass/elements/_page_content.scss */
+/* line 63, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation .nav-next a::before {
   content: "";
   width: 0;
@@ -2392,13 +2398,13 @@ img.aligncenter {
   top: 4px;
   margin-right: 15px;
 }
-/* line 72, sass/elements/_page_content.scss */
+/* line 77, sass/elements/_page_content.scss */
 .category .content-area .posts-navigation a {
   color: #92b4ec;
 }
 
 /* Specifics for the donate page */
-/* line 79, sass/elements/_page_content.scss */
+/* line 84, sass/elements/_page_content.scss */
 .page-content-area #CAFDonateWidgetContainer > a {
   display: block;
   text-align: center;
