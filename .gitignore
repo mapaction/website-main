@@ -12,6 +12,7 @@ wordpress/wp-content/themes/*
 !wordpress/wp-content/plugins/
 wordpress/wp-content/plugins/*
 !wordpress/wp-content/plugins/ma-home-widget
+!wordpress/wp-content/plugins/ma-widget-insert
 
 # Ignore build directories & files
 .sass-cache

@@ -418,10 +418,21 @@ img.aligncenter {
   margin-right: auto;
 }
 
+/*
+ * Mixin defining the style of the Map Action
+ * Home Block widget (which can be in other places
+ * than the home page!). The mixin does not define
+ * the layout, which is context dependent.
+ *
+ * Mixin should be applied to parent container
+ * (eg. .dashboard or .ma-home-widget-embed),
+ * and it is expected widgets are defined within
+ * 'section' tags.
+ */
 /* This mixin contains the default styling we'd expect to
    apply to any container that contains main website
    content */
-/* line 5, sass/elements/_page_content_mixin.scss */
+/* line 7, sass/elements/_page_content_mixin.scss */
 h1 {
   color: #19458d;
   font-size: 37px;
@@ -430,7 +441,7 @@ h1 {
   font-weight: normal;
 }
 
-/* line 13, sass/elements/_page_content_mixin.scss */
+/* line 15, sass/elements/_page_content_mixin.scss */
 h2 {
   font-size: 22px;
   font-weight: bold;
@@ -439,7 +450,7 @@ h2 {
   color: #19458d;
 }
 
-/* line 21, sass/elements/_page_content_mixin.scss */
+/* line 23, sass/elements/_page_content_mixin.scss */
 h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: bold;
@@ -448,35 +459,35 @@ h3, h4, h5, h6 {
   color: #19458d;
 }
 
-/* line 29, sass/elements/_page_content_mixin.scss */
+/* line 31, sass/elements/_page_content_mixin.scss */
 a, a:visited {
   color: #19458d;
   text-decoration: underline;
 }
 
-/* line 33, sass/elements/_page_content_mixin.scss */
+/* line 35, sass/elements/_page_content_mixin.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 36, sass/elements/_page_content_mixin.scss */
+/* line 38, sass/elements/_page_content_mixin.scss */
 a.button, a.button:visited, a.button:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 41, sass/elements/_page_content_mixin.scss */
+/* line 43, sass/elements/_page_content_mixin.scss */
 header > h1 {
   margin-top: 0;
   line-height: 1em;
 }
 
-/* line 46, sass/elements/_page_content_mixin.scss */
+/* line 48, sass/elements/_page_content_mixin.scss */
 ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 50, sass/elements/_page_content_mixin.scss */
+/* line 52, sass/elements/_page_content_mixin.scss */
 ul li::before {
   content: "";
   background-color: #19458d;
@@ -489,17 +500,17 @@ ul li::before {
   top: -0.1em;
 }
 
-/* line 63, sass/elements/_page_content_mixin.scss */
+/* line 65, sass/elements/_page_content_mixin.scss */
 ol {
   margin-left: 0;
 }
 
-/* line 67, sass/elements/_page_content_mixin.scss */
+/* line 69, sass/elements/_page_content_mixin.scss */
 .edit-link {
   display: none;
 }
 
-/* line 71, sass/elements/_page_content_mixin.scss */
+/* line 73, sass/elements/_page_content_mixin.scss */
 blockquote {
   position: relative;
   padding-left: 30px;
@@ -508,7 +519,7 @@ blockquote {
   font-style: italic;
   font-size: 22px;
 }
-/* line 78, sass/elements/_page_content_mixin.scss */
+/* line 80, sass/elements/_page_content_mixin.scss */
 blockquote::before {
   position: absolute;
   width: 4px;
@@ -517,24 +528,24 @@ blockquote::before {
   left: 0;
   height: 100%;
 }
-/* line 86, sass/elements/_page_content_mixin.scss */
+/* line 88, sass/elements/_page_content_mixin.scss */
 blockquote.blockquote-image {
   padding-left: 180px;
 }
-/* line 88, sass/elements/_page_content_mixin.scss */
+/* line 90, sass/elements/_page_content_mixin.scss */
 blockquote.blockquote-image img {
   width: 150px;
   position: absolute;
   left: 0;
   top: 7.5px;
 }
-/* line 94, sass/elements/_page_content_mixin.scss */
+/* line 96, sass/elements/_page_content_mixin.scss */
 blockquote.blockquote-image::before {
   width: 0;
   height: 0;
 }
 
-/* line 101, sass/elements/_page_content_mixin.scss */
+/* line 103, sass/elements/_page_content_mixin.scss */
 .pull-out-box-right, .pull-out-box-left {
   width: 350px;
   text-align: center;
@@ -546,29 +557,239 @@ blockquote.blockquote-image::before {
   font-size: 22px;
 }
 
-/* line 111, sass/elements/_page_content_mixin.scss */
+/* line 113, sass/elements/_page_content_mixin.scss */
 .pull-out-box-right {
   float: right;
 }
 
-/* line 114, sass/elements/_page_content_mixin.scss */
+/* line 116, sass/elements/_page_content_mixin.scss */
 .pull-out-box-left {
   float: left;
 }
 
 /* Used to override themes, eg. in block quotes */
-/* line 119, sass/elements/_page_content_mixin.scss */
+/* line 121, sass/elements/_page_content_mixin.scss */
 .plain-text {
   color: black;
   font-size: 18px;
   font-style: normal;
 }
 
-/* line 124, sass/elements/_page_content_mixin.scss */
+/* line 126, sass/elements/_page_content_mixin.scss */
 .blue-italicised {
   color: #19458d;
   font-style: italic;
   font-size: 22px;
+}
+
+/* Theme embeded widgets */
+/* line 133, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed {
+  /* Style the block container */
+  /* Style the header when directly beneath the container
+     (eg. for text widget ) */
+  /* Whole block as a link */
+  /* Style the block */
+  /* Overrides */
+  /* Layout */
+  /* Make the container slightly larger than the page allows us to have
+     margin both sides of our blocks and not worry where they break
+     onto the next line */
+  width: calc( 100% + 30px );
+  margin-left: -15px;
+}
+/* line 14, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section {
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* line 21, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > h2 {
+  background-color: #32a4a0;
+  font-size: 22px;
+  /* Maybe override */
+  padding: 10px 30px;
+  /* Maybe override */
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+  height: 56px;
+  /* Maybe override */
+  color: white;
+  text-decoration: none;
+}
+/* line 31, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > h2 > a, .ma-widgets-embed > section > h2 > a:visited, .ma-widgets-embed > section > h2 > a:hover {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+/* line 39, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > a.ma-home-widget {
+  display: block;
+  border: 0;
+  text-decoration: none;
+}
+/* line 46, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget {
+  border-radius: 4px;
+  overflow: hidden;
+  /* Style ma-home-widget specific header */
+  /* Custom background colors */
+  /* Handle image placement */
+  /* Buttons */
+}
+/* line 51, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget > h2 {
+  background-color: #32a4a0;
+  font-size: 22px;
+  /* Maybe override */
+  height: 56px;
+  /* Maybe override */
+  color: white;
+  padding: 10px 30px;
+  /* Maybe override */
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+}
+/* line 61, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget > h2 > a, .ma-widgets-embed > section > .ma-home-widget > h2 > a:visited, .ma-widgets-embed > section > .ma-home-widget > h2 > a:hover {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+/* line 67, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget > .ma-home-widget-text {
+  font-size: 22px;
+  /* Maybe override */
+  padding: 15px 30px;
+  /* Maybe override */
+}
+/* line 73, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-light-green {
+  background-color: #dff1f0;
+  color: #19458d;
+}
+/* line 76, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-light-green a.ma-home-widget {
+  color: #19458d;
+}
+/* line 79, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-light-green > .ma-home-widget-text {
+  background-color: #dff1f0;
+}
+/* line 83, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-light-grey {
+  background-color: #eaeaea;
+  color: black;
+}
+/* line 86, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-light-grey a.ma-home-widget {
+  color: black;
+}
+/* line 89, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-light-grey > .ma-home-widget-text {
+  background-color: #eaeaea;
+}
+/* line 93, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-transparent {
+  color: black;
+}
+/* line 95, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.background-transparent a.ma-home-widget {
+  color: black;
+}
+/* line 101, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-above {
+  position: relative;
+}
+/* line 103, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-above > .ma-home-widget-text {
+  padding: 7.5px 30px 15px 30px;
+  position: absolute;
+  bottom: 3.75px;
+  width: 100%;
+}
+/* line 109, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-above > img {
+  width: 100%;
+}
+/* line 114, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-right > img {
+  float: right;
+  margin-top: 15px;
+}
+/* line 118, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-right > .ma-home-widget-text {
+  float: left;
+  width: 50%;
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-top: 0;
+}
+/* line 125, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-right::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 131, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget.image-full {
+  background-size: cover;
+  background-position: center;
+}
+/* line 137, sass/elements/_home_widgets_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget .button {
+  display: block;
+  width: 100%;
+  margin-top: 7.5px;
+  text-align: center;
+  font-size: 22px;
+}
+/* line 137, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed > section > h2 {
+  font-size: 18px;
+  padding: 10px 30px;
+  height: 46px;
+}
+/* line 142, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget > h2 {
+  font-size: 18px;
+  height: 46px;
+  padding: 10px 30px;
+}
+/* line 147, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget > .ma-home-widget-text {
+  font-size: 18px;
+  padding: 15px 30px;
+}
+/* line 159, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 165, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed > section {
+  width: calc( 33% - 30px );
+  margin: 0 15px 30px 15px;
+  float: left;
+}
+@media screen and (max-width: 1140px) {
+  /* line 165, sass/elements/_page_content_mixin.scss */
+  .ma-widgets-embed > section {
+    width: calc( 50% - 30px );
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 165, sass/elements/_page_content_mixin.scss */
+  .ma-widgets-embed > section {
+    width: calc( 100% - 30px );
+  }
+}
+/* line 176, sass/elements/_page_content_mixin.scss */
+.ma-widgets-embed > section > .ma-home-widget {
+  width: 100%;
+  height: 194px;
 }
 
 /*# sourceMappingURL=editor-style.css.map */

@@ -1,3 +1,5 @@
+@import "elements/home_widgets_mixin";
+
 /* This mixin contains the default styling we'd expect to
    apply to any container that contains main website
    content */
@@ -125,6 +127,56 @@
 		color: $primary-blue;
 		font-style: italic;
 		font-size: $base-font-size-large;
+	}
+
+	/* Theme embeded widgets */
+	.ma-widgets-embed {
+		@include home_widget_styles();
+
+		/* Overrides */
+		& > section > h2 {
+			font-size: $base-font-size;
+			padding: $gutter-size/3 $gutter-size;
+			height: $block-title-height-embed;
+		}
+		& > section > .ma-home-widget > h2 {
+			font-size: $base-font-size;
+			height: $block-title-height-embed;
+			padding: $gutter-size/3 $gutter-size;
+		}
+		& > section > .ma-home-widget > .ma-home-widget-text {
+			font-size: $base-font-size;
+			padding: $gutter-size/2 $gutter-size;
+		}
+
+		/* Layout */
+		/* Make the container slightly larger than the page allows us to have
+		   margin both sides of our blocks and not worry where they break
+		   onto the next line */
+		width: calc( 100% + #{$gutter-size} );
+		margin-left: -$gutter-size/2;
+
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		& > section {
+			width: calc( 33% - #{ $gutter-size } );
+			margin: 0 $gutter-size/2 $gutter-size $gutter-size/2;
+			float: left;
+			@media screen and (max-width: $three_column_min_width) {
+				width: calc( 50% - #{ $gutter-size } );
+			}
+			@media screen and (max-width: $content_embed_two_column_min_width) {
+				width: calc( 100% - #{ $gutter-size } );
+			}
+		}
+		& > section > .ma-home-widget {
+			width: 100%;
+			height: $block-height-embed;
+		}
 	}
 }
 
