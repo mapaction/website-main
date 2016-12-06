@@ -70,6 +70,12 @@
 		display: none;
 	}
 
+	figcaption {
+		font-size: $base-font-size-small;
+		line-height: 1.2;
+		color: $caption-grey;
+	}
+
 	blockquote {
 		position: relative;
 		padding-left: $gutter-size;
