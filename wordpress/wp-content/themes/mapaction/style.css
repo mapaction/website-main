@@ -403,19 +403,19 @@ table {
 
 /* Wordpress rich text editor adds these classes */
 /* line 111, sass/_defaults.scss */
-img.alignright {
+img.alignright, figure.alignright {
   float: right;
   margin: 0 0 1em 1em;
 }
 
 /* line 115, sass/_defaults.scss */
-img.alignleft {
+img.alignleft, figure.alignleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 
 /* line 119, sass/_defaults.scss */
-img.aligncenter {
+img.aligncenter, figure.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1020,11 +1020,11 @@ img.aligncenter {
 }
 
 /* The very first home block behaves differently */
-/* line 25, sass/elements/_dashboard.scss */
+/* line 26, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget {
   position: relative;
 }
-/* line 27, sass/elements/_dashboard.scss */
+/* line 28, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget > .widget-title {
   width: 65%;
   color: black;
@@ -1036,35 +1036,46 @@ img.aligncenter {
   position: absolute;
   left: 0;
   bottom: 100px;
+  border-radius: 0 4px 4px 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 27, sass/elements/_dashboard.scss */
+  /* line 28, sass/elements/_dashboard.scss */
   .dashboard > section:first-child > .ma-home-widget > .widget-title {
     width: 100%;
     bottom: auto;
     top: 50px;
   }
 }
-/* line 44, sass/elements/_dashboard.scss */
+/* line 46, sass/elements/_dashboard.scss */
 .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
   color: white;
   background-color: #19458d;
-  padding: 15px;
+  padding: 0 15px;
   width: 30%;
   position: absolute;
   right: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  border-radius: 4px 0 0 4px 0;
+  border-radius: 4px 0 0 4px;
   /* Should align with button in neighbouring box */
   bottom: 22.5px;
-  min-height: 66px;
+  height: 63px;
+  line-height: 63px;
 }
 @media screen and (max-width: 750px) {
-  /* line 44, sass/elements/_dashboard.scss */
+  /* line 46, sass/elements/_dashboard.scss */
   .dashboard > section:first-child > .ma-home-widget > .ma-home-widget-text {
     width: 70%;
   }
+}
+
+/* Second block (donate button) */
+/* line 68, sass/elements/_dashboard.scss */
+.dashboard > section:nth-child(2) > .ma-home-widget .button {
+  height: 63px;
+  line-height: 63px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* By default always hide the sidebar menu, then re-enable it as and when */
