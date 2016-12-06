@@ -38,5 +38,6 @@
 
 	<footer class="entry-footer">
 		<?php mapaction_entry_footer(); ?>
+		<a class="read-more-link" href="<?php echo esc_url( get_permalink() ); ?>">Read more</a>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

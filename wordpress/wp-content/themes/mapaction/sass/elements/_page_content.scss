@@ -30,6 +30,11 @@
 	article {
 		margin-bottom: $gutter-size;
 	}
+	article footer a.read-more-link {
+		font-size: $base-font-size-small;
+		color: $primary-blue;
+	}
+
 	.posts-navigation {
 		margin-bottom: $gutter-size;
 		font-size: $base-font-size-large;
