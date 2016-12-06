@@ -22,6 +22,7 @@
 }
 
 /* The very first home block behaves differently */
+$home-button-height: 63px;
 .dashboard > section:first-child > .ma-home-widget {
 	position: relative;
 	> .widget-title {
@@ -35,6 +36,7 @@
 		position: absolute;
 		left: 0;
 		bottom: 100px;
+		border-radius: 0 4px 4px 0;
 		@media screen and (max-width: $two_column_min_width) {
 			width: 100%;
 			bottom: auto;
@@ -44,18 +46,29 @@
 	> .ma-home-widget-text {
 		color: white;
 		background-color: $primary-blue;
-		padding: $gutter-size/2;
+		padding: 0 $gutter-size/2;
 		width: 30%;
 		position: absolute;
 		right: 0;
-		font-size: $base-font-size;
+		font-size: $base-font-size-medium;
 		font-weight: bold;
-		border-radius: 4px 0 0 4px 0;
+		border-radius: 4px 0 0 4px;
         /* Should align with button in neighbouring box */
 		bottom: $gutter-size * 0.75;
-		min-height: 66px;
+		height: $home-button-height;
+		line-height: $home-button-height;
 		@media screen and (max-width: $two_column_min_width) {
 			width: 70%;
 		}
 	}
 }
+
+/* Second block (donate button) */
+
+.dashboard > section:nth-child(2) > .ma-home-widget .button {
+	height: $home-button-height;
+	line-height: $home-button-height;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
