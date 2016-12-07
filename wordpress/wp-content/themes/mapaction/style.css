@@ -797,13 +797,17 @@ img.aligncenter, figure.aligncenter {
 /* line 17, sass/elements/_footer.scss */
 .site-footer-inner > section a, .site-footer-inner > section a:visited {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* line 21, sass/elements/_footer.scss */
 .site-footer-inner > section a:hover {
+  text-decoration: underline;
+}
+/* line 24, sass/elements/_footer.scss */
+.site-footer-inner > section a.button:hover {
   text-decoration: none;
 }
-/* line 25, sass/elements/_footer.scss */
+/* line 28, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu {
   padding: 0;
   margin: 0;
@@ -812,21 +816,48 @@ img.aligncenter, figure.aligncenter {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-/* line 33, sass/elements/_footer.scss */
+/* line 36, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu a, .site-footer-inner > section ul.menu a:visited {
   color: white;
   text-decoration: none;
   font-size: 16px;
 }
-/* line 38, sass/elements/_footer.scss */
+/* line 41, sass/elements/_footer.scss */
 .site-footer-inner > section ul.menu a:hover {
   text-decoration: underline;
 }
 
-/* line 44, sass/elements/_footer.scss */
+/* line 47, sass/elements/_footer.scss */
+.site-footer-inner > div.aptivate-brand {
+  clear: both;
+  font-size: 12px;
+  color: white;
+  margin-left: 30px;
+  opacity: 0.75;
+}
+/* line 53, sass/elements/_footer.scss */
+.site-footer-inner > div.aptivate-brand a {
+  color: white;
+  text-decoration: none;
+}
+/* line 56, sass/elements/_footer.scss */
+.site-footer-inner > div.aptivate-brand a:visited {
+  color: white;
+}
+/* line 59, sass/elements/_footer.scss */
+.site-footer-inner > div.aptivate-brand a:hover {
+  text-decoration: underline;
+}
+
+/* line 65, sass/elements/_footer.scss */
 .site-footer-inner > section .social-media-icons a {
   display: inline-block;
   margin-right: 15px;
+}
+
+/* line 70, sass/elements/_footer.scss */
+.site-footer-inner > section .social-media-icons a:hover {
+  opacity: 0.6;
 }
 
 /*

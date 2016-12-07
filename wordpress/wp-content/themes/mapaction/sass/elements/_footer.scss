@@ -44,6 +44,24 @@
 	}
 }
 
+.site-footer-inner > div.aptivate-brand {
+	clear: both;
+	font-size: $base-font-size-tiny;
+	color: white;
+	margin-left: $gutter-size;
+	opacity: 0.75;
+	a {
+		color: white;
+		text-decoration: none;
+		&:visited {
+			color: white;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 .site-footer-inner > section .social-media-icons a {
 	display: inline-block;
 	margin-right: $gutter-size/2;

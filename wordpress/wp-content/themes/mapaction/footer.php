@@ -16,6 +16,7 @@
 	<footer id="colophon" class="site-footer site-footer-layout" role="contentinfo">
 		<div class="site-footer-inner site-footer-inner-layout">
 			<?php dynamic_sidebar('footer'); ?>
+			<div class="aptivate-brand">Website by <a href="http://www.aptivate.org" target="_blank">Aptivate</a></div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
