@@ -1,0 +1,94 @@
+@import "page_content_mixin";
+
+/* General page styling */
+.page-content-area {
+	@include content_area_styles();
+}
+
+/* General single post styling */
+.single-post .content-area {
+	@include content_area_styles();
+}
+
+/* 404 page styling */
+.error404 .content-area {
+	@include content_area_styles();
+}
+
+/* Category listing page styling */
+.category .content-area,
+.search .content-area {
+	@include content_area_styles();
+	h2 {
+		margin-bottom: 0;
+		a, a:visited, a:hover {
+			text-decoration: none;
+			width: 100%;
+			display: block;
+			border-bottom: 2px solid $secondary-blue;
+		}
+	}
+	.entry-meta {
+		font-size: $base-font-size-small;
+		margin-top: $gutter-size/4;
+		color: $primary-blue;
+	}
+	article {
+		margin-bottom: $gutter-size;
+	}
+	article footer a.read-more-link {
+		font-size: $base-font-size-small;
+		color: $primary-blue;
+	}
+
+	.posts-navigation {
+		margin-bottom: $gutter-size;
+		font-size: $base-font-size-large;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.nav-previous {
+			float: right;
+			a::after {
+				content: "";
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-left:10px solid $secondary-blue;
+				display: inline-block;
+				position: relative;
+				top: 4px;
+				margin-left: $gutter-size/2;
+			}
+		}
+		.nav-next {
+			float: left;
+			a::before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-right:10px solid $secondary-blue;
+				display: inline-block;
+				position: relative;
+				top: 4px;
+				margin-right: $gutter-size/2;
+			}
+
+		}
+		a {
+			color: $secondary-blue;
+		}
+	}
+}
+
+/* Specifics for the donate page */
+.page-content-area #CAFDonateWidgetContainer > a {
+	display: block;
+	text-align: center;
+	margin: $gutter-size;
+}

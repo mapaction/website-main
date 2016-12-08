@@ -1,18 +1,27 @@
-*.log
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+# Ignore all WP files other than the ones we are developing, as WP core is managed by Flywheel
+wordpress/*
+!wordpress/.htaccess
+!wordpress/wp-content/
+wordpress/wp-content/*
 
+!wordpress/wp-content/themes/
+wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/mapaction
+
+!wordpress/wp-content/plugins/
+wordpress/wp-content/plugins/*
+!wordpress/wp-content/plugins/ma-home-widget
+!wordpress/wp-content/plugins/ma-widget-insert
+
+# Ignore build directories & files
+.sass-cache
+style.css.map
+editor-style.css.map
+
+# Ignore data folder in our dev directory
+dev/mysql_data
+dev/mapaction_*.sql
+
+# Custom vim settings file
+.vimrc_local

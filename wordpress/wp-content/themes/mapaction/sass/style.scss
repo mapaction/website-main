@@ -1,0 +1,43 @@
+/*!
+Theme Name: mapaction
+Theme URI: http://mapaction.org
+Author: Aptivate (base theme from Automatic)
+Author URI: http://aptivate.org
+Description: Theme for Mapaction website, based on the _s base theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mapaction
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+
+mapaction is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/* Settings & Variables */
+@import "settings";
+
+/* Browser reset/normalize */
+@import "reset";
+
+/* Defaults for our site (base font sizes, etc.) */
+@import "defaults";
+
+/* Specific elements. Each file contains the layout
+   of items within that element */
+@import "elements/buttons.scss";
+@import "elements/emergencies-bar.scss";
+@import "elements/main-navigation.scss";
+@import "elements/footer.scss";
+@import "elements/dashboard.scss";
+@import "elements/sidebar-navigation.scss";
+@import "elements/page_content.scss";
+@import "elements/404.scss";
+
+/* General layout */
+@import "page_layout";

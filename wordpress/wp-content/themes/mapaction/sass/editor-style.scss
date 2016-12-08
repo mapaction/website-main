@@ -1,0 +1,8 @@
+/**
+ * Styles for the RTE in Wordpress
+ */
+@import "settings";
+@import "reset";
+@import "defaults";
+@import "elements/page_content_mixin";
+@include content_area_styles();

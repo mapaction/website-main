@@ -1,0 +1,313 @@
+/* Layout of the page */
+.site-layout {
+	padding: 0 $gutter-size;
+	max-width: $site-max-width;
+	margin: auto;
+	@media screen and (max-width: $two_column_min_width) {
+		padding: 0 $gutter-size/2;
+	}
+}
+
+/* Layout of the header (as a whole) */
+.site-header-layout {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/* Layout of the emergencies bar */
+.site-emergencies-layout {
+	height: $emergencies-height;
+	@media screen and (max-width: $two_column_min_width) {
+		height: $emergencies-height-small;
+	}
+}
+
+/* Create the color bars that spread outside the page width
+   for the emergencies banner */
+.site-emergencies-layout {
+	position: relative;
+	&::before {
+		position: absolute;
+		right: 100%;
+		height: $emergencies-height;
+		@media screen and (max-width: $two_column_min_width) {
+			height: $emergencies-height-small;
+		}
+		width: $margin-spread;
+		background-color: $primary-blue;
+		content: "";
+	}
+	&::after {
+		position: absolute;
+		left: 100%;
+		height: $emergencies-height;
+		@media screen and (max-width: $two_column_min_width) {
+			height: $emergencies-height-small;
+		}
+		width: $margin-spread;
+		background-color: $primary-red;
+		content: "";
+	}
+}
+
+/* Site branding (logo) section */
+/* Place logo */
+.site-branding-layout {
+	float: left;
+	margin-top: $gutter-size;
+	.site-logo a {
+		height: $logo-height;
+		display: block;
+		@media screen and (max-width: $three_column_min_width) {
+			height: $logo-height-small;
+		}
+	}
+	img {
+		height: $logo-height;
+		@media screen and (max-width: $three_column_min_width) {
+			height: $logo-height-small;
+		}
+	}
+}
+
+/* Full width navigation */
+.site-navigation-toggle-label-layout {
+	display: none;
+	margin-top: #{ $gutter-size + ( $logo-height - $base-line-height * $base-font-size ) / 2 };
+	@media screen and (max-width: $three_column_min_width) {
+		margin-top: #{ $gutter-size + ( $logo-height-small - $base-line-height * $base-font-size ) / 2 };
+	}
+}
+.main-navigation-layout {
+	float: right;
+	margin-top: #{ $gutter-size + ( $logo-height - $base-line-height * $base-font-size ) / 2 };
+	@media screen and (max-width: $three_column_min_width) {
+		margin-top: #{ $gutter-size + ( $logo-height-small - $base-line-height * $base-font-size ) / 2 };
+	}
+
+	ul, li {
+		display: inline-block;
+	}
+	input {
+		display: none;
+	}
+}
+
+/* Intermediate navigation */
+@media screen and (max-width: $full_menu_min_width) {
+	.main-navigation-layout {
+		float: none;
+		clear: both;
+	}
+}
+
+/* Mobile navigation */
+@media screen and (max-width: $two_column_min_width) {
+	.site-navigation-toggle-label-layout {
+		display: block;
+		float: right;
+	}
+
+	.main-navigation-layout {
+		float: none;
+		clear: both;
+		input[type="checkbox"]:not(:checked) + ul {
+			display: none;
+		}
+		> ul > li {
+			display: block;
+			text-align: left;
+			margin-top: $gutter-size/2;
+		}
+	}
+}
+
+/* Footer layout */
+.site-footer-layout {
+	min-height: $footer-min-height;
+	width: calc( 100% + #{ 2 * $margin-spread } );
+	margin-left: -$margin-spread;
+}
+
+.site-footer-inner-layout {
+	margin-left: $margin-spread;
+	padding-top: 2*$gutter-size;
+	width: calc( 100% - #{ 2 * $margin-spread } );
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.site-footer-inner-layout > section {
+	width: 33%;
+	float: left;
+	> h2 {
+		margin: 0 0 $gutter-size/2 0;
+	}
+}
+
+@media screen and (max-width: $two_column_min_width) {
+	.site-footer-inner-layout > section {
+		width: 100%;
+		margin-bottom: $gutter-size;
+		float: none;
+	}
+}
+
+/*
+ * Home page blocks
+ */
+.dashboard-layout::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.dashboard-layout {
+	/* Make the container slightly larger than the page allows us to have
+	   margin both sides of our blocks and not worry where they break
+	   onto the next line */
+	width: calc( 100% + #{$gutter-size} );
+	margin-left: -$gutter-size/2;
+}
+.dashboard-layout > section {
+	width: calc( 33% - #{ $gutter-size } );
+	margin: 0 $gutter-size/2 $gutter-size $gutter-size/2;
+	height: $block-height;
+	float: left;
+}
+.dashboard-layout > section > .ma-home-widget {
+	width: 100%;
+	height: $block-height;
+}
+.dashboard-layout > section:first-child {
+	width: calc( 2 * 33% - #{ $gutter-size } );
+	height: $block-height-tall;
+}
+.dashboard-layout > section:first-child > .ma-home-widget {
+	width: 100%;
+	height: $block-height-tall;
+}
+.dashboard-layout > section:nth-child(2) {
+	height: $block-height-tall;
+}
+.dashboard-layout > section:nth-child(2) > .ma-home-widget {
+	height: $block-height-tall;
+}
+@media screen and (max-width: $three_column_min_width) {
+	.dashboard-layout > section {
+		width: calc( 50% - #{ $gutter-size } );
+	}
+	.dashboard-layout > section:first-child {
+		width: calc( 100% - #{ $gutter-size } );
+	}
+	.dashboard-layout > section:nth-child(2) {
+		height: $block-height;
+	}
+	.dashboard-layout > section:nth-child(2) > .ma-home-widget {
+		height: $block-height;
+	}
+}
+@media screen and (max-width: $two_column_min_width) {
+	.dashboard-layout > section {
+		width: calc( 100% - #{ $gutter-size } );
+	}
+}
+
+/**
+ * Content pages layout (including sidebar)
+ *
+ * We rely on classes set on body (page-parent, page-child) to
+ * know whether a sidebar is needed.
+ */
+.site-content-layout {
+	margin-top: $gutter-size;
+}
+
+.page-content-area,
+.error404 .content-area,
+.search .content-area {
+	width: calc( 100% - #{ $logo-width } - #{ 2*$gutter-size } );
+	float: right;
+	@media screen and (max-width: $two_column_min_width) {
+		width: 100%;
+	}
+}
+.page .site-content,
+.error404 .site-content,
+.search .site-content {
+	&::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+.page-parent, .page-child {
+	.sidebar-navigation-layout {
+		width: $logo-width;
+		@media screen and (max-width: $two_column_min_width) {
+			display: none;
+		}
+	}
+}
+
+/**
+ * Category page layout
+ */
+.category {
+	.content-area {
+		width: calc( 100% - #{ $logo-width } - #{ 2*$gutter-size } );
+		@media screen and (max-width: $two_column_min_width) {
+			width: 100%;
+		}
+		float: right;
+	}
+
+	.site-content {
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+
+	.sidebar-navigation-layout {
+		width: $logo-width;
+		@media screen and (max-width: $two_column_min_width) {
+			display: none;
+		}
+	}
+}
+
+/**
+ * Single post page layout
+ */
+.single-post {
+	.content-area {
+		width: calc( 100% - #{ $logo-width } - #{ 2*$gutter-size } );
+		@media screen and (max-width: $two_column_min_width) {
+			width: 100%;
+		}
+		float: right;
+	}
+
+	.site-content {
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+
+	.sidebar-navigation-layout {
+		width: $logo-width;
+		@media screen and (max-width: $two_column_min_width) {
+			display: none;
+		}
+	}
+}

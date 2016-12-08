@@ -1,0 +1,74 @@
+@import "elements/home_widgets_mixin";
+
+.dashboard {
+	@include home_widget_styles();
+	& > section > h2 {
+		font-size: $base-font-size-large;
+		padding: $gutter-size/3 $gutter-size;
+		height: $block-title-height;
+	}
+	& > section > .ma-home-widget > h2 {
+		font-size: $base-font-size-large;
+		height: $block-title-height;
+		padding: $gutter-size/3 $gutter-size;
+	}
+	& > section > .ma-home-widget > .ma-home-widget-text {
+		font-size: $base-font-size-large;
+		padding: $gutter-size/2 $gutter-size;
+		@media screen and (max-width: $three_column_min_width) {
+			font-size: $base-font-size;
+		}
+	}
+}
+
+/* The very first home block behaves differently */
+$home-button-height: 63px;
+.dashboard > section:first-child > .ma-home-widget {
+	position: relative;
+	> .widget-title {
+		width: 65%;
+		color: black;
+		line-height: 1.25em;
+		height: auto;
+		font-size: $base-font-size-giant;
+		font-weight: normal;
+		background-color: rgba(255, 255, 255, 0.75);
+		position: absolute;
+		left: 0;
+		bottom: 100px;
+		border-radius: 0 4px 4px 0;
+		@media screen and (max-width: $two_column_min_width) {
+			width: 100%;
+			bottom: auto;
+			top: 50px;
+		}
+	}
+	> .ma-home-widget-text {
+		color: white;
+		background-color: $primary-blue;
+		padding: 0 $gutter-size/2;
+		width: 30%;
+		position: absolute;
+		right: 0;
+		font-size: $base-font-size-medium;
+		font-weight: bold;
+		border-radius: 4px 0 0 4px;
+        /* Should align with button in neighbouring box */
+		bottom: $gutter-size * 0.75;
+		height: $home-button-height;
+		line-height: $home-button-height;
+		@media screen and (max-width: $two_column_min_width) {
+			width: 70%;
+		}
+	}
+}
+
+/* Second block (donate button) */
+
+.dashboard > section:nth-child(2) > .ma-home-widget .button {
+	height: $home-button-height;
+	line-height: $home-button-height;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+

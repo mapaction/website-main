@@ -1,0 +1,193 @@
+@import "elements/home_widgets_mixin";
+
+/* This mixin contains the default styling we'd expect to
+   apply to any container that contains main website
+   content */
+@mixin content_area_styles() {
+	h1 {
+		color: $primary-blue;
+		font-size: $base-font-size-giant;
+		margin-top: $gutter-size/2;
+		margin-bottom: $gutter-size/4;
+		font-weight: normal;
+	}
+
+	h2 {
+		font-size: $base-font-size-large;
+		font-weight: bold;
+		margin-top: $gutter-size/2;
+		margin-bottom: $gutter-size/2;
+		color: $primary-blue;
+	}
+
+	h3, h4, h5, h6 {
+		font-size: $base-font-size;
+		font-weight: bold;
+		margin-top: $gutter-size/2;
+		margin-bottom: $gutter-size/2;
+		color: $primary-blue;
+	}
+
+	a, a:visited {
+		color: $primary-blue;
+		text-decoration: underline;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a.button, a.button:visited, a.button:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	header > h1 {
+		margin-top: 0;
+		line-height: 1em;
+	}
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: $gutter-size;
+		li {
+			&::before {
+				content: "";
+				background-color: $primary-blue;
+				display: inline-block;
+				width: 0.5em;
+				height: 0.5em;
+				margin-right: 0.5em;
+				border-radius: 50%;
+				position: relative;
+				top: -0.1em;
+				margin-left: -1em;
+			}
+		}
+	}
+	ol {
+		margin-left: 0;
+	}
+
+	.edit-link {
+		display: none;
+	}
+
+	figcaption {
+		font-size: $base-font-size-small;
+		line-height: 1.2;
+		color: $caption-grey;
+	}
+
+	blockquote {
+		position: relative;
+		padding-left: $gutter-size;
+		margin: $gutter-size 0;
+		color: $primary-blue;
+		font-style: italic;
+		font-size: $base-font-size-large;
+		&::before {
+			position: absolute;
+			width: 4px;
+			background-color: $primary-blue;
+			border-radius: 4px;
+			left: 0;
+			height: 100%;
+		}
+		&.blockquote-image {
+			padding-left: 150px + $gutter-size;
+			img {
+				width: 150px;
+				position: absolute;
+				left: 0;
+				top: $gutter-size/4;
+			}
+			&::before {
+				width: 0;
+				height: 0;
+			}
+		}
+	}
+
+	.pull-out-box-right, .pull-out-box-left {
+		width: $pull-out-box-width;
+		text-align: center;
+		background-color: $secondary-green-light;
+		padding: $gutter-size;
+		margin: 0 0 $gutter-size 0;
+		color: $primary-blue;
+		font-style: italic;
+		font-size: $base-font-size-large;
+	}
+	.pull-out-box-right {
+		float: right;
+		margin: 0 0 $gutter-size $gutter-size;
+	}
+	.pull-out-box-left {
+		float: left;
+		margin: 0 $gutter-size $gutter-size 0;
+	}
+
+	/* Used to override themes, eg. in block quotes */
+	.plain-text {
+		color: black;
+		font-size: $base-font-size;
+		font-style: normal;
+	}
+	.blue-italicised {
+		color: $primary-blue;
+		font-style: italic;
+		font-size: $base-font-size-large;
+	}
+
+	/* Theme embeded widgets */
+	.ma-widgets-embed {
+		@include home_widget_styles();
+
+		/* Overrides */
+		& > section > h2 {
+			font-size: $base-font-size;
+			padding: $gutter-size/3 $gutter-size;
+			height: $block-title-height-embed;
+		}
+		& > section > .ma-home-widget > h2 {
+			font-size: $base-font-size;
+			height: $block-title-height-embed;
+			padding: $gutter-size/3 $gutter-size;
+		}
+		& > section > .ma-home-widget > .ma-home-widget-text {
+			font-size: $base-font-size;
+			padding: $gutter-size/2 $gutter-size;
+		}
+
+		/* Layout */
+		/* Make the container slightly larger than the page allows us to have
+		   margin both sides of our blocks and not worry where they break
+		   onto the next line */
+		width: calc( 100% + #{$gutter-size} );
+		margin-left: -$gutter-size/2;
+
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		& > section {
+			width: calc( 33% - #{ $gutter-size } );
+			margin: 0 $gutter-size/2 $gutter-size $gutter-size/2;
+			float: left;
+			@media screen and (max-width: $three_column_min_width) {
+				width: calc( 50% - #{ $gutter-size } );
+			}
+			@media screen and (max-width: $content_embed_two_column_min_width) {
+				width: calc( 100% - #{ $gutter-size } );
+			}
+		}
+		& > section > .ma-home-widget {
+			width: 100%;
+			height: $block-height-embed;
+		}
+	}
+}
+
+

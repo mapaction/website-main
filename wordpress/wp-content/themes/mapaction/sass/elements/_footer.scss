@@ -1,0 +1,72 @@
+.site-footer {
+	background-color: $primary-blue;
+	padding-bottom: $gutter-size;
+}
+
+.site-footer-inner > section {
+	padding: 0 $gutter-size;
+	color: white;
+	> h2 {
+		font-size: $base-font-size;
+		font-weight: bold;
+	}
+	> div {
+		font-size: $base-font-size-medium;
+		font-weight: normal;
+	}
+	a, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a.button:hover {
+		text-decoration: none;
+	}
+
+	ul.menu {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+
+		a, a:visited {
+			color: white;
+			text-decoration: none;
+			font-size: $base-font-size-medium;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.site-footer-inner > div.aptivate-brand {
+	clear: both;
+	font-size: $base-font-size-tiny;
+	color: white;
+	margin-left: $gutter-size;
+	opacity: 0.75;
+	a {
+		color: white;
+		text-decoration: none;
+		&:visited {
+			color: white;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.site-footer-inner > section .social-media-icons a {
+	display: inline-block;
+	margin-right: $gutter-size/2;
+}
+
+.site-footer-inner > section .social-media-icons a:hover {
+	opacity: 0.6;
+}
